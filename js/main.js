@@ -12,3 +12,36 @@ function hamburgerMenu() {
 button.addEventListener("click", hamburgerMenu);	
  
 })();
+
+
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// Fade-in effect
+gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
+    gsap.from(section, {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+        }
+    });
+});
+
+// Scale effect for images
+gsap.utils.toArray("#mens-image, #womens-image, #showroom, #earbuds-image, .vertical_text").forEach((image) => {
+    gsap.from(image, {
+        scale: 0.8,
+        opacity: 0,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: image,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+        }
+    });
+});
