@@ -3,42 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Galvji:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
     <title>Roy's Portfolio</title>
 </head>
+
 <body>
-    <div class="hero-container">
-      <div class="hero-content">
-        <h1 class="large-title">P</h1>
-        <h2 class="portfolio-title">ORTFOLIO</h2>
-        <h3 class="name">Roy Sit</h3>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/roy-sit78" class="link">in</a>
-          <a href="#about" class="link">About Me</a>
-        </div>
-      </div>
+  <h1 class="hidden">Welcome to my portfolio</h1>
+<div id="sticky-nav-con">
+    <header id="main-header" class="grid-con">
+        <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-4 m-col-end-13">
+          <h2 class="hidden">Main Navigation</h2>
+            <button id="button"></button>
+              <div id="burger-con" class="hidden">
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#mens">Mens</a></li>
+                  <li><a href="#womens">Womens</a></li>
+                  <li><a href="#multimedia">Multimedia</a></li>
+                </ul>
+              </div>
+        </nav>
+
+    <div id="logo" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
+        <a href="index.html">
+          <object data="images/my_name.svg" type="image/svg+xml">     
+          </object>
+        </a>
+    </div>          
+  </header>
+</div>
+
+    <section id="hero" class="full-width-grid-con">
+        <h2 class="hidden">My Fashion Show</h2>
+        <video id="hero-video" controls>
+          <source src="video/fashion_show.mp4" type="video/mp4">
+          <source src="video/fashion_show.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video> 
+        <div class="vertical_text">  
+              <p>MOTION<br>DESIGNER</p>
+              <br>
+              <p>WEBSITE<br>DESIGNER</p>
+              <br>
+              <p>FASHION<br>DESIGNER</p>   
+        </div>       
+    </section>
+
+    <div class="flex-container-contact">
+        <img src="images/my_logo.svg" alt="Contact email" class="icon">
+        <img src="images/linkin.svg" alt="LinkedIn icon" class="icon">
     </div>
 
-  
+
+    <section class="full-width-grid-con">
+        <div class="col-span-full m-col-span-full">
+            <div id="about-me">
+            <h3>ABOUT</h3>
+            <p>
+                With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+                <br>
+                Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
+                <br><br>           
+            </p>
+            </div>
+        </div>
+    </section>
+    
+    <div id="collection-image">
+    <img src="images/collection.jpg" alt="collection rack">
+    </div>
+
+    <section class="full-width-grid-con">
+    <div class="col-span-full m-col-span-full">
+        <div id="experience">
+            <h3>EXPERIENCE</h3>          
+        </div>
+        <div id="showroom">
+            <img src="images/ls_showroom.jpg" alt="showroom">         
+            <p>
+                With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+                <br>
+                Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
+                <br><br>           
+            </p>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="full-width-grid-con">
+        <div class="col-span-full m-col-span-full">
+            <div id="mens">
+            <h3>MENS</h3>
+            <div id="mens-image">
+                <img src="images/mens.jpg" alt="mens image">
+                <p>
+                  Performance Tailoring
+                  As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this Spring/Summer sport tailoring collection.
+                  <br>
+                  By applying innovations in fabrics and construction to create comfortable, sport-inspired tailoring.      
+              </p>
+                </div>         
+            </div>
+        
+        </div>
+    </section>
+    
+
+    <section class="full-width-grid-con">
+      <div class="col-span-full m-col-span-full">
+          <div id="womens">
+          <div id="womens-image">
+              <img src="images/womens.jpg" alt="womens image">
+              <p>
+                Tactile Material
+                The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. 
+                <br>
+                <br>
+                Additionally, there is an emphasis on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies.                 
+              </p>
+          </div>   
+              <h3>WOMENS</h3>      
+          </div>
+      </div>
+  </section>
+
+
+  <section class="full-width-grid-con">
+    <div class="col-span-full m-col-span-full">
+        <div id="multi">
+            <h3>MULTI <br>MEDIA</h3>         
+        </div>
+        
+        <div id="burple">
+          <video id="burple-video" controls>
+            <source src="video/burple_promo.webm" type="video/webm">
+            <source src="video/burple_promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+          <br><br> 
+            <p>
+              Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. We believe in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled
+              <br><br> 
+              We believe in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth.
+              <br><br>           
+            </p>
+        </div>
+    </div>
+  </section>
+
+    <section class="full-width-grid-con">
+      <div class="col-span-full m-col-span-full">
+          <div id="multi-2">
+              <h3>MULTI <br>MEDIA</h3>         
+          </div>
+
+          <div id="earbuds-image">
+            <img src="images/earbuds.jpg" alt="earbuds posters">
+            <br><br> 
+              <p>
+                In this project, I use generators in Cinema 4D to create a pair of earbuds, and use the earbuds as a promotional asset for the print campaign and video. The print campaign will incorporate the earbuds into a poster design, while the video showcases the features of the earbuds including its colours, shapes, textures, lighting and animation keyframes.
+                <br><br> 
+                Illustrator: Initial sketch of the earbuds' shape.
+                C4D: Shape the earbuds, add lighting and a backdrop to for the lighting quality. 
+                Photoshop: Retouch the colour and contrast to enhance the images for posters. 
+                <br><br>           
+              </p>
+          </div>
+      </div>
+      </section>
 
 
 
-
-
-
-
-
-
-
-    <footer></footer>
- 
-    <script src="js/main.js"></script>   
-
+    <footer>
+    <script src="js/main.js"></script>
+    </footer>
 </body>
 </html>
+
