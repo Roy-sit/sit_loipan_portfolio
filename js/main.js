@@ -33,7 +33,7 @@ gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
 });
 
 // Scale effect for images
-gsap.utils.toArray("#mens-image, #womens-image, #showroom, #earbuds-image, .vertical_text").forEach((image) => {
+gsap.utils.toArray("#mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
         scale: 0.8,
         opacity: 0,

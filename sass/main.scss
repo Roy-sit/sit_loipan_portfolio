@@ -3,17 +3,5 @@
 //have to include all of these otherwise main.css will be empty
 //We do not create styles in here
 
-@import 'contact';
-@import 'images';
-@import 'typography';
-@import 'variables';
-@import 'video';
+@use 'pages';
 
-
-body {
-  background-color: white; 
-  font-family: $body-font-family; // from variable 
-  color: $body-text-color; // from variable 
-  margin: 0; 
-  padding: 0;
-}
