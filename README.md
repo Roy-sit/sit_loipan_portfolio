@@ -1,6 +1,6 @@
 <img src="images/collection.jpg">
 
-#### Project: Portfolio
+### Project: Portfolio
 This is a personal portfolio website showcasing my work in fashion design, web development, and motion graphics. It includes interactive elements and smooth animations.
 
 
