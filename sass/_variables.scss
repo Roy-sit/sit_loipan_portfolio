@@ -1,0 +1,23 @@
+
+$primary-color: black; 
+$secondary-color: #FF6C00;
+$hover-color: black;
+$body-text-color: black; 
+$heading-font-family: 'Galvji', Helvetica, Arial, sans-serif; 
+$body-font-family: 'Galvji', Helvetica, Arial, sans-serif; 
+
+body, h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  font-family: $body-font-family;
+}
+
+a {
+  color: $secondary-color;
+  &:hover {
+    color: $hover-color; 
+  }
+}
+
+#burger-con ul li a {
+  color: $secondary-color; 
+}
