@@ -1,0 +1,655 @@
+@import 'variables';
+
+html {
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+  #main-nav button {
+      display: none;
+  }
+
+  #sticky-nav-con {
+    background-color: white;
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+  #main-nav {
+      background-color: white;
+      justify-self: right;
+      align-self: self-end;
+      z-index: 1;
+      grid-row-start: 1;
+      padding-bottom: 0;
+      margin-top: 40px;
+
+  }
+
+  #burger-con {
+      display: inline;
+      position: inherit;
+      width: 0;
+      height: 0;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+  }
+      
+  #burger-con ul li {
+      padding: 0;
+      border-bottom: 0;
+      display: inline;
+  }
+  
+  #burger-con ul li a {
+      font-size: 18px;
+      padding-left: 35px;
+  }
+      
+
+  #logo {
+      justify-self: left;
+      width: 400px;
+      margin-bottom: 0;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  #logo object {
+      width: 650px;
+      padding: 0 0;
+  }
+
+  #main-header {
+      order: 2;
+  }
+
+#hero-video {
+  scale: 95%;
+}
+
+  .vertical_text {
+      padding-top: 20px;
+      font-size: 60px;
+  }
+
+  .flex-container-contact {
+      margin-right: -550px;
+  }
+
+   #about-me h3 {
+      font-size: 100px; 
+      margin-top: 66px; 
+      margin-left: -300px;  
+  }
+
+  #collection-image {
+    width: 80%;
+    margin-left: -15px;
+  }
+
+  #experience h3 {
+    font-size: 100px;
+    margin-left: 10px;  
+}
+
+  #showroom {
+  width: 80%;
+  margin-left: 132px;
+}
+
+  #showroom p {
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+#mens h3 {
+  font-size: 100px;
+}
+
+#mens-image {
+  width: 80%;
+}
+
+#mens-image p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+#womens h3 {
+  font-size: 100px;
+  margin-left: 600px;
+  margin-top: -670px;
+}
+
+#womens-image {
+  width: 75%;
+}
+
+#womens-image p {
+  font-size: 15px;
+}
+
+#multi h3 {
+  font-size: 100px;
+}
+
+#burple-video {
+  scale: 85%;
+  margin-top: -30px;
+}
+
+#burple p{
+  font-size: 15px;
+  margin-top: -30px;
+}
+
+#multi-2 h3 {
+  font-size: 100px;
+  }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  
+  #main-nav button {
+    display: none;
+}
+
+#sticky-nav-con {
+    background-color: white;
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#main-nav {
+    background-color: white;
+    justify-self: right;
+    align-self: self-end;
+    z-index: 1;
+    grid-row-start: 1;
+    padding-bottom: 0;
+    margin-top: 40px;
+
+}
+
+#burger-con {
+    display: inline;
+    position: inherit;
+    width: 0;
+    height: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+    
+#burger-con ul li {
+    padding: 0;
+    border-bottom: 0;
+    display: inline;
+}
+
+#burger-con ul li a {
+    font-size: 20px;
+    padding-left: 35px;
+}
+    
+
+#logo {
+    justify-self: left;
+    width: 500px;
+    margin-bottom: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#logo object {
+    width: 650px;
+    padding: 0 0;
+}
+
+#main-header {
+    order: 2;
+}
+
+#hero-video {
+scale: 85%;
+}
+
+.vertical_text {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+.flex-container-contact {
+    margin-right: -550px;
+}
+
+ #about-me h3 {
+    font-size: 100px; 
+    margin-top: 66px; 
+    margin-left: -300px;  
+}
+
+#about-me p {
+font-size: 16px;
+line-height: 35px;
+}
+
+#collection-image {
+  width: 75%;
+  margin-left: -15px;
+}
+
+#experience h3 {
+  font-size: 100px;
+  margin-left: 10px;  
+}
+
+#showroom {
+width: 70%;
+margin-left: 132px;
+}
+
+#showroom p {
+font-size: 16px;
+line-height: 35px;
+margin-top: 10px;
+}
+
+#mens h3 {
+font-size: 100px;
+}
+
+#mens-image {
+width: 70%;
+}
+
+#mens-image p {
+line-height: 35px;
+font-size: 16px;
+margin-top: 10px;
+margin-left: 2px;
+}
+
+#womens h3 {
+font-size: 100px;
+margin-left: 800px;
+margin-top: -670px;
+}
+
+#womens-image {
+  width: 70%;
+  margin-left: 30px;
+  }
+
+#womens-image p {
+font-size: 16px;
+line-height: 35px;
+}
+
+#multi h3 {
+font-size: 100px;
+}
+
+#burple-video {
+scale: 75%;
+margin-top: -30px;
+}
+
+#burple p{
+font-size: 16px;
+line-height: 35px;
+margin-top: -80px;
+}
+#multi-2 h3 {
+  font-size: 100px;
+  }
+
+#earbuds-image {
+  width: 65%;
+}
+
+#earbuds-image p {
+  font-size: 16px;
+  line-height: 35px;
+  }
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+  #main-nav button {
+      display: none;
+  }
+
+  #sticky-nav-con {
+    background-color: white;
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+  #main-nav {
+      background-color: white;
+      justify-self: right;
+      align-self: self-end;
+      z-index: 1;
+      grid-row-start: 1;
+      padding-bottom: 0;
+      margin-top: 40px;
+
+  }
+
+  #burger-con {
+      display: inline;
+      position: inherit;
+      width: 0;
+      height: 0;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+  }
+      
+  #burger-con ul li {
+      padding: 0;
+      border-bottom: 0;
+      display: inline;
+  }
+  
+  #burger-con ul li a {
+      font-size: 18px;
+      padding-left: 35px;
+  }
+      
+
+  #logo {
+      justify-self: left;
+      width: 400px;
+      margin-bottom: 0;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  #logo object {
+      width: 650px;
+      padding: 0 0;
+  }
+
+  #main-header {
+      order: 2;
+  }
+
+#hero-video {
+  scale: 95%;
+}
+
+  .vertical_text {
+      padding-top: 20px;
+      font-size: 60px;
+  }
+
+  .flex-container-contact {
+      margin-right: -550px;
+  }
+
+   #about-me h3 {
+      font-size: 100px; 
+      margin-top: 66px; 
+      margin-left: -300px;  
+  }
+
+  #collection-image {
+    width: 80%;
+    margin-left: -15px;
+  }
+
+  #experience h3 {
+    font-size: 100px;
+    margin-left: 10px;  
+}
+
+  #showroom {
+  width: 80%;
+  margin-left: 132px;
+}
+
+  #showroom p {
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+#mens h3 {
+  font-size: 100px;
+}
+
+#mens-image {
+  width: 80%;
+}
+
+#mens-image p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+#womens h3 {
+  font-size: 100px;
+  margin-left: 600px;
+  margin-top: -670px;
+}
+
+#womens-image {
+  width: 75%;
+}
+
+#womens-image p {
+  font-size: 15px;
+}
+
+#multi h3 {
+  font-size: 100px;
+}
+
+#burple-video {
+  scale: 85%;
+  margin-top: -30px;
+}
+
+#burple p{
+  font-size: 15px;
+  margin-top: -30px;
+}
+
+#multi-2 h3 {
+  font-size: 100px;
+  }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  
+  #main-nav button {
+    display: none;
+}
+
+#sticky-nav-con {
+    background-color: white;
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#main-nav {
+    background-color: white;
+    justify-self: right;
+    align-self: self-end;
+    z-index: 1;
+    grid-row-start: 1;
+    padding-bottom: 0;
+    margin-top: 40px;
+
+}
+
+#burger-con {
+    display: inline;
+    position: inherit;
+    width: 0;
+    height: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+    
+#burger-con ul li {
+    padding: 0;
+    border-bottom: 0;
+    display: inline;
+}
+
+#burger-con ul li a {
+    font-size: 20px;
+    padding-left: 35px;
+}
+    
+
+#logo {
+    justify-self: left;
+    width: 500px;
+    margin-bottom: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#logo object {
+    width: 650px;
+    padding: 0 0;
+}
+
+#main-header {
+    order: 2;
+}
+
+#hero-video {
+scale: 85%;
+}
+
+.vertical_text {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+.flex-container-contact {
+    margin-right: -550px;
+}
+
+ #about-me h3 {
+    font-size: 100px; 
+    margin-top: 66px; 
+    margin-left: -300px;  
+}
+
+#about-me p {
+font-size: 16px;
+line-height: 35px;
+}
+
+#collection-image {
+  width: 75%;
+  margin-left: -15px;
+}
+
+#experience h3 {
+  font-size: 100px;
+  margin-left: 10px;  
+}
+
+#showroom {
+width: 70%;
+margin-left: 132px;
+}
+
+#showroom p {
+font-size: 16px;
+line-height: 35px;
+margin-top: 10px;
+}
+
+#mens h3 {
+font-size: 100px;
+}
+
+#mens-image {
+width: 70%;
+}
+
+#mens-image p {
+line-height: 35px;
+font-size: 16px;
+margin-top: 10px;
+margin-left: 2px;
+}
+
+#womens h3 {
+font-size: 100px;
+margin-left: 800px;
+margin-top: -670px;
+}
+
+#womens-image {
+  width: 70%;
+  margin-left: 30px;
+  }
+
+#womens-image p {
+font-size: 16px;
+line-height: 35px;
+}
+
+#multi h3 {
+font-size: 100px;
+}
+
+#burple-video {
+scale: 75%;
+margin-top: -30px;
+}
+
+#burple p{
+font-size: 16px;
+line-height: 35px;
+margin-top: -80px;
+}
+#multi-2 h3 {
+  font-size: 100px;
+  }
+
+#earbuds-image {
+  width: 65%;
+}
+
+#earbuds-image p {
+  font-size: 16px;
+  line-height: 35px;
+  }
+}

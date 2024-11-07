@@ -14,7 +14,6 @@ button.addEventListener("click", hamburgerMenu);
 })();
 
 
-
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
