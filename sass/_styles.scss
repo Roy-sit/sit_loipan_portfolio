@@ -21,6 +21,7 @@ li {
   background-color: white;
   position: sticky;
   top: -20px;
+
   z-index: 1;
   padding-bottom: 0px;
   padding-left: 20px;
@@ -75,7 +76,6 @@ li {
       a {
         color: $secondary-color;
         font-size: 13px;
-
         &:hover {
           color: $body-text-color;
         }
@@ -254,7 +254,6 @@ li {
   line-height: 25px;
   margin-left: 20px;
 }
-
 
 // Burple
 #multi h3 {

@@ -1,7 +1,11 @@
-<img src="img/hero.jpg">
+<img src="images/collection.jpg">
 
 #### Project: Portfolio
 This is a personal portfolio website showcasing my work in fashion design, web development, and motion graphics. It includes interactive elements and smooth animations.
+
+#### About Me
+With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
 
 #### Installation
 There is no installation process required. Simply download the files to your computer.
