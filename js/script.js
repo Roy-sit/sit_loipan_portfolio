@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream:js/main.js
-=======
+
 (function(){
   console.log('JS file is connected.');
 
@@ -35,6 +34,7 @@ gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
 
 // Scale effect for images
 gsap.utils.toArray("#mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
+
     gsap.from(image, {
         scale: 0.8,
         opacity: 0,
@@ -46,4 +46,4 @@ gsap.utils.toArray("#mens-image, #womens-image, #showroom, #earbuds-image").forE
         }
     });
 });
->>>>>>> Stashed changes:js/script.js
+

@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Roy's Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-<<<<<<< Updated upstream
-  
-=======
+
   <h1 class="hidden">Welcome to my portfolio</h1>
 <div id="sticky-nav-con">
     <header id="main-header" class="grid-con">
@@ -27,7 +24,8 @@
                   <li><a href="#experience">Experience</a></li>
                   <li><a href="#mens">Mens</a></li>
                   <li><a href="#womens">Womens</a></li>
-                  <li><a href="#multi">Multimedia</a></li>
+                  <li><a href="#multi">Rebranding</a></li>
+                  <li><a href="#multi-2">Earbuds</a></li>
                 </ul>
               </div>
         </nav>
@@ -39,6 +37,15 @@
     </div>          
   </header>
 </div>
+
+<!-- Background Video -->
+<div class="bg-video-container">
+  <video class="bg-video" autoplay loop muted playsinline>
+      <source src="video/bg_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
+
 
     <section id="hero" class="full-width-grid-con">
         <h2 class="hidden">My Fashion Show</h2>
@@ -64,27 +71,132 @@
           <img src="images/linkin.svg" alt="linkedin icon" class="icon">
       </a>
   </div>
->>>>>>> Stashed changes
 
 
 
+    <section class="full-width-grid-con">
+        <div class="col-span-full m-col-span-full">
+            <div id="about-me">
+            <h3>ABOUT</h3>
+            <p>
+                With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+                <br>
+                Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
+                <br><br>           
+            </p>
+            </div>
+        </div>
+    </section>
+    
+    <div id="collection-image">
+    <img src="images/collection.jpg" alt="collection rack">
+    </div>
+
+    <section class="full-width-grid-con">
+    <div class="col-span-full m-col-span-full">
+        <div id="experience">
+            <h3>EXPERIENCE</h3>          
+        </div>
+        <div id="showroom">
+            <img src="images/ls_showroom.jpg" alt="showroom">         
+            <p>
+                With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+                <br>
+                Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
+                <br><br>           
+            </p>
+        </div>
+    </div>
+    </section>
 
 
+    <section class="full-width-grid-con">
+        <div class="col-span-full m-col-span-full">
+            <div id="mens">
+            <h3>MENS</h3>
+            <div id="mens-image">
+                <img src="images/mens.jpg" alt="mens image">
+                <p>
+                  Performance Tailoring
+                  As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
+                  Innovations in fabrics and construction to create comfortable, sport-inspired tailoring.      
+              </p>
+                </div>         
+            </div>
+        
+        </div>
+    </section>
+    
+
+    <section class="full-width-grid-con">
+      <div class="col-span-full m-col-span-full">
+          <div id="womens">
+          <div id="womens-image">
+              <img src="images/womens.jpg" alt="womens image">
+              <p>
+                Tactile Material
+                The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. 
+                <br>
+                <br>
+                Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies.                 
+              </p>
+          </div>   
+              <h3>WOMENS</h3>      
+          </div>
+      </div>
+  </section>
 
 
+  <section class="full-width-grid-con">
+    <div class="col-span-full m-col-span-full">
+        <div id="multi">
+            <h3>REBRANDING</h3>         
+        </div>
+        
+        <div id="burple">
+          <video id="burple-video" controls>
+            <source src="video/burple_promo.webm" type="video/webm">
+            <source src="video/burple_promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+          <br><br> 
+            <p>
+              Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. We believe in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled
+              <br><br> 
+              We believe in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth.
+              <br><br>           
+            </p>
+        </div>
+    </div>
+  </section>
 
+    <section class="full-width-grid-con">
+      <div class="col-span-full m-col-span-full">
+          <div id="multi-2">
+              <h3>EARBUDS</h3>         
+          </div>
 
-<<<<<<< Updated upstream
-  
-<footer>
-
-</footer>
+          <div id="earbuds-image">
+            <img src="images/earbuds.jpg" alt="earbuds posters">
+            <br><br> 
+              <p>
+                In this project, I use generators in Cinema 4D to create a pair of earbuds, and use the earbuds as a promotional asset for the print campaign and video. The print campaign will incorporate the earbuds into a poster design, while the video showcases the features of the earbuds including its colours, shapes, textures, lighting and animation keyframes.
+                <br><br> 
+                Illustrator: Initial sketch of the earbuds' shape.
+                C4D: Shape the earbuds, add lighting and a backdrop to for the lighting quality. 
+                Photoshop: Retouch the colour and contrast to enhance the images for posters. 
+                <br><br>           
+              </p>
+          </div>
+      </div>
+      </section>
  
     <script src="js/main.js"></script>   
-=======
     <footer>
       <div class="contact-icon">
-        <a href="mailto:lpsroy78@gmail.com" target="_blank">
+        <!-- <a href="mailto:lpsroy78@gmail.com" target="_blank"> -->
+          <a>
+
             <img src="images/my_logo.svg" alt="contact email" class="icon">
         </a>
         <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
@@ -93,6 +205,6 @@
     </div>
     <script src="js/script.js"></script>
     </footer>
->>>>>>> Stashed changes
+
 </body>
 </html>
