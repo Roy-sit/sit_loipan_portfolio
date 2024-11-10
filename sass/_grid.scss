@@ -5,8 +5,6 @@ html {
   margin: auto;
 }
 
-
-
 /* tablet */
 @media screen and (min-width: 768px) {
 
@@ -48,14 +46,14 @@ html {
   }
   
   #burger-con ul li a {
-      font-size: 14px;
+      font-size: 13px;
       padding-left: 30px;
   }
       
 
   #logo {
       justify-self: left;
-      width: 300px;
+      width: 280px;
       margin-bottom: 0;
       grid-row-start: 1;
       grid-row-end: 2;
@@ -85,7 +83,7 @@ html {
    #about-me h3 {
       font-size: 90px; 
       letter-spacing: 4px;
-      margin-top: -10px; 
+      margin-top: 130px; 
       margin-left: -280px; 
   }
 
@@ -120,9 +118,9 @@ html {
     font-size: 14px;
     line-height: 35px;
     margin-left: -180px;
-    margin-top: -110px;
+    margin-top: -140px;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px 10px 40px;
     position: relative;
     margin-bottom: 80px;
   }
@@ -180,8 +178,8 @@ html {
 #burple p{
   font-size: 14px;
   line-height: 35px;
-  margin-top: -30px;
-  padding: 50px 50px 20px 50px;
+  margin-top: -50px;
+  padding: 30px 20px 0 30px;
 }
 
 // earbuds section
@@ -202,7 +200,13 @@ html {
     position: relative;
     margin-bottom: 100px;
   }
+
+  .contact-icon{
+    margin-left: 580px;
+    margin-bottom: 80px;
+  }
 }
+
 
 
 /* Desktop */
@@ -247,7 +251,7 @@ html {
   
   #burger-con ul li a {
       font-size: 16px;
-      padding-left: 30px;
+      padding-left: 40px;
   }
       
 
@@ -262,7 +266,7 @@ html {
 
 #hero-video {
   scale: 90%;
-  margin-top: -22px;
+  margin-top: -24px;
 }
 
   .vertical_text {
@@ -286,11 +290,11 @@ html {
 
   #about-me p {
       font-size: 15px;
-      line-height: 35px;
+      line-height: 35px; 
   }
 
   #collection-image {
-    width: 75%;
+    width: 70%;
     margin-left: -15px;
     margin-bottom: 80px;
   }
@@ -307,7 +311,7 @@ html {
 }
 
 #showroom {
-  width: 70%;
+  width: 65%;
   margin-left: 250px;
 }
 
@@ -339,7 +343,7 @@ html {
   line-height: 35px;
   margin-top: 10px;
   margin-left: 2px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 
@@ -359,6 +363,7 @@ html {
   font-size: 15px;
   line-height: 35px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 
 
@@ -368,15 +373,16 @@ html {
 }
 
 #burple-video {
-  scale: 80%;
-  margin-top: -30px;
+  scale: 70%;
+  margin-top: -90px;
 }
 
 #burple p{
   font-size: 15px;
   line-height: 35px;
-  margin-top: -30px;
+  margin-top: -120px;
   padding: 50px 50px 20px 50px;
+  margin-bottom: 100px;
 }
 
 // earbuds section
@@ -396,9 +402,10 @@ html {
     padding: 20px 50px;
     margin-left: 0;
     position: relative;
-    margin-bottom: 180px;
+    margin-bottom: 200px;
   }
   .contact-icon{
     margin-left: 680px;
+    margin-bottom: 80px;
   }
 }
