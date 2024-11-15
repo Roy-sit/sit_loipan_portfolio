@@ -1,18 +1,56 @@
 (function(){
   console.log('JS file is connected.');
 
-let burgerCon = document.querySelector("#burger-con");
-const links = document.querySelectorAll(".hamburger menu")
+  let burgerCon = document.querySelector("#burger-con");
+  const links = document.querySelectorAll(".hamburger menu");
   
-function hamburgerMenu() {
-  button.classList.toggle("expanded");
-      burgerCon.classList.toggle("hidden");
-};
+  function hamburgerMenu() {
+    button.classList.toggle("expanded");
+    burgerCon.classList.toggle("hidden");
+  };
 
-button.addEventListener("click", hamburgerMenu);	
+  button.addEventListener("click", hamburgerMenu);	
  
 })();
 
+// Zoom effect
+const promoImages = document.querySelectorAll("#collection-image, #mens-image, #earbuds-image, #showroom, #womens-image");
+
+promoImages.forEach(promoImage => {
+  const img = promoImage.querySelector("img");
+
+  promoImage.addEventListener("mouseenter", () => {
+    gsap.to(img, {
+      scale: 1.1, 
+      duration: 0.3,
+      ease: "power3.out",
+    });
+  });
+
+  promoImage.addEventListener("mousemove", (e) => {
+    const rect = promoImage.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // Horizontal movement
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2; // Vertical movement
+
+    const maxMove = 30;
+    gsap.to(img, {
+      x: x * maxMove,
+      y: y * maxMove,
+      duration: 0.3,
+      ease: "power3.out",
+    });
+  });
+
+  promoImage.addEventListener("mouseleave", () => {
+    gsap.to(img, {
+      scale: 1,
+      x: 0,
+      y: 0,
+      duration: 0.3,
+      ease: "power3.out",
+    });
+  });
+});
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -31,7 +69,7 @@ gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
     });
 });
 
-// Scale effect for images
+// Scale effect for images on scroll
 gsap.utils.toArray(" .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
         scale: 0.8,
