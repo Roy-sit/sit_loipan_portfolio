@@ -21,7 +21,7 @@ promoImages.forEach(promoImage => {
 
   promoImage.addEventListener("mouseenter", () => {
     gsap.to(img, {
-      scale: 1.1, 
+      scale: 1.02, 
       duration: 0.3,
       ease: "power3.out",
     });
@@ -32,7 +32,7 @@ promoImages.forEach(promoImage => {
     const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // Horizontal movement
     const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2; // Vertical movement
 
-    const maxMove = 30;
+    const maxMove = 10;
     gsap.to(img, {
       x: x * maxMove,
       y: y * maxMove,
