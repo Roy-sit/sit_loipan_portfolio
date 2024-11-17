@@ -1,3 +1,4 @@
+// Hamburger
 (function(){
   console.log('JS file is connected.');
 
@@ -10,8 +11,9 @@
   };
 
   button.addEventListener("click", hamburgerMenu);	
- 
 })();
+
+
 
 // Zoom effect
 const promoImages = document.querySelectorAll("#mens-image, #showroom, #womens-image");
@@ -51,6 +53,8 @@ promoImages.forEach(promoImage => {
     });
   });
 });
+
+
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
