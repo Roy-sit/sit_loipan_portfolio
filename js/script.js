@@ -14,7 +14,7 @@
 })();
 
 // Zoom effect
-const promoImages = document.querySelectorAll("#collection-image, #mens-image, #earbuds-image, #showroom, #womens-image");
+const promoImages = document.querySelectorAll("#mens-image, #showroom, #womens-image");
 
 promoImages.forEach(promoImage => {
   const img = promoImage.querySelector("img");
