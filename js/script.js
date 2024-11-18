@@ -15,6 +15,26 @@
 
 
 
+// Rotation effect to vertical text
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  ".vertical_text",
+  { rotate: 0, y: 0 }, 
+  {
+    rotate: 270, 
+    y: 530, // Move down to stay visible
+    scrollTrigger: {
+      trigger: ".vertical_text",
+      start: "top 20%", 
+      end: "top 100%", 
+      scrub: true,
+    },
+  }
+);
+
+
+
 // Zoom effect
 const promoImages = document.querySelectorAll("#mens-image, #showroom, #womens-image");
 

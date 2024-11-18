@@ -75,7 +75,7 @@
 
   <!-- Contact icon -->
     <div class="contact-icon">
-      <a href="mailto:lpsroy78@gmail.com" target="_blank">
+      <a href="#about-me" target="_blank">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
       <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
@@ -213,7 +213,7 @@
       <!--Footer section  -->
     <footer>
       <div class="contact-icon">
-          <a>
+          <a href="#about-me" target="_blank">
             <img src="images/my_logo.svg" alt="contact email" class="icon">
         </a>
         <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
@@ -221,14 +221,21 @@
         </a>
     </div>
 
+
     <div id="reserved">
       <p>&#174; Roy Sit All Right Reserved 2025
-        <br><br>
-        email: lpsroy78@gmail.com
       </p>
-      <br>
+      <div id="footer-contact">
+        <form id="contact-form" action="#" method="POST">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="comments" rows="3" placeholder="Comments"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
-      
+      </div>
+
+    
     <script src="js/script.js"></script>
     </footer>
 </body>
