@@ -186,7 +186,7 @@ html {
 #m-model {
   scale: 35%;
   z-index: -1;
-  margin-top: -1800px;
+  margin-top: -1900px;
   margin-left: -450px;
 }
 
@@ -194,25 +194,33 @@ html {
 // Womens section
 #womens h3 {
   font-size: 100px;
-  margin-left: 650px;
+  margin-left: 680px;
   margin-top: -770px;
 }
 
 #womens-image {
-  width: 80%;
+  width: 75%;
   margin-left: 20px;
+}
+
+#womens-image #w-model {
+  scale: 50%;
+  margin-top: -1080px;
+  margin-left: 540px;
 }
 
 #womens-image p {
   font-size: 14px;
   line-height: 35px;
   padding: 30px;
+  margin-top: -390px;
 }
 
 
 // Burple section
 #multi h3 {
   font-size: 100px;
+  margin-top: 200px;
 }
 
 #burple-video {
@@ -230,12 +238,12 @@ html {
 // earbuds section
 #multi-2 h3 {
   font-size: 100px;
-  margin-top: 450px;
+  margin-top: 500px;
   }
 
   #earbuds-image {
     margin-left: 150px;
-    margin-top: 220px;
+    margin-top: 280px;
   }
 
   #earbuds-image p {
@@ -408,20 +416,25 @@ html {
 #m-model {
   scale: 35%;
   z-index: -1;
-  margin-top: -1800px;
+  margin-top: -1900px;
   margin-left: -450px;
 }
 
 // Womens section
 #womens h3 {
   font-size: 100px;
-  margin-left: 750px;
+  margin-left: 850px;
   margin-top: -870px;
 }
 
 #womens-image {
   width: 70%;
   margin-left: 20px;
+}
+
+#womens-image #w-model {
+  margin-top: -1080px;
+  margin-left: 680px;
 }
 
 #womens-image p {

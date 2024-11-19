@@ -8,6 +8,9 @@
     <title>Roy's Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -150,11 +153,12 @@
 
 
     <!-- Womenswear section -->
-    <section class="full-width-grid-con">
-      <div class="col-span-full m-col-span-full">
+    <section class="col-span-full m-col-span-full">
+      <div>
           <div id="womens">
           <div id="womens-image">
               <img src="images/womens.jpg" alt="womens image">
+              <img id="w-model" src="images/woman_model.png" alt="woman model">
               <p>
                 Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
@@ -235,8 +239,8 @@
       </p>
       <div id="footer-contact">
         <form id="contact-form" action="#" method="POST">
-          <input type="text" name="fullName" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
           <textarea name="comments" rows="3" placeholder="Comments"></textarea>
           <button type="submit">Send</button>
         </form>

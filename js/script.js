@@ -34,6 +34,23 @@ gsap.fromTo(
 );
 
 
+// Wavy effect
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#w-model", {
+  scrollTrigger: {
+    trigger: "#w-model", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: true, 
+  },
+  y: 100, // Move vertically to create the wave effect
+  scale: 0.8, 
+  ease: "power1.inOut", 
+  duration: 3, 
+});
+
+
 
 
 // Register ScrollTrigger plugin

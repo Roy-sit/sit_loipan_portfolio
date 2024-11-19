@@ -252,28 +252,25 @@ li {
 
 #m-model {
   position: absolute;
-  scale: 20%;
+  scale: 25%;
   z-index: -1;
-  margin-top: -1500px;
+  margin-top: -1550px;
   margin-left: -450px;
 }
 
 #m-model img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 // Womens
 #womens {
-  margin-top: 250px;
-  margin-left: -3px;
+  margin-top: 160px;
   margin-right: 100px;
-  padding-bottom: 30px;
-  padding-top: 60px;
 }
 
 #womens h3 {
-  margin-left: 180px;
-  margin-top: -460px;
+  margin-left: 210px;
+  margin-top: -400px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
   font-size: 90px; 
@@ -282,16 +279,23 @@ li {
 
 #womens-image {
   max-width: 90%;
-  margin-top: -150px;
+}
+
+#womens-image #w-model {
+  position: relative;
+  opacity: 0.85;
+  scale: 50%;
+  margin-top: -630px;
+  margin-left: 220px;
 }
 
 #womens-image p {
+  position: relative;
   font-size: 12px;
   line-height: 25px;
   background-color: rgba(255, 255, 255, 0.9);
-  margin-top: 10px;
+  margin-top: -340px;
   padding: 20px 30px 20px 30px;
-  position: relative;
 }
 
 
