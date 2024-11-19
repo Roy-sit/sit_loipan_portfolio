@@ -13,11 +13,6 @@ a {
   font-weight: 600;
 }
 
-input, textarea {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
 
 li {
   list-style: none;
@@ -375,7 +370,8 @@ li {
 #contact-form textarea {
   padding: 10px;
   font-size: 13px;
-  border: 1px solid #ccc;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 3px;
   flex: 1 1 auto; /* Flexible width */
   min-width: 120px; /* Prevent inputs from becoming too small */
