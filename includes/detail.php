@@ -25,36 +25,6 @@ if (!$results) {
 
 
 
-  <section class="container">
-        <div class="title">
-            <h3><?php echo $row['MENSWEAR'];?></h3>          
-        </div>
-
-        <div class="image">
-            <img src="images/<?php echo $row['mens-image.jpg'];?>" alt="image"> 
-        </div>
-        
-     
-        <div class="case">
-        <p>
-            <span>CASE STUDY:</span>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti, at nam. Voluptate ex placeat quaerat id et sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti. eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti.
-            <br>
-            <br>
-            <span>CLIENTS:</span>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit.
-            <br>
-            <br>
-            <span>APPLICATION:</span>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti.
-        </p>
-    </div>
-    </section>
-
-
 
 <footer>
 </footer>

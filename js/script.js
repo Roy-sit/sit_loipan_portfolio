@@ -34,6 +34,7 @@ gsap.fromTo(
 );
 
 
+
 // Wavy effect
 gsap.registerPlugin(ScrollTrigger);
 
