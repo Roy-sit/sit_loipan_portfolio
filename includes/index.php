@@ -4,7 +4,7 @@
 require_once('includes/connect.php');
 
 // create a query to run in SQL
-$query = 'SELECT project.id AS project, title, image, description FROM project';
+$query = "SELECT id, title, image, description FROM project";
 
 //run the query to get back the content
 $results = mysqli_query($connect, $query);
@@ -35,22 +35,34 @@ if (!$results) {
 
 <?php
 while ($row = mysqli_fetch_array($results)) {
-    echo '<section class="full-width-grid-con">
-            <div class="col-span-full m-col-span-full">
-                <div id="mens">
-                    <h3>' . $row['title'] . '</h3>
-                    <div id="mens-image">
-                        <img src="images/' . $row['image'] . '" alt="Project Image">
-                        <p>
-                            Performance Tailoring
-                            As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this Spring/Summer sport tailoring collection.
-                            <br>
-                            By applying innovations in fabrics and construction to create comfortable, sport-inspired tailoring.      
-                        </p>
-                    </div>
-                </div> 
-            </div>
-        </section>';
+    
+    echo ' <section class="container">
+        <div class="title">
+            <h3>MENSWEAR</h3>          
+        </div>
+
+        <div class="image">
+            <img src="images/mens-image.jpg" alt="image"> 
+        </div>
+        
+        <div class="case">
+            <p>
+                <span>CASE STUDY:</span>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti, at nam. Voluptate ex placeat quaerat id et sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti. eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti.
+                <br>
+                <br>
+                <span>CLIENTS:</span>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit.
+                <br>
+                <br>
+                <span>APPLICATION:</span>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti.
+            </p>
+         </div>
+    </section>';
 }
 ?>
 
