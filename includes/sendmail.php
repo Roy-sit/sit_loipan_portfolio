@@ -1,10 +1,9 @@
 <?php
 
-require_once('connect.php');
+require_once('includes/connect.php');
 
 ///gather the form content
-$fname = $_POST['first_name'];
-$lname = $_POST['last_name'];
+$full_name = $_POST['full_name'];
 $email = $_POST['email'];
 $msg = $_POST['comments'];
 
@@ -12,17 +11,12 @@ $errors = [];
 
 //validate and clean these values
 
-$fname = trim($fname);
-$lname = trim($lname);
+$full_name = trim($full_name);
 $email = trim($email);
 $msg = trim($msg);
 
-if(empty($lname)) {
-    $errors['last_name'] = 'Last Name cant be empty';
-}
-
-if(empty($fname)) {
-    $errors['first_name'] = 'First Name cant be empty';
+if(empty($full_name)) {
+    $errors['full_name'] = 'Full Name cant be empty';
 }
 
 if(empty($msg)) {
@@ -39,39 +33,29 @@ if(empty($errors)) {
 
     //insert these values as a new row in the contacts table
 
-    $query = "INSERT INTO contacts (last_name,first_name, email, comments) VALUES('.$lname.','.$fname.','.$email.','.$msg.')";
+    $query = "INSERT INTO contacts (full_name, email, comments) VALUES ('" . $full_name . "', '" . $email . "', '" . $msg . "')";
 
     if(mysqli_query($connect, $query)) {
 
 //format and send these values in an email
 
-$to = 'rhaaf@fanshawec.ca';
+$to = 'lpsroy78@gmail.com';
 $subject = 'Message from your Portfolio site!';
-
 $message = "You have received a new contact form submission:\n\n";
-$message .= "Name: ".$fname." ".$lname."\n";
+$message .= "Name: ".$full_name."\n";
 $message .= "Email: ".$email."\n\n";
 $message .= $msg;
 //build out rest of message body...
 
-mail($to,$subject,$message);
+mail($to, $subject, $message);
 
 header('Location: thank_you.php');
+}
 
-}else{
+else{
     for($i=0; $i < count($errors); $i++) {
         echo $errors[$i].'<br>';
     }
 }
-
-
-
-
-
-
-
-
 }
-
-
 ?>

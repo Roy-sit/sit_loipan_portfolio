@@ -68,7 +68,6 @@ while ($row = mysqli_fetch_array($results)) {
 
 <section class="myform">
 <?php
-// You can add additional content or functionality here.
 ?>
 
 </section>

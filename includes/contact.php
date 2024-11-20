@@ -4,30 +4,24 @@
 
 <body>
 <section>
-<form method="post" action="sendmail.php">
+    <form method="post" action="sendmail.php">
+        <label for="full_name">Full Name: </label>
+        <input type="text" name="full_name" id="full_name">
 
-    <label for="first_name">First Name: </label>
-    <input type="text" name="first_name" id="first_name">
+        <br><br>
 
-<br><br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
 
-    <label for="last_name">Last Name: </label>
-    <input type="text" name="last_name" id="last_name">
+        <br><br>
 
-    <br><br>
+        <label for="comments">Comments: </label>
+        <textarea name="comments" id="comments">comment</textarea>
 
-    <label for="email">Email: </label>
-    <input type="text" name="email" id="email">
+        <br><br>
 
-    <br><br>
-
-    <label for="comments">Comments: </label>
-    <textarea name="comments" id="comments">comment here</textarea>
-
-    <br><br>
-
-    <input type="submit" value="send">
-</form>
+        <input type="submit" value="Send">
+    </form>
 </section>
 <footer>
 <?php 
