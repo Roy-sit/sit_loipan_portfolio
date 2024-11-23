@@ -1,3 +1,4 @@
+
 // Hamburger
 (function(){
   console.log('JS file is connected.');
@@ -74,7 +75,7 @@ gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
 
 
 // Scroll effect
-gsap.utils.toArray("#m-model img, .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
+gsap.utils.toArray("#footer-contact, #m-model img, .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
         scale: 0.8,
         opacity: 0,
@@ -85,4 +86,17 @@ gsap.utils.toArray("#m-model img, .vertical_text, #collection-image, #mens-image
             toggleActions: "play none none reverse",
         }
     });
+});
+
+
+
+document.addEventListener("scroll", () => {
+  const backToTop = document.querySelector("#back-to-top");
+
+  // Check if we're at the bottom of the page
+  if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
+      backToTop.style.display = "flex"; // Show the arrow at the bottom
+  } else {
+      backToTop.style.display = "none"; // Hide the arrow when scrolling up
+  }
 });

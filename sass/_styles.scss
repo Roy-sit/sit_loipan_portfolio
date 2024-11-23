@@ -73,7 +73,6 @@ li {
   margin-top: 38px;
   margin-bottom: 50px;
   background-color: transparent;
-  cursor: pointer;
   object {
     width: 300px;
   }
@@ -135,11 +134,16 @@ li {
 .contact-icon {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 80px;
 
   .icon {
-    max-width: 80%;
-    height: 70px;
+    max-width: 90%;
+    height: 80px;
+    transition: transform 0.3s ease; 
+
+    &:hover {
+      transform: scale(1.1); // zoom-in on hover
+    }
   }
 }
 
@@ -411,3 +415,33 @@ li {
   background-color: rgba(4, 146, 248, 1);
 }
 
+
+// Back to top arrow
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 90px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  &:hover {
+    transform: scale(1.1); 
+  }
+}
+
+#back-to-top img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease; 
+  &:hover {
+    transform: scale(1.2); 
+  }
+}
