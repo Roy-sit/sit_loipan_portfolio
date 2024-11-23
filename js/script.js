@@ -36,6 +36,27 @@ gsap.fromTo(
 
 
 
+// Slider
+const slider = document.querySelector('.image-slider');
+const leftArrow = document.querySelector('.arrow.left');
+const rightArrow = document.querySelector('.arrow.right');
+
+let currentPosition = 0;
+
+leftArrow.addEventListener('click', () => {
+  currentPosition += slider.clientWidth;
+  slider.style.transform = `translateX(${Math.min(currentPosition, 0)}px)`;
+});
+
+rightArrow.addEventListener('click', () => {
+  currentPosition -= slider.clientWidth;
+  const maxTranslate = -slider.scrollWidth + slider.clientWidth;
+  slider.style.transform = `translateX(${Math.max(currentPosition, maxTranslate)}px)`;
+});
+
+
+
+
 // Wavy effect
 gsap.registerPlugin(ScrollTrigger);
 
