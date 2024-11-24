@@ -81,7 +81,7 @@
 const musicSection = document.querySelector(".music-section");
 const audio = document.querySelector(".music-section .background-music");
 
-audio.volume = 0.07;
+audio.volume = 0.08;
 
 function handleIntersection(entries) {
   entries.forEach((entry) => {
