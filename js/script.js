@@ -72,10 +72,36 @@
       updateSlideIndicator(); 
     }
   });
+  updateSlideIndicator(); 
 
-  // Initialize the slide indicator
-  updateSlideIndicator(); // initial slide number
 
+
+
+// BGM Audio
+const musicSection = document.querySelector(".music-section");
+const audio = document.querySelector(".music-section .background-music");
+
+audio.volume = 0.05;
+
+function handleIntersection(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      audio.play(); // Play audio when the section is in view
+    } else {
+      audio.pause(); // Pause audio when the section is out of view
+      audio.currentTime = 0; // Reset audio to the beginning
+    }
+  });
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.5, // Trigger when 50% of the section is visible
+});
+
+// Ensure the observer targets the correct section
+if (musicSection) {
+  observer.observe(musicSection);
+}
 
 
 
