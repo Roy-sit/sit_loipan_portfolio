@@ -6,22 +6,6 @@ html {
 }
 
 
-/* Mobile */
-@media (max-width: 768px) {
-  #contact-form {
-    flex-direction: column; 
-    gap: 15px;
-  }
-
-  #contact-form input,
-  #contact-form textarea,
-  #contact-form button {
-    width: 100%; /* Full width for inputs and button */
-  }
-}
-
-
-
 /* tablet */
 @media screen and (min-width: 768px) {
   
@@ -98,8 +82,8 @@ html {
   }
 
 #hero-video {
-  scale: 90%;
-  margin-top: -20px;
+  scale: 85%;
+  margin-top: -35px;
 }
 
   .vertical_text {
@@ -148,7 +132,7 @@ html {
   margin-left: -15px;
 
   h3 {
-    font-size: 80px;
+    font-size: 85px;
   }
 }
 
@@ -172,6 +156,7 @@ html {
 #mens h3 {
   font-size: 100px;
   margin-left: -180px;
+  margin-top: 100px;
 }
 
 #mens-image {
@@ -197,7 +182,7 @@ html {
 
 // Womens section
 #womens h3 {
-  font-size: 100px;
+  font-size: 90px;
   margin-left: 680px;
   margin-top: -770px;
 }
@@ -223,7 +208,7 @@ html {
 
 // Burple section
 #multi h3 {
-  font-size: 100px;
+  font-size: 90px;
   margin-top: 200px;
 }
 
@@ -243,8 +228,9 @@ html {
 
 // earbuds section
 #multi-2 h3 {
-  font-size: 100px;
+  font-size: 90px;
   margin-top: 500px;
+  margin-left: -170px;
   }
 
   #earbuds-image {
@@ -263,6 +249,10 @@ html {
   }
 
   // Demo reels
+  #demo-title h3 {
+     font-size: 85px;
+  }
+
   #demo-video {
     scale: 85%;
     margin-top: -20px;
@@ -367,8 +357,8 @@ html {
 
 
 #hero-video {
-  scale: 85%;
-  margin-top: -45px;
+  scale: 73%;
+  margin-top: -95px;
 }
 
   .vertical_text {
@@ -481,7 +471,7 @@ html {
 
 // Burple section
 #multi h3 {
-  font-size: 100px;
+  font-size: 95px;
 }
 
 #burple-video {
@@ -501,7 +491,7 @@ html {
 
 // earbuds section
 #multi-2 h3 {
-  font-size: 100px;
+  font-size: 95px;
   }
 
   #earbuds-image {
@@ -525,6 +515,10 @@ html {
     #demo-video {
       scale: 70%;
       margin-top: -80px;
+    }
+
+    #demo-video h3 {
+      font-size: 95px;
     }
     
     #demo-title p {

@@ -146,7 +146,7 @@ if (musicSection) {
 
 
   // Scroll effect
-  gsap.utils.toArray("#footer-contact, #m-model img, .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
+  gsap.utils.toArray("#footer-contact, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
       scale: 0.8,
       opacity: 0,

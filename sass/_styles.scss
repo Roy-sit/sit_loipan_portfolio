@@ -163,7 +163,7 @@ li {
     margin-top: 180px;
     transform: rotate(-90deg);
     letter-spacing: 4px;
-    font-size: 70px;
+    font-size: 65px;
     position: absolute;
   }
 
@@ -195,7 +195,7 @@ li {
     margin-top: 130px;
     margin-left: 5px;
     letter-spacing: 4px;
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 
@@ -293,11 +293,11 @@ li {
 }
 
 #mens h3 {
-  margin-left: -230px;
-  margin-top: 65px;
+  margin-left: -210px;
+  margin-top: 60px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
-  font-size: 90px; 
+  font-size: 80px; 
   position: absolute;
 }
 
@@ -338,11 +338,11 @@ li {
 }
 
 #womens h3 {
-  margin-left: 210px;
-  margin-top: -400px;
+  margin-left: 250px;
+  margin-top: -480px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
-  font-size: 90px; 
+  font-size: 70px; 
   position: absolute;
 }
 
@@ -374,8 +374,8 @@ li {
 #multi h3 {
   margin-top: 130px;
   margin-bottom: 20px;
-  margin-left: -10px;
-  font-size: 70px; 
+  margin-left: 5px;
+  font-size: 60px; 
 }
 
 #burple-video {
@@ -395,11 +395,11 @@ li {
 
 // Earbuds
 #multi-2 h3 {
-  margin-left: -200px;
+  margin-left: -130px;
   margin-top: 360px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
-  font-size: 90px; 
+  font-size: 65px; 
   position: absolute;
 }
 
@@ -433,7 +433,7 @@ li {
   margin-top: 70px;
   margin-bottom: 20px;
   margin-left: 5px;
-  font-size: 65px; 
+  font-size: 60px; 
 }
 
 #demo-video {
@@ -503,6 +503,19 @@ li {
 
 #contact-form button:hover {
   background-color: rgba(4, 146, 248, 1);
+}
+
+@media (max-width: 768px) {
+  #contact-form {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form button {
+    width: 100%; /* Full width for inputs and button */
+  }
 }
 
 
