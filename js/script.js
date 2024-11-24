@@ -13,6 +13,9 @@
 
   button.addEventListener("click", hamburgerMenu);	
 
+
+
+
   // Rotation effect to vertical text
   gsap.registerPlugin(ScrollTrigger);
 
@@ -30,6 +33,9 @@
       },
     }
   );
+
+
+
 
   // Slider
   const slider = document.querySelector('.image-slider');
@@ -70,9 +76,12 @@
   // Initialize the slide indicator
   updateSlideIndicator(); // initial slide number
 
+
+
+
+
   // Wavy effect
   gsap.registerPlugin(ScrollTrigger);
-
   gsap.to("#w-model", {
     scrollTrigger: {
       trigger: "#w-model", 
@@ -85,6 +94,9 @@
     ease: "power1.inOut", 
     duration: 3, 
   });
+
+
+
 
   // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
@@ -103,6 +115,10 @@
     });
   });
 
+
+
+
+
   // Scroll effect
   gsap.utils.toArray("#footer-contact, #m-model img, .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
@@ -117,10 +133,14 @@
     });
   });
 
+
+  
+
+  // Back to top arrow
   document.addEventListener("scroll", () => {
     const backToTop = document.querySelector("#back-to-top");
 
-    // Check if we're at the bottom of the page
+    // Check if at the bottom of the page
     if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
       backToTop.style.display = "flex"; // Show the arrow at the bottom
     } else {

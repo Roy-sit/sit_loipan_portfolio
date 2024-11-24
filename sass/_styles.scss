@@ -209,6 +209,8 @@ li {
   overflow: hidden; /* Prevent overflow of the images */
   position: relative; /* For arrows positioning */
 
+
+   // Slider
   .image-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -232,8 +234,6 @@ li {
     position: relative;
   }
 
-
-  // Slider
   .arrow {
     position: absolute;
     top: 25%;
