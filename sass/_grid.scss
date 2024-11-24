@@ -237,6 +237,8 @@ html {
   line-height: 35px;
   margin-top: -50px;
   padding: 30px 20px 0 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 // earbuds section
@@ -260,6 +262,25 @@ html {
     margin-bottom: 150px;
   }
 
+  // Demo reels
+  #demo-video {
+    scale: 85%;
+    margin-top: -20px;
+  }
+  
+  #demo-title p {
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: -30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+  // Footer section
   .contact-icon{
     margin-left: 580px;
     margin-bottom: 80px;
@@ -311,18 +332,21 @@ html {
       height: 0;
       box-shadow: none;
       border-radius: 0;
-      margin: 0;
+      margin-left: 0;
   }
       
+  #burger-con ul {
+   margin-right: -90px;
+}
+
   #burger-con ul li {
-      padding: 0;
       border-bottom: 0;
       display: inline;
   }
   
   #burger-con ul li a {
-      font-size: 16px;
-      padding-left: 40px;
+      font-size: 15px;
+      padding: 20px;
   }
       
 
@@ -343,8 +367,8 @@ html {
 
 
 #hero-video {
-  scale: 90%;
-  margin-top: -24px;
+  scale: 85%;
+  margin-top: -45px;
 }
 
   .vertical_text {
@@ -468,9 +492,11 @@ html {
 #burple p{
   font-size: 15px;
   line-height: 35px;
-  margin-top: -120px;
+  margin-top: -100px;
   padding: 50px 50px 20px 50px;
   margin-bottom: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 // earbuds section
@@ -493,6 +519,27 @@ html {
     position: relative;
     margin-bottom: 200px;
   }
+
+
+    // Demo reels
+    #demo-video {
+      scale: 70%;
+      margin-top: -80px;
+    }
+    
+    #demo-title p {
+      font-size: 15px;
+      line-height: 35px;
+      margin-top: -80px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+      padding: 50px;
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+
+
+  // Footer section
   .contact-icon{
     margin-left: 680px;
     margin-bottom: 150px;
