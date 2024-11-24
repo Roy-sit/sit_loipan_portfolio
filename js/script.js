@@ -16,6 +16,8 @@
 
 
 
+
+
 // Rotation effect to vertical text
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,23 +38,46 @@ gsap.fromTo(
 
 
 
+
 // Slider
 const slider = document.querySelector('.image-slider');
 const leftArrow = document.querySelector('.arrow.left');
 const rightArrow = document.querySelector('.arrow.right');
+const slideIndicator = document.querySelector('.slide-indicator'); // Reference to the slide indicator
 
 let currentPosition = 0;
+const totalSlides = slider.querySelectorAll('img').length; // Calculate the total number of slides
+let currentSlide = 0;
 
+// Function to update the slide indicator
+function updateSlideIndicator() {
+  slideIndicator.textContent = `${currentSlide + 1}/${totalSlides}`;
+}
+
+// Left arrow functionality
 leftArrow.addEventListener('click', () => {
-  currentPosition += slider.clientWidth;
-  slider.style.transform = `translateX(${Math.min(currentPosition, 0)}px)`;
+  if (currentSlide > 0) { // Prevent moving beyond the first slide
+    currentSlide--;
+    currentPosition += slider.clientWidth;
+    slider.style.transform = `translateX(${Math.min(currentPosition, 0)}px)`;
+    updateSlideIndicator(); 
+  }
 });
 
+// Right arrow functionality
 rightArrow.addEventListener('click', () => {
-  currentPosition -= slider.clientWidth;
-  const maxTranslate = -slider.scrollWidth + slider.clientWidth;
-  slider.style.transform = `translateX(${Math.max(currentPosition, maxTranslate)}px)`;
+  if (currentSlide < totalSlides - 1) { // Prevent moving beyond the last slide
+    currentSlide++;
+    currentPosition -= slider.clientWidth;
+    const maxTranslate = -slider.scrollWidth + slider.clientWidth;
+    slider.style.transform = `translateX(${Math.max(currentPosition, maxTranslate)}px)`;
+    updateSlideIndicator(); 
+  }
 });
+
+// Initialize the slide indicator
+updateSlideIndicator(); // initial slide number
+
 
 
 
@@ -93,8 +118,6 @@ gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
     });
 });
 
-
-
 // Scroll effect
 gsap.utils.toArray("#footer-contact, #m-model img, .vertical_text, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
@@ -108,8 +131,6 @@ gsap.utils.toArray("#footer-contact, #m-model img, .vertical_text, #collection-i
         }
     });
 });
-
-
 
 document.addEventListener("scroll", () => {
   const backToTop = document.querySelector("#back-to-top");
