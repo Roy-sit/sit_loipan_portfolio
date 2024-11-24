@@ -42,9 +42,15 @@ Proficiency of tools like Adobe XD for UX/UI design, alongside with HTML, CSS, a
 Integration of After Effects, C4D for creating dynamic, innovative video content, 3D modulars.
 
 ### Website Features:
-- Fully responsive function from mobile to desktop.
-- Smooth sliding page transitions using GreenSock.
-- Integrated video background, play on hover over.
+- Fully responsive from mobile to desktop.
+- Smooth scrolltrigger transitions using Gsap.
+- Integrated video background loopping.
 - Portfolio gallery showcasing projects and description.
+- Scroll effect with audio on Experience section for better viewing experience.
+- Contact form.
+- Direct media link buttons.
+- Animated text.
+- One click Back-to-Top.
+- Slider function for multi images scrolling.
 
 THE END
