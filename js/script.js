@@ -89,13 +89,13 @@ function handleIntersection(entries) {
       audio.play(); // Play audio when the section is in view
     } else {
       audio.pause(); // Pause audio when the section is out of view
-      audio.currentTime = 0; // Reset audio to the beginning
     }
   });
 }
 
 const observer = new IntersectionObserver(handleIntersection, {
   threshold: 0.5, // Trigger when 50% of the section is visible
+  rootMargin: '130px'
 });
 
 // Ensure the observer targets the correct section
