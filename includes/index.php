@@ -1,10 +1,11 @@
 <html>
 <?php
+
 //connect to the running database server and the specific database
 require_once('includes/connect.php');
 
 // create a query to run in SQL
-$query = "SELECT id, title, image, description FROM project";
+$query = "SELECT project.id, title, image, case_study, client, application FROM project";
 
 //run the query to get back the content
 $results = mysqli_query($connect, $query);
@@ -37,31 +38,35 @@ if (!$results) {
 while ($row = mysqli_fetch_array($results)) {
     
     echo ' <section class="container">
-        <div class="title">
-            <h3>MENSWEAR</h3>          
+        <div class="title"> <h3>MENSWEAR</h3> </div>
+
+        <div class="image"> <img src="images/mens-image.jpg" alt="image"> </div>
+        
+        <div class="des-con">
+        <div class="case_study">
+            <p>
+              <span>CASE STUDY:</span>
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti, at nam.
+            </p>
         </div>
 
-        <div class="image">
-            <img src="images/mens-image.jpg" alt="image"> 
+        <div class="client">
+          <p>
+            <span>CLIENT:</span> 
+            <br> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit amet eum dicta eaque tenetur deleniti eveniet.
+          </p>
         </div>
-        
-        <div class="case">
-            <p>
-                <span>CASE STUDY:</span>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti, at nam. Voluptate ex placeat quaerat id et sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti. eum dicta eaque tenetur deleniti eveniet sit maiores impedit rem culpa corrupti.
-                <br>
-                <br>
-                <span>CLIENTS:</span>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti eveniet sit.
-                <br>
-                <br>
-                <span>APPLICATION:</span>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum dicta eaque tenetur deleniti.
-            </p>
-         </div>
+
+        <div class="application">
+           <p>
+            <span>APPLICATION:</span>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur.
+           </p>
+        </div>
+      </div>
     </section>';
 }
 ?>

@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             mail($to, $subject, $message);
 
             // Redirect to thank you page
-            header('Location: thank_you.php');
+            header('Location: contact.php');
         } else {
             echo "Error: " . mysqli_error($connect);  // Display SQL error if the query fails
         }
