@@ -169,16 +169,18 @@ burpleVideo.volume = 0.05;
 
   
 
-  // Back to top arrow
-  document.addEventListener("scroll", () => {
-    const backToTop = document.querySelector("#back-to-top");
+// Show back-to-top arrow only at the bottom of the page
+document.addEventListener("scroll", () => {
+  const backToTop = document.querySelector("#back-to-top");
 
-    // Check if at the bottom of the page
-    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
-      backToTop.style.display = "flex"; // Show the arrow at the bottom
-    } else {
-      backToTop.style.display = "none"; // Hide the arrow when scrolling up
-    }
-  });
+  // Calculate if the user is near the bottom of the page
+  const scrolledToBottom =
+    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
 
+  if (scrolledToBottom) {
+    backToTop.style.display = "flex"; // Show the arrow
+  } else {
+    backToTop.style.display = "none"; // Hide the arrow
+  }
+});
 })();
