@@ -167,20 +167,11 @@ const burpleVideo = document.querySelector("#burple-video");
 burpleVideo.volume = 0.05;
 
 
-  
 
-// Show back-to-top arrow only at the bottom of the page
-document.addEventListener("scroll", () => {
-  const backToTop = document.querySelector("#back-to-top");
+// Volume control of Purple video
+const demoVideo = document.querySelector("#demo-video");
+demoVideo.volume = 0.2;
 
-  // Calculate if the user is near the bottom of the page
-  const scrolledToBottom =
-    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
 
-  if (scrolledToBottom) {
-    backToTop.style.display = "flex"; // Show the arrow
-  } else {
-    backToTop.style.display = "none"; // Hide the arrow
-  }
-});
+
 })();

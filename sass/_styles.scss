@@ -78,6 +78,7 @@ li {
   }
 }
 
+
 #sticky-nav-con {
   background-color: rgba(255, 255, 255, 0.98);
   position: sticky;
@@ -228,7 +229,7 @@ li {
     line-height: 25px;
     margin-right: 40px;
     margin-left: 50px;
-    margin-top: -70px;
+    margin-top: -30px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
     padding: 30px 40px 10px 40px;
@@ -272,6 +273,7 @@ li {
 // Slide Indicator
 .slide-indicator {
   position: absolute;
+  display: none;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
