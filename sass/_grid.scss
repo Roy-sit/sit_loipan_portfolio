@@ -284,6 +284,48 @@ html {
     padding-bottom: 150px;
     margin-right: 150px;
   }
+
+
+
+  // For project
+  .project-con {
+    margin: 0 auto; /* Centers horizontally */
+    padding: 20px;
+  }
+  
+  .title h3 {
+    font-size: 55px;
+    margin-top: 30px;
+  }  
+  
+  .image {
+    width: 100%;
+  }
+
+  .des-con {
+    gap: 15px;
+    margin-top: -20px;
+  }
+  
+  .case_study, .client, .application {
+    padding: 30px;
+    border-left: 8px solid $secondary-color;
+  }
+  
+  .case_study span, 
+  .client span, 
+  .application span {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+  
+  .case_study p, 
+  .client p, 
+  .application p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 35px;
+  }
 }
 
 
@@ -540,4 +582,31 @@ html {
     padding-bottom: 200px;
     margin-right: 200px;
   }
+
+
+// Styling for Project
+.project-con {
+  scale: 105%;
+}
+
+.title h3 {
+  font-size: 65px;
+  margin-top: 80px;
+}
+
+.case_study span, 
+  .client span, 
+  .application span {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+  
+  .case_study p, 
+  .client p, 
+  .application p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 35px;
+  }
+
 }
