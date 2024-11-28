@@ -1,6 +1,7 @@
 @import 'variables';
 @import url('https://cdn.tailwindcss.com');
 
+
 body {
     overflow-x: hidden;
 }
@@ -506,6 +507,7 @@ li {
   font-size: 55px;
 }
 
+
 .project-con {
   max-width: 900px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -541,7 +543,6 @@ li {
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .des-con {
   display: grid;

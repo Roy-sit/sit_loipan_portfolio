@@ -275,20 +275,20 @@
       
       <!-- Project PHP -->
       <div class="projects" id="projects">
-        <h2 id="main-title">PROJECTS SECTION<h2>
-        <?php
-        require_once('includes/connect.php');
-    
-        $query = "SELECT id, title, image, case_study, client, application FROM project";
-        $results = mysqli_query($connect, $query);
-    
-        if (!$results) {
-            die("<p>Query failed: " . mysqli_error($connect) . "</p>");
-        } elseif (mysqli_num_rows($results) === 0) {
-            echo "<p>No data found in the table.</p>";
-        } else {
-            while ($row = mysqli_fetch_assoc($results)) {
-        ?>
+    <h2 id="main-title">PROJECTS SECTION</h2>
+    <?php
+    require_once('includes/connect.php');
+
+    $query = "SELECT id, title, image, case_study, client, application FROM project";
+    $results = mysqli_query($connect, $query);
+
+    if (!$results) {
+        die("<p style='font-family: \"Galvji\", Helvetica, Arial, sans-serif;'>Query failed: " . mysqli_error($connect) . "</p>");
+    } elseif (mysqli_num_rows($results) === 0) {
+        echo "<p style='font-family: \"Galvji\", Helvetica, Arial, sans-serif;'>No data found in the table.</p>";
+    } else {
+        while ($row = mysqli_fetch_assoc($results)) {
+    ?>
     
         <section class="project-con">
             <div class="title">
