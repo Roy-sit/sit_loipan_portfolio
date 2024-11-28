@@ -1,4 +1,5 @@
 @import 'variables';
+@import url('https://cdn.tailwindcss.com');
 
 body {
     overflow-x: hidden;
@@ -164,7 +165,7 @@ li {
     margin-top: 180px;
     transform: rotate(-90deg);
     letter-spacing: 4px;
-    font-size: 65px;
+    font-size: 60px;
     position: absolute;
   }
 
@@ -196,7 +197,7 @@ li {
     margin-top: 130px;
     margin-left: 5px;
     letter-spacing: 4px;
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 
@@ -296,11 +297,11 @@ li {
 }
 
 #mens h3 {
-  margin-left: -210px;
+  margin-left: -200px;
   margin-top: 60px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
-  font-size: 80px; 
+  font-size: 75px; 
   position: absolute;
 }
 
@@ -378,7 +379,7 @@ li {
   margin-top: 130px;
   margin-bottom: 20px;
   margin-left: 5px;
-  font-size: 60px; 
+  font-size: 55px; 
 }
 
 #burple-video {
@@ -436,7 +437,7 @@ li {
   margin-top: 70px;
   margin-bottom: 20px;
   margin-left: 5px;
-  font-size: 60px; 
+  font-size: 55px; 
 }
 
 #demo-video {
@@ -451,6 +452,86 @@ li {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
   padding: 20px 30px 20px 30px;
   position: relative;
+}
+
+
+
+// Styling for Project
+#main-title {
+  margin-top: 150px;
+  margin-bottom: -110px;
+  margin-left: 20px;
+  font-size: 55px;
+}
+
+.project-con {
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 100px;
+}
+
+.project-con:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title h3 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: transparent; 
+  -webkit-text-stroke: 1.5px $primary-color; /* Apply the stroke with black color */
+}
+
+
+.image img {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto; 
+}
+
+.image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.des-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: -20px;
+}
+
+
+.case_study, .client, .application {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-left: 7px solid $secondary-color;
+}
+
+.case_study span, 
+.client span, 
+.application span {
+  font-weight: bold;
+  color: $secondary-color;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.case_study p, 
+.client p, 
+.application p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 25px;
 }
 
 
@@ -520,3 +601,5 @@ li {
     width: 100%; /* Full width for inputs and button */
   }
 }
+
+
