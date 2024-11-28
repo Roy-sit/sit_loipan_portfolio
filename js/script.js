@@ -1,8 +1,9 @@
 (function() {
 
-  // Hamburger
+  
   console.log('JS file is connected.');
 
+  // Hamburger menu
   let burgerCon = document.querySelector("#burger-con");
   const links = document.querySelectorAll(".hamburger menu");
   
@@ -168,9 +169,9 @@ burpleVideo.volume = 0.05;
 
 
 
-// Volume control of Purple video
+// Volume control of Demo Reels video
 const demoVideo = document.querySelector("#demo-video");
-demoVideo.volume = 0.2;
+demoVideo.volume = 0.10;
 
 
 

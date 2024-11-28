@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+  <link href="https://fonts.googleapis.com/css2?family=YourFont&display=swap" rel="stylesheet">
+</head>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Roy's Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
 </head>
 
 <body>
@@ -113,7 +115,6 @@
     </div>
 
     
-
 <!-- Experience Section -->
 <section class="full-width-grid-con">
   <div class="col-span-full m-col-span-full">
@@ -164,7 +165,7 @@
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
                   Innovations in fabrics and construction to create comfortable, sport-inspired tailoring. <br><br>
-                  <a href="#mens" class="d-button">DETAIL...</a>     
+                  <a href="#projects" class="d-button">DETAIL...</a>     
               </p>
                 </div>  
             </div>
@@ -173,8 +174,6 @@
     <div id="m-model">
       <img src="images/man_model.png" alt="man model">
     </div>
-
-
 
 
     <!-- Womenswear section -->
@@ -187,7 +186,7 @@
               <p>
                 Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
-                <a href="#womens" class="d-button">DETAIL...</a>                 
+                <a href="#projects" class="d-button">DETAIL...</a>                 
               </p>
           </div>   
               <h3>WOMENS</h3>      
@@ -195,7 +194,6 @@
       </div>
   </section>
  
-
 
   <!-- Rebranding section -->
   <section class="full-width-grid-con">
@@ -213,7 +211,7 @@
           <br><br> 
             <p>
               Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. Burple believes in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth. <br><br>
-              <a href="#multi" class="d-button">DETAIL...</a>                 
+              <a href="#projects" class="d-button">DETAIL...</a>                 
               <br>  
               <br>       
             </p>
@@ -235,7 +233,7 @@
               <p>
                 In this project, I use generators in Cinema 4D to create a pair of earbuds, and use the earbuds as a promotional asset for the print campaign and video. The print campaign will incorporate the earbuds into a poster design, while the video showcases the features of the earbuds including its colours, shapes, textures, lighting and animation keyframes.
                 <br><br>
-                <a href="#multi-2" class="d-button">DETAIL...</a>                 
+                <a href="#projects" class="d-button">DETAIL...</a>                 
                 <br><br>           
               </p>
           </div>
@@ -267,6 +265,69 @@
       </section>
 
 
+      
+      <!-- Project PHP -->
+      <div class="projects" id="projects">
+        <h2 id="main-title">PROJECT SECTION<h2>
+        <?php
+        require_once('includes/connect.php');
+    
+        $query = "SELECT id, title, image, case_study, client, application FROM project";
+        $results = mysqli_query($connect, $query);
+    
+        if (!$results) {
+            die("<p>Query failed: " . mysqli_error($connect) . "</p>");
+        } elseif (mysqli_num_rows($results) === 0) {
+            echo "<p>No data found in the table.</p>";
+        } else {
+            while ($row = mysqli_fetch_assoc($results)) {
+        ?>
+    
+        <section class="project-con">
+            <div class="title">
+              <h3><?php echo $row['title'];?></h3>
+            </div>
+    
+            <div class="image">
+              <img src="<?php echo $row['image'];?>" alt="image">
+            </div>
+    
+          <div class="des-con">
+              <div class="case_study">
+                  <p>
+                    <span>CASE STUDY:</span>
+                    <?php echo $row['case_study'];?>
+                  </p>
+              </div>    
+    
+            <div class="client">
+              <p>
+                <span>CLIENT:</span>
+                <?php echo $row['client'];?>
+              </p>
+            </div>
+    
+            <div class="application">
+              <p>
+              <span>APPLICATION:</span>
+              <?php echo $row['application'];?>
+              </p>
+            </div>
+          </div>
+    
+          <br>
+          <br>
+          <br>
+        </section>
+      <?php
+      }
+      }
+      ?>
+      </div>
+
+
+
+
       <!--Footer section  -->
     <footer>
       <div class="contact-icon">
@@ -277,7 +338,6 @@
             <img src="images/linkin.svg" alt="linkedin icon" class="icon">
         </a>
     </div>
-
 
     <div id="reserved">
       <p>&#174; Roy Sit, All Right Reserved, 2025.
@@ -293,7 +353,6 @@
       </div>
       </div>
 
-    
     <script src="js/script.js"></script>
     </footer>
 </body>
