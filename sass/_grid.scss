@@ -284,56 +284,6 @@ html {
     padding-bottom: 150px;
     margin-right: 150px;
   }
-
-
-
-  // For project
-  #main-title {
-    margin-top: 220px;
-    margin-bottom: -150px;
-    padding-bottom: 30px;
-    font-size: 65px;
-  }
-
-  .project-con {
-    margin: 0 auto; /* Centers horizontally */
-    padding: 20px;
-    margin-top: 80px;
-  }
-  
-  .title h3 {
-    font-size: 50px;
-    margin-top: 30px;
-  }  
-  
-  .image {
-    width: 100%;
-  }
-
-  .des-con {
-    gap: 15px;
-    margin-top: -20px;
-  }
-  
-  .case_study, .client, .application {
-    padding: 30px;
-    border-left: 8px solid $secondary-color;
-  }
-  
-  .case_study span, 
-  .client span, 
-  .application span {
-    font-size: 13px;
-    letter-spacing: 3px;
-  }
-  
-  .case_study p, 
-  .client p, 
-  .application p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 35px;
-  }
 }
 
 
