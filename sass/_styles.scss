@@ -9,16 +9,15 @@ a {
   text-decoration: none;
 }
 
-.d-button {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-
 li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.d-button {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 
@@ -42,30 +41,57 @@ li {
 #burger-con {
   position: absolute;
   width: 140px;
-  height: 350px;
+  height: 410px;
   box-shadow: 2px 1px 15px #979597;
   background-color: rgba(255, 255, 255, 0.93);
   top: 100px;
   left: 18px;
   z-index: 1;
+}
 
-  ul {
+#burger-con ul {
     text-align: left;
     margin: 0 20px 10px -15px;
+}
 
-    li {
+#burger-con  ul li {
       padding: 15px 0;
+}
 
-      a {
-        color: $secondary-color;
-        font-size: 13px;
-        &:hover {
-          color: $body-text-color;
-        }
-      }
-    }
+#burger-con ul li a {
+  color: $secondary-color;
+  font-size: 13px;
+  position: relative;
+  padding: 5px 0;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+#burger-con ul li a:hover {
+    color: white;
+    letter-spacing: 7px;
+    font-weight:bold;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background:  $secondary-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1; // Keep the text on top
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
   }
 }
+
 
 
 // Name Logo
@@ -385,6 +411,23 @@ li {
 #burple-video {
   max-width: 100%;
 }
+
+#burple-images {
+  display: flex; /* Align images horizontally */
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; 
+  margin-top: 20px; 
+  flex-wrap: wrap; /* Allow wrapping for very small screens */
+}
+
+.burple-img {
+  max-width: 100%; /* Make images responsive */
+  width: calc(50% - 10px); /* Each image takes 50% of the container width with spacing */
+  height: auto; 
+  object-fit: cover; 
+}
+
 
 #burple p {
   font-size: 12px;

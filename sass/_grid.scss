@@ -9,22 +9,7 @@ html {
 /* tablet */
 @media screen and (min-width: 768px) {
   
-  #contact-form input,
-  #contact-form textarea {
-    height: 50px; 
-    box-sizing: border-box;
-    flex: 1; 
-  }
-
-  #contact-form button {
-    height: 50px; 
-    padding: 0 60px; 
-    font-size: 16px;
-    flex-shrink: 0; /* Prevent button from shrinking */
-  }
-
-
-  #main-nav button {
+#main-nav button {
       display: none;
   }
 
@@ -56,7 +41,7 @@ html {
   }
       
   #burger-con ul li {
-      padding: 0;
+      padding: 4px;
       border-bottom: 0;
       display: inline;
   }
@@ -221,6 +206,17 @@ html {
   margin-top: -30px;
 }
 
+#burple-images {
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center; 
+  gap: 52px; 
+}
+
+.burple-img {
+  width: 40%; 
+  margin-bottom: 40px;
+}
+
 #burple p{
   font-size: 14px;
   line-height: 35px;
@@ -275,6 +271,20 @@ html {
 
 
   // Footer section
+  #contact-form input,
+  #contact-form textarea {
+    height: 50px; 
+    box-sizing: border-box;
+    flex: 1; 
+  }
+
+  #contact-form button {
+    height: 50px; 
+    padding: 0 60px; 
+    font-size: 16px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+  }
+
   .contact-icon{
     margin-left: 580px;
     margin-bottom: 80px;
@@ -342,50 +352,9 @@ html {
 /* Desktop */
 @media screen and (min-width: 1200px) {
 
-  #main-nav button {
-      display: none;
-  }
-
-  #sticky-nav-con {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    margin-bottom: -15px;
-    padding-bottom: 20px;
+#burger-con ul li a {
+    font-size: 15px;
 }
-
-// menu background
-  #main-nav {
-      background-color: transparent;
-      justify-self: right;
-      align-self: self-end;
-      z-index: 1;
-  }
-
-  // menu
-  #burger-con {
-      display: inline;
-      position: inherit;
-      width: 0;
-      height: 0;
-      box-shadow: none;
-      border-radius: 0;
-      margin-left: 0;
-  }
-      
-  #burger-con ul {
-   margin-right: -90px;
-}
-
-  #burger-con ul li {
-      border-bottom: 0;
-      display: inline;
-  }
-  
-  #burger-con ul li a {
-      font-size: 15px;
-      padding: 20px;
-  }
       
 
   #logo {
@@ -524,6 +493,16 @@ html {
 #burple-video {
   scale: 70%;
   margin-top: -90px;
+}
+
+#burple-images {
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center; 
+}
+
+.burple-img {
+  width: 33%; 
+  margin-top: -100px;
 }
 
 #burple p{

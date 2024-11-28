@@ -208,6 +208,12 @@
             <source src="video/burple_promo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        <div id="burple-images">
+      <img src="images/burple_orange.jpg" alt="Burple Orange" class="burple-img">
+      <img src="images/burple_lemon.jpg" alt="Burple Lemon" class="burple-img">
+        </div>
+      
           <br><br> 
             <p>
               Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. Burple believes in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth. <br><br>
