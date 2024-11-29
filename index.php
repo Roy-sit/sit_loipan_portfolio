@@ -273,8 +273,8 @@
 
 
       
-      <!-- Project PHP -->
-      <div class="projects" id="projects">
+<!-- Project PHP -->
+<div class="projects" id="projects">
     <h2 id="main-title">PROJECTS SECTION</h2>
     <?php
     require_once('includes/connect.php');
@@ -292,32 +292,32 @@
     
         <section class="project-con">
             <div class="title">
-              <h3><?php echo $row['title'];?></h3>
+              <h3><?php echo $row['title']; ?></h3>
             </div>
     
             <div class="image">
-              <img src="<?php echo $row['image'];?>" alt="image">
+              <img src="<?php echo $row['image']; ?>" alt="image" class="project-img-<?php echo $row['id']; ?>">
             </div>
     
           <div class="des-con">
               <div class="case_study">
                   <p>
                     <span>CASE STUDY:</span>
-                    <?php echo $row['case_study'];?>
+                    <?php echo $row['case_study']; ?>
                   </p>
               </div>    
     
             <div class="client">
               <p>
                 <span>CLIENT:</span>
-                <?php echo $row['client'];?>
+                <?php echo $row['client']; ?>
               </p>
             </div>
     
             <div class="application">
               <p>
               <span>APPLICATION:</span>
-              <?php echo $row['application'];?>
+              <?php echo $row['application']; ?>
               </p>
             </div>
           </div>
@@ -326,11 +326,25 @@
           <br>
           <br>
         </section>
-      <?php
-      }
-      }
-      ?>
-      </div>
+        
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+          gsap.from(".project-img-<?php echo $row['id']; ?>", {
+            scale: 0.8,
+            opacity: 0,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: ".project-img-<?php echo $row['id']; ?>",
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            },
+          });
+        </script>
+    <?php
+        }
+    }
+    ?>
+</div>
 
 
 

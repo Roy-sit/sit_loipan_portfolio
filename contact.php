@@ -16,7 +16,7 @@
         <br><br>
 
         <label for="comments">Comments: </label>
-        <textarea name="comments" id="comments">comment</textarea>
+        <textarea name="comments" id="comments"></textarea>
 
         <br><br>
 

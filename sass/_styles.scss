@@ -84,7 +84,7 @@ li {
 
   &:hover {
     color: white;
-    border-top: 5px solid black;
+    border-top: 4px solid black;
     letter-spacing: 2px;
 
     &:before {
@@ -539,15 +539,10 @@ li {
 
 .image img {
   width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   margin: 0 auto; 
 }
 
-.image img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
 
 .des-con {
   display: grid;

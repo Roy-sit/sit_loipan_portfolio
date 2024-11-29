@@ -205,9 +205,6 @@ if (musicSection) {
 
 
 
-
-
-
 // Volume control of Purple video
 const burpleVideo = document.querySelector("#burple-video");
 burpleVideo.volume = 0.05;
