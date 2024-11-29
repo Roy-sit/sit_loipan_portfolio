@@ -78,7 +78,7 @@
 
 
 
-// BGM Audio
+// BGM Audio on scroll for Experience Section
 const musicSection = document.querySelector(".music-section");
 const audio = document.querySelector(".music-section .background-music");
 
@@ -145,7 +145,6 @@ if (musicSection) {
 
 
 
-
   // Scroll effect
   gsap.utils.toArray("#footer-contact, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
@@ -176,9 +175,9 @@ if (musicSection) {
       x: "0%",  // Move to normal position
       duration: 1,
       scrollTrigger: {
-        trigger: "#burple-images",  // Trigger the animation on scroll
-        start: "top 250%",  // Animation starts when the top of #burple-images is 80% into view
-        end: "bottom 50%",  // Animation ends when the bottom of #burple-images is 20% into view
+        trigger: "#burple-images",  
+        start: "top 250%",  
+        end: "bottom 50%",  
         scrub: true,  // Smooth scrolling effect
       }
     }
@@ -188,17 +187,17 @@ if (musicSection) {
     "#burple-images .burple-img:last-child",  // Targets the second image (Burple Lemon)
     {
       opacity: -1,
-      x: "100%",  // Start from the right
+      x: "100%", 
     },
     {
       opacity: 1,
-      x: "0%",  // Move to normal position
+      x: "0%", 
       duration: 1,
       scrollTrigger: {
-        trigger: "#burple-images",  // Trigger the animation on scroll
-        start: "top 250%",  // Animation starts when the top of #burple-images is 80% into view
-        end: "bottom 50%",  // Animation ends when the bottom of #burple-images is 20% into view
-        scrub: true,  // Smooth scrolling effect
+        trigger: "#burple-images", 
+        start: "top 250%",  
+        end: "bottom 50%",  
+        scrub: true, 
       }
     }
   );
