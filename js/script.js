@@ -1,6 +1,5 @@
 (function() {
 
-  
   console.log('JS file is connected.');
 
   // Hamburger menu
@@ -13,7 +12,6 @@
   };
 
   button.addEventListener("click", hamburgerMenu);	
-
 
 
 
@@ -37,8 +35,7 @@
 
 
 
-
-  // Slider
+  // Slider for Experience Section
   const slider = document.querySelector('.image-slider');
   const leftArrow = document.querySelector('.arrow.left');
   const rightArrow = document.querySelector('.arrow.right');
@@ -77,8 +74,7 @@
 
 
 
-
-// BGM Audio on scroll for Experience Section
+// BGM Audio for Experience Section
 const musicSection = document.querySelector(".music-section");
 const audio = document.querySelector(".music-section .background-music");
 
@@ -106,8 +102,7 @@ if (musicSection) {
 
 
 
-
-  // Wavy effect
+  // Zoom-in-out effect
   gsap.registerPlugin(ScrollTrigger);
   gsap.to("#w-model", {
     scrollTrigger: {
@@ -116,32 +111,11 @@ if (musicSection) {
       end: "bottom top", 
       scrub: true, 
     },
-    y: 100, // Move vertically to create the wave effect
+    y: 100, // Move vertically for zoom effect
     scale: 0.8, 
     ease: "power1.inOut", 
     duration: 3, 
   });
-
-
-
-
-  // Register ScrollTrigger plugin
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Fade-in effect
-  gsap.utils.toArray(".full-width-grid-con").forEach((section) => {
-    gsap.from(section, {
-      opacity: 0,
-      y: 50,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: section,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      }
-    });
-  });
-
 
 
 
@@ -161,14 +135,13 @@ if (musicSection) {
 
 
 
-
 // Slide effect for burple-images
   gsap.registerPlugin(ScrollTrigger);
   gsap.fromTo(
     "#burple-images .burple-img:first-child",  // Targets the first image (Burple Orange)
     {
       opacity: -1,
-      x: "-100%",  // Start from the left
+      x: "-200%",  // Start from the left
     },
     {
       opacity: 1,
@@ -176,8 +149,8 @@ if (musicSection) {
       duration: 1,
       scrollTrigger: {
         trigger: "#burple-images",  
-        start: "top 250%",  
-        end: "bottom 50%",  
+        start: "top 200%",  
+        end: "bottom 100%",  
         scrub: true,  // Smooth scrolling effect
       }
     }
@@ -187,7 +160,7 @@ if (musicSection) {
     "#burple-images .burple-img:last-child",  // Targets the second image (Burple Lemon)
     {
       opacity: -1,
-      x: "100%", 
+      x: "200%", 
     },
     {
       opacity: 1,
@@ -195,8 +168,8 @@ if (musicSection) {
       duration: 1,
       scrollTrigger: {
         trigger: "#burple-images", 
-        start: "top 250%",  
-        end: "bottom 50%",  
+        start: "top 200%",  
+        end: "bottom 100%",  
         scrub: true, 
       }
     }
@@ -207,7 +180,6 @@ if (musicSection) {
 // Volume control of Purple video
 const burpleVideo = document.querySelector("#burple-video");
 burpleVideo.volume = 0.05;
-
 
 
 // Volume control of Demo Reels video
