@@ -25,11 +25,11 @@
     { rotate: 0, y: 0 }, 
     {
       rotate: 270, 
-      y: 530, // Move down to stay visible
+      y: 1000, // Move down to stay visible
       scrollTrigger: {
         trigger: ".vertical_text",
-        start: "top 20%", 
-        end: "top 100%", 
+        start: "top 40%", 
+        end: "top 130%", 
         scrub: true,
       },
     }

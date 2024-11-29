@@ -80,9 +80,10 @@ li {
     left: 0;
     right: 0;
     top: 0;
-    background:  $secondary-color;
+   
     transform: scaleX(0);
     transform-origin: left;
+    text-decoration: underline;
     transition: transform 0.3s ease;
     z-index: -1; // Keep the text on top
   }
