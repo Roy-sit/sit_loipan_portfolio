@@ -51,12 +51,12 @@ li {
 }
 
 #burger-con ul {
-    text-align: left;
-    margin: 0 20px 10px -15px;
+  text-align: left;
+  margin: 0 20px 10px -15px;
 }
 
-#burger-con  ul li {
-      padding: 15px 0;
+#burger-con ul li {
+  padding: 15px 0;
 }
 
 #burger-con ul li a {
@@ -67,11 +67,6 @@ li {
   display: inline-block;
   overflow: hidden;
   transition: color 0.3s ease;
-}
-
-#burger-con ul li a:hover {
-    color: white;
-    letter-spacing: 5px;
 
   &:before {
     content: "";
@@ -80,15 +75,21 @@ li {
     left: 0;
     right: 0;
     top: 0;
-    background:  $secondary-color;
+    background: $secondary-color;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
     z-index: -1; // Keep the text on top
   }
 
-  &:hover:before {
-    transform: scaleX(1);
+  &:hover {
+    color: white;
+    border-top: 5px solid black;
+    letter-spacing: 2px;
+
+    &:before {
+      transform: scaleX(1);
+    }
   }
 }
 
@@ -422,12 +423,16 @@ li {
 }
 
 .burple-img {
-  max-width: 100%; /* Make images responsive */
+  max-width: 100%; 
   width: calc(50% - 10px); /* Each image takes 50% of the container width with spacing */
   height: auto; 
   object-fit: cover; 
+  transform: translateX(50%);
 }
 
+#burple-images .burple-img:first-child {
+  transform: translateX(-100%); /* Start the screen from the left for the first image */
+}
 
 #burple p {
   font-size: 12px;

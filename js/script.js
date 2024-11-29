@@ -163,6 +163,51 @@ if (musicSection) {
 
 
 
+// Slide effect for burple-images
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.fromTo(
+    "#burple-images .burple-img:first-child",  // Targets the first image (Burple Orange)
+    {
+      opacity: -1,
+      x: "-100%",  // Start from the left
+    },
+    {
+      opacity: 1,
+      x: "0%",  // Move to normal position
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#burple-images",  // Trigger the animation on scroll
+        start: "top 250%",  // Animation starts when the top of #burple-images is 80% into view
+        end: "bottom 50%",  // Animation ends when the bottom of #burple-images is 20% into view
+        scrub: true,  // Smooth scrolling effect
+      }
+    }
+  );
+  
+  gsap.fromTo(
+    "#burple-images .burple-img:last-child",  // Targets the second image (Burple Lemon)
+    {
+      opacity: -1,
+      x: "100%",  // Start from the right
+    },
+    {
+      opacity: 1,
+      x: "0%",  // Move to normal position
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#burple-images",  // Trigger the animation on scroll
+        start: "top 250%",  // Animation starts when the top of #burple-images is 80% into view
+        end: "bottom 50%",  // Animation ends when the bottom of #burple-images is 20% into view
+        scrub: true,  // Smooth scrolling effect
+      }
+    }
+  );
+
+
+
+
+
+
 // Volume control of Purple video
 const burpleVideo = document.querySelector("#burple-video");
 burpleVideo.volume = 0.05;
