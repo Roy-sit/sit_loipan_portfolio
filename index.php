@@ -165,7 +165,7 @@
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
                   Innovations in fabrics and construction to create comfortable, sport-inspired tailoring. <br><br>
-                  <a href="#main-title" class="d-button">DETAIL...</a>     
+                  <a href="#project-1" class="d-button">DETAIL...</a>     
               </p>
                 </div>  
             </div>
@@ -186,7 +186,7 @@
               <p>
                 Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
-                <a href="#projects" class="d-button">DETAIL...</a>                 
+                <a href="#project-2" class="d-button">DETAIL...</a>                 
               </p>
           </div>   
               <h3>WOMEN</h3>      
@@ -217,7 +217,7 @@
           <br><br> 
             <p>
               Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. Burple believes in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth. <br><br>
-              <a href="#projects" class="d-button">DETAIL...</a>                 
+              <a href="#project-3" class="d-button">DETAIL...</a>                 
               <br>  
               <br>       
             </p>
@@ -240,7 +240,7 @@
               The goal of this project is to design and build a pair of earbuds using generators in Cinema 4D for a print campaign and a short video. The earbuds should be visually appealing earbuds including its colours, shapes, textures, lighting and animation keyframes. The goal is to create a visually appealing
               and engaging video that showcases the 3D earbuds and their features forsocial media using text.
                 <br><br>
-                <a href="#projects" class="d-button">DETAIL...</a>                 
+                <a href="#project-4" class="d-button">DETAIL...</a>                 
                 <br><br>           
               </p>
           </div>
@@ -290,7 +290,7 @@
         while ($row = mysqli_fetch_assoc($results)) {
     ?>
     
-        <section class="project-con">
+        <section class="project-con" id="project-<?php echo $row['id']; ?>"> <!-- Added ID here -->
             <div class="title">
               <h3><?php echo $row['title']; ?></h3>
             </div>
@@ -299,32 +299,32 @@
               <img src="<?php echo $row['image']; ?>" alt="image" class="project-img-<?php echo $row['id']; ?>">
             </div>
     
-          <div class="des-con">
-              <div class="case_study">
-                  <p>
-                    <span>CASE STUDY:</span>
-                    <?php echo $row['case_study']; ?>
-                  </p>
-              </div>    
+            <div class="des-con">
+                <div class="case_study">
+                    <p>
+                        <span>CASE STUDY:</span>
+                        <?php echo $row['case_study']; ?>
+                    </p>
+                </div>    
     
-            <div class="client">
-              <p>
-                <span>CLIENT:</span>
-                <?php echo $row['client']; ?>
-              </p>
+                <div class="client">
+                    <p>
+                        <span>CLIENT:</span>
+                        <?php echo $row['client']; ?>
+                    </p>
+                </div>
+    
+                <div class="application">
+                    <p>
+                        <span>APPLICATION:</span>
+                        <?php echo $row['application']; ?>
+                    </p>
+                </div>
             </div>
     
-            <div class="application">
-              <p>
-              <span>APPLICATION:</span>
-              <?php echo $row['application']; ?>
-              </p>
-            </div>
-          </div>
-    
-          <br>
-          <br>
-          <br>
+            <br>
+            <br>
+            <br>
         </section>
         
         <script>
@@ -345,7 +345,6 @@
     }
     ?>
 </div>
-
 
 
 
