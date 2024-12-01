@@ -24,13 +24,13 @@
             <button id="button"></button>
               <div id="burger-con" class="hidden">
                 <ul>
-                  <li><a href="#about-me">Me</a></li>
+                  <li><a href="#about-me">About</a></li>
                   <li><a href="#experience">EXP</a></li>
-                  <li><a href="#mens">Mens</a></li>
-                  <li><a href="#womens">Womens</a></li>
+                  <li><a href="#mens">Men</a></li>
+                  <li><a href="#womens">Women</a></li>
                   <li><a href="#multi">Rebranding</a></li>
                   <li><a href="#multi-2">Earbuds</a></li>
-                  <li><a href="#demo-title">Demo Reels</a></li>
+                  <li><a href="#demo-title">Showreel</a></li>
                 </ul>
               </div>
         </nav>
@@ -158,7 +158,7 @@
     <section class="full-width-grid-con">
         <div class="col-span-full m-col-span-full">
             <div id="mens">
-            <h3>MENS</h3>
+            <h3>MEN</h3>
             <div id="mens-image">
                 <img src="images/mens.jpg" alt="mens image">
                 <p>
@@ -189,7 +189,7 @@
                 <a href="#projects" class="d-button">DETAIL...</a>                 
               </p>
           </div>   
-              <h3>WOMENS</h3>      
+              <h3>WOMEN</h3>      
           </div>
       </div>
   </section>
@@ -252,7 +252,7 @@
       <section class="full-width-grid-con">
         <div class="col-span-full m-col-span-full">
           <div id="demo-title">
-            <h3>DEMO REELS</h3>
+            <h3>SHOWREEL</h3>
          
           <video id="demo-video" controls poster="images/demo_thumb.png">
             <source src="video/demo_reels.webm" type="video/webm">
