@@ -101,9 +101,10 @@
             <div id="about-me">
             <h3>ABOUT</h3>
             <p>
-                With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
-                <br>
-                Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
+            Driven by a strong passion for creativity, I was drawn to the world of fashion and graphic design, where I could transform ideas into tangible, impactful visuals. This inspiration has fueled my desire to craft innovative designs that truly resonate with audiences.
+            Building on a solid educational foundation in fashion and graphic design from the UK, and enriched by years of professional experience with international fashion brands, I have honed my expertise in developing market-leading, forward-thinking designs. My career has been characterized by a strong sense of responsibility, a high work ethic, and a proven ability to deliver exceptional results.
+            <br><br>
+            Currently, I am expanding my skill set by studying Interactive Media Design, with the goal of merging fashion and technology. My focus is on developing a unique specialization in website design, logo creation, and motion graphics tailored to the needs of fashion brands.
                 <br><br>           
             </p>
             </div>
