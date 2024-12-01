@@ -102,7 +102,7 @@ if (musicSection) {
 
 
 
-  // Zoom-in-out effect
+  // W-model effect
   gsap.registerPlugin(ScrollTrigger);
   gsap.to("#w-model", {
     scrollTrigger: {
