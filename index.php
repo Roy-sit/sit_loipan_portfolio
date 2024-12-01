@@ -24,7 +24,7 @@
             <button id="button"></button>
               <div id="burger-con" class="hidden">
                 <ul>
-                  <li><a href="#about-me">About</a></li>
+                  <li><a href="#about-me">Me</a></li>
                   <li><a href="#experience">EXP</a></li>
                   <li><a href="#mens">Mens</a></li>
                   <li><a href="#womens">Womens</a></li>
