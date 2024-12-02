@@ -37,26 +37,33 @@ li {
   }
 }
 
-
-// Burger Menu
+// Burger Container
 #burger-con {
   position: absolute;
-  width: 140px;
-  height: 410px;
+  width: 150px;
+  height: 320px; 
   box-shadow: 2px 1px 15px #979597;
   background-color: rgba(255, 255, 255, 0.93);
   top: 100px;
   left: 18px;
   z-index: 1;
+  display: none; 
+}
+
+#burger-con.show {
+  display: block; 
 }
 
 #burger-con ul {
-  text-align: left;
-  margin: 0 20px 10px -15px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0px;
+  
 }
 
 #burger-con ul li {
-  padding: 15px 0;
+  padding: 17px 0;
+  position: relative;
 }
 
 #burger-con ul li a {
@@ -65,7 +72,6 @@ li {
   position: relative;
   padding: 5px 0;
   display: inline-block;
-  overflow: hidden;
   transition: color 0.3s ease;
 
   &:before {
@@ -79,7 +85,7 @@ li {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
-    z-index: -1; // Keep the text on top
+    z-index: -1;
   }
 
   &:hover {
@@ -93,7 +99,39 @@ li {
   }
 }
 
+// Dropdown for Fashion and Multimedia
+#burger-con ul li > a {
+  position: relative;
+}
 
+// Dropdown bg box
+#burger-con ul li > ul {
+  display: none; 
+  position: absolute;
+  left: 100%;  
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  min-width: 150px;
+  box-shadow: 2px 1px 15px #979597;
+}
+
+#burger-con ul li:hover > ul {
+  display: block;  /* Show the submenu when parent is hovered */
+}
+
+#burger-con ul ul li {
+  padding: 10px 20px;
+}
+
+#burger-con ul ul li a {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+#burger-con ul ul li a:hover {
+  border-top: 4px solid black;
+  background: $secondary-color;
+}
 
 // Name Logo
 #logo {
@@ -106,14 +144,12 @@ li {
   }
 }
 
-
 #sticky-nav-con {
   background-color: rgba(255, 255, 255, 0.98);
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
 
 // Background video
 .bg-video-container {

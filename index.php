@@ -10,8 +10,7 @@
     <link href="css/main.css" rel="stylesheet">
     <title>Roy's Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
 </head>
 
 <body>
@@ -20,28 +19,38 @@
 <div id="sticky-nav-con">
     <header id="main-header" class="grid-con">
         <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-4 m-col-end-13">
-          <h2 class="hidden">Main Navigation</h2>
+            <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
-              <div id="burger-con" class="hidden">
+            <div id="burger-con" class="hidden">
                 <ul>
-                  <li><a href="#about-me">About</a></li>
-                  <li><a href="#experience">EXP</a></li>
-                  <li><a href="#mens">Men</a></li>
-                  <li><a href="#womens">Women</a></li>
-                  <li><a href="#multi">Rebranding</a></li>
-                  <li><a href="#multi-2">Earbuds</a></li>
-                  <li><a href="#demo-title">Showreel</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#experience">EXP</a></li>
+                    <li>
+                        <a href="#fashion">Fashion</a>
+                        <ul>
+                            <li><a href="#mens">Men</a></li>
+                            <li><a href="#womens">Women</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#multimedia">Multimedia</a>
+                        <ul>
+                            <li><a href="#multi">Rebranding</a></li>
+                            <li><a href="#multi-2">Earbuds</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#demo-title">Showreel</a></li>
                 </ul>
-              </div>
+            </div>
         </nav>
 
         <!-- My Logo -->
         <div id="logo" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
-          <a href="#hero">
-              <object data="images/my_name.svg" type="image/svg+xml"></object>
-          </a>
-      </div>         
-  </header>
+            <a href="#hero">
+                <object data="images/my_name.svg" type="image/svg+xml"></object>
+            </a>
+        </div>
+    </header>
 </div>
 
 

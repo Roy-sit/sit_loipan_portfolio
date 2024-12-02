@@ -4,15 +4,29 @@
 
   // Hamburger menu
   let burgerCon = document.querySelector("#burger-con");
-  const links = document.querySelectorAll(".hamburger menu");
+  let button = document.querySelector("#main-nav button");
+  const links = document.querySelectorAll("#burger-con > ul > li > a");
   
+  // Toggle burger menu visibility
   function hamburgerMenu() {
     button.classList.toggle("expanded");
-    burgerCon.classList.toggle("hidden");
+    burgerCon.classList.toggle("show");  // Show menu when toggled
   };
+  
+  button.addEventListener("click", hamburgerMenu);
+  
+  // Toggle submenus for Fashion, Multimedia
+  links.forEach(link => {
+    link.addEventListener("click", function (event) {
+      const submenu = this.nextElementSibling;
+      if (submenu && submenu.tagName === "UL") {
+        event.preventDefault();  // Prevent page navigation
+        submenu.classList.toggle("show");  
+      }
+    });
+  });
 
-  button.addEventListener("click", hamburgerMenu);	
-
+  
 
 
   // Rotation effect to vertical text

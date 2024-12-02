@@ -8,6 +8,14 @@ html {
 
 /* tablet */
 @media screen and (min-width: 768px) {
+
+  #logo {
+    justify-self: left;
+    width: 280px;
+    margin-bottom: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
   
 #main-nav button {
       display: none;
@@ -41,24 +49,34 @@ html {
   }
       
   #burger-con ul li {
-      padding: 4px;
+      padding: 10px;
       border-bottom: 0;
       display: inline;
   }
   
   #burger-con ul li a {
       font-size: 13px;
-      padding-left: 30px;
+      padding-left: 35px;
   }
-      
 
-  #logo {
-      justify-self: left;
-      width: 280px;
-      margin-bottom: 0;
-      grid-row-start: 1;
-      grid-row-end: 2;
-  }
+  // Dropdown bg box
+#burger-con ul li > ul {
+  display: none; 
+  position: absolute;
+  left: 30px;  
+  top: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  min-width: 90px;
+  height: 90px;
+  box-shadow: 2px 1px 15px #979597;
+}
+
+#burger-con ul ul li a {
+  font-size: 13px;
+  padding: 7px 0;
+  margin: 5px;
+}
+      
 
   .bg-video2 {
     width: 100%;
