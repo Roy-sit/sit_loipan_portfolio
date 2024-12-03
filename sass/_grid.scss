@@ -6,10 +6,10 @@ html {
 }
 
 
-
+// Mobile
+// Add pointer to the dropdown container
 @media (max-width: 768px) {
   #burger-con ul li > ul {
-   
     margin-left: 5px; /* Adjust submenu position */
   }
 
@@ -27,7 +27,7 @@ html {
 
 
 
-/* tablet */
+// Tablet
 @media screen and (min-width: 768px) {
 
   #logo {
@@ -76,9 +76,9 @@ html {
   }
   
   #burger-con ul li a {
-      font-size: 14px;
-      padding-left: 45px;
-      font-weight: bold;
+      font-size: 13px;
+      padding-left: 40px;
+      font-weight: 500;
   }
 
   // Dropdown container
@@ -89,7 +89,7 @@ html {
   top: 18px;
   background: rgba(255, 255, 255, 0.9);
   width: 100px;
-  height: 125px;
+  height: 150px;
   box-shadow: 2px 1px 15px #979597;
 }
 
@@ -106,8 +106,9 @@ html {
 
 #burger-con ul ul li a {
   font-size: 13px;
-  padding: 7px 0;
-  margin: 5px;
+   display: flex;  /* To allow alignment */
+  justify-content: center; /* Centers the text horizontally */
+  text-align: left; 
 }
       
 
@@ -141,6 +142,7 @@ html {
       height: 80px;
     }
   }
+
 
 // About section
    #about-me h3 {
@@ -220,6 +222,7 @@ html {
 }
 
 
+
 // Womens section
 #womens h3 {
   font-size: 80px;
@@ -246,10 +249,36 @@ html {
 }
 
 
+// Graphic section
+#graphic-con {
+  width: 650px;
+  margin-left: -15px;
+  margin-top: 250px;
+
+  h3 {
+    font-size: 80px;
+  }
+}
+
+#garphic-image p {
+  font-size: 14px;
+  line-height: 35px;
+}
+
+#garphic-image {
+  width: 80%;
+  margin-left: 150px;
+}
+
+.arrow2 {
+  margin-top: 65px;
+}
+
+
 // Burple section
 #multi h3 {
   font-size: 80px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 #burple-video {
@@ -471,8 +500,8 @@ html {
 }
 
 #showroom {
-  width: 65%;
-  margin-left: 250px;
+  width: 70%;
+  margin-left: 170px;
 }
 
 #showroom p {
@@ -533,6 +562,26 @@ html {
   font-size: 15px;
   line-height: 35px;
   padding: 30px;
+}
+
+
+// Graphic
+#graphic-con {
+  width: 650px;
+  margin-left: -15px;
+
+  h3 {
+    font-size: 90px;
+  }
+}
+
+#garphic-image {
+  width: 70%;
+  margin-left: 170px;
+}
+
+#garphic-image p {
+  font-size: 15px;
 }
 
 

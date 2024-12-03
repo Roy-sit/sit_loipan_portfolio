@@ -27,8 +27,9 @@
                     <li><a href="#experience">EXP</a></li>
                     <li><a href="#fashion">Fashion</a>
                         <ul>
-                          <li><a href="#mens">Menswear</a></li>
-                          <li><a href="#womens">Womenswear</a></li>
+                          <li><a href="#mens">Men</a></li>
+                          <li><a href="#womens">Women</a></li>
+                          <li><a href="#graphic-con">Graphic</a></li>
                         </ul>
                     </li>
                     
@@ -201,6 +202,35 @@
           </div>
       </div>
   </section>
+
+
+
+  <!-- Graphic -->
+<section class="full-width-grid-con">
+  <div class="col-span-full m-col-span-full">
+    <div id="graphic-con">
+      <h3>GRAPHIC</h3>
+    </div>
+    <div id="garphic-image">
+      <button class="arrow2 left"></button>
+      <div class="image-slider2">
+        <img src="images/graphic_1.jpg" alt="graphic image">
+        <img src="images/graphic_2.jpg" alt="graphic image 2">
+        <img src="images/graphic_3.jpg" alt="graphic image 3">
+      </div>
+      <button class="arrow2 right"></button>
+      <div class="slide-indicator2">1/3</div>
+      <p>
+        This season’s prints push boundaries with bold “print-on-print” 
+        designs. Abstract florals on moody purple bring an edgy sophistication, 
+        while rhythmic dots in varied sizes and tones create a graphic, modern 
+        aesthetic. Dense overlays of florals and dots add depth and dynamic energy. 
+        These patterns blend tradition with innovation, delivering high-impact, 
+        versatile styles perfect for Spring/Summer collections.
+      </p>
+    </div>
+  </div>
+</section>
  
 
   <!-- Rebranding section -->

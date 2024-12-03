@@ -96,32 +96,42 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
   updateSlideIndicator(); 
 
 
+  
 
-// BGM Audio for Experience Section
-const musicSection = document.querySelector(".music-section");
-const audio = document.querySelector(".music-section .background-music");
+// Slider for Graphic Section
+const slider2 = document.querySelector('.image-slider2');
+const leftArrow2 = document.querySelector('.arrow2.left');
+const rightArrow2 = document.querySelector('.arrow2.right');
+const slideIndicator2 = document.querySelector('.slide-indicator2'); 
 
-audio.volume = 0.08;
+let currentPosition2 = 0;
+const totalSlides2 = slider2.querySelectorAll('img').length;
+let currentSlide2 = 0;
 
-function handleIntersection(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      audio.play(); // Play audio when the section is in view
-    } else {
-      audio.pause(); // Pause audio when the section is out of view
-    }
-  });
+function updateSlideIndicator2() {
+  slideIndicator2.textContent = `${currentSlide2 + 1}/${totalSlides2}`;
 }
 
-const observer = new IntersectionObserver(handleIntersection, {
-  threshold: 0.5, // Trigger when 50% of the section is visible
-  rootMargin: '130px'
+leftArrow2.addEventListener('click', () => {
+  if (currentSlide2 > 0) { 
+    currentSlide2--;
+    currentPosition2 += slider2.clientWidth;
+    slider2.style.transform = `translateX(${Math.min(currentPosition2, 0)}px)`;
+    updateSlideIndicator2(); 
+  }
 });
 
-// Ensure the observer targets the correct section
-if (musicSection) {
-  observer.observe(musicSection);
-}
+rightArrow2.addEventListener('click', () => {
+  if (currentSlide2 < totalSlides2 - 1) {
+    currentSlide2++;
+    currentPosition2 -= slider2.clientWidth;
+    const maxTranslate2 = -slider2.scrollWidth + slider2.clientWidth;
+    slider2.style.transform = `translateX(${Math.max(currentPosition2, maxTranslate2)}px)`;
+    updateSlideIndicator2(); 
+  }
+});
+updateSlideIndicator2(); 
+
 
 
 
