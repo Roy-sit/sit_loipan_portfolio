@@ -6,6 +6,27 @@ html {
 }
 
 
+
+@media (max-width: 768px) {
+  #burger-con ul li > ul {
+   
+    margin-left: 5px; /* Adjust submenu position */
+  }
+
+  #burger-con ul li > ul::before {
+    content: "";
+    position: absolute;
+    top: 10px; /* Adjust vertical alignment */
+    left: -20px; /* Position the pointer on the left side */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent;
+    transform: rotate(270deg); /* No rotation for a left-facing triangle */
+  }
+}
+
+
+
 /* tablet */
 @media screen and (min-width: 768px) {
 
@@ -60,7 +81,7 @@ html {
       font-weight: bold;
   }
 
-  // Dropdown bg box
+  // Dropdown container
 #burger-con ul li > ul {
   display: none; 
   position: absolute;
@@ -70,6 +91,17 @@ html {
   width: 100px;
   height: 125px;
   box-shadow: 2px 1px 15px #979597;
+}
+
+// Add pointer to the dropdown container
+#burger-con ul li > ul::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20px; 
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.95) transparent;
 }
 
 #burger-con ul ul li a {
