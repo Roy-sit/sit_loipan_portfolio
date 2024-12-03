@@ -57,6 +57,7 @@ html {
   #burger-con ul li a {
       font-size: 14px;
       padding-left: 45px;
+      font-weight: bold;
   }
 
   // Dropdown bg box
@@ -371,20 +372,19 @@ html {
 /* Desktop */
 @media screen and (min-width: 1200px) {
 
+  #logo {
+    justify-self: left;
+    width: 300px;
+    margin-top: 40px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
 #burger-con ul li a {
     font-size: 15px;
 }
+
       
-
-  #logo {
-      justify-self: left;
-      width: 300px;
-      margin-bottom: 0;
-      grid-row-start: 1;
-      grid-row-end: 2;
-  }
-
-
   .bg-video2 {
     width: 100%;
     height: 60%;

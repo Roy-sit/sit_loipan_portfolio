@@ -7,7 +7,7 @@ let burgerCon = document.querySelector("#burger-con");
 let button = document.querySelector("#main-nav button");
 const links = document.querySelectorAll("#burger-con > ul > li > a");
 
-// Toggle burger menu visibility
+// Menu visibility
 function toggleHamburgerMenu() {
   button.classList.toggle("expanded");
   burgerCon.classList.toggle("show"); // Show/hide menu
@@ -21,18 +21,17 @@ function closeHamburgerMenu(event) {
   }
 }
 
-// Toggle submenus for Fashion, Multimedia
+// Sub-menus for Fashion, Multimedia
 links.forEach((link) => {
   link.addEventListener("click", function (event) {
     const submenu = this.nextElementSibling;
     if (submenu && submenu.tagName === "UL") {
-      event.preventDefault(); // Prevent page navigation
+      event.preventDefault(); 
       submenu.classList.toggle("show");
     }
   });
 });
 
-// Event listeners
 button.addEventListener("click", toggleHamburgerMenu);
 document.addEventListener("click", closeHamburgerMenu); // Close on outside click
 
