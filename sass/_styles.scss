@@ -24,12 +24,13 @@ li {
 
 #main-nav button {
   background: url(../images/hamburger-menu.svg) no-repeat center;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   border: none;
   transition: all 0.5s ease;
   cursor: pointer;
   margin-top: 42px;
+  margin-left: 20px;
 
   &.expanded {
     transform: rotate(90deg);
@@ -41,10 +42,10 @@ li {
 #burger-con {
   position: absolute;
   width: 150px;
-  height: 320px; 
+  height: 300px; 
   box-shadow: 2px 1px 15px #979597;
   background-color: rgba(255, 255, 255, 0.93);
-  top: 100px;
+  top: 80px;
   left: 18px;
   z-index: 1;
   display: none; 
@@ -56,13 +57,13 @@ li {
 
 #burger-con ul {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0px;
   
 }
 
 #burger-con ul li {
-  padding: 17px 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -73,6 +74,7 @@ li {
   padding: 5px 0;
   display: inline-block;
   transition: color 0.3s ease;
+  letter-spacing: 2px;
 
   &:before {
     content: "";
@@ -137,7 +139,7 @@ li {
 #logo {
   justify-self: center;
   margin-top: 38px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   background-color: transparent;
   object {
     width: 300px;
@@ -166,7 +168,7 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  filter: blur(150px);
+  filter: blur(120px);
 }
 
 .bg-video2 {

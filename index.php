@@ -25,22 +25,20 @@
                 <ul>
                     <li><a href="#about-me">About</a></li>
                     <li><a href="#experience">EXP</a></li>
-                    <li>
-                        <a href="#fashion">Fashion</a>
+                    <li><a href="#fashion">Fashion</a>
                         <ul>
-                            <li><a href="#mens">Men</a></li>
-                            <li><a href="#womens">Women</a></li>
+                          <li><a href="#mens">Menswear</a></li>
+                          <li><a href="#womens">Womenswear</a></li>
                         </ul>
                     </li>
+                    
                     <li>
                         <a href="#multimedia">Multimedia</a>
                         <ul>
                             <li><a href="#multi">Rebranding</a></li>
                             <li><a href="#multi-2">Earbuds</a></li>
+                            <li><a href="#demo-title">Showreel</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#demo-title">Showreel</a></li>
-                </ul>
             </div>
         </nav>
 

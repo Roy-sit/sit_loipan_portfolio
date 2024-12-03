@@ -2,31 +2,41 @@
 
   console.log('JS file is connected.');
 
-  // Hamburger menu
-  let burgerCon = document.querySelector("#burger-con");
-  let button = document.querySelector("#main-nav button");
-  const links = document.querySelectorAll("#burger-con > ul > li > a");
-  
-  // Toggle burger menu visibility
-  function hamburgerMenu() {
-    button.classList.toggle("expanded");
-    burgerCon.classList.toggle("show");  // Show menu when toggled
-  };
-  
-  button.addEventListener("click", hamburgerMenu);
-  
-  // Toggle submenus for Fashion, Multimedia
-  links.forEach(link => {
-    link.addEventListener("click", function (event) {
-      const submenu = this.nextElementSibling;
-      if (submenu && submenu.tagName === "UL") {
-        event.preventDefault();  // Prevent page navigation
-        submenu.classList.toggle("show");  
-      }
-    });
-  });
+// Hamburger menu elements
+let burgerCon = document.querySelector("#burger-con");
+let button = document.querySelector("#main-nav button");
+const links = document.querySelectorAll("#burger-con > ul > li > a");
 
-  
+// Toggle burger menu visibility
+function toggleHamburgerMenu() {
+  button.classList.toggle("expanded");
+  burgerCon.classList.toggle("show"); // Show/hide menu
+}
+
+// Close menu when clicking outside
+function closeHamburgerMenu(event) {
+  if (!burgerCon.contains(event.target) && !button.contains(event.target)) {
+    button.classList.remove("expanded");
+    burgerCon.classList.remove("show"); // Hide menu
+  }
+}
+
+// Toggle submenus for Fashion, Multimedia
+links.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    const submenu = this.nextElementSibling;
+    if (submenu && submenu.tagName === "UL") {
+      event.preventDefault(); // Prevent page navigation
+      submenu.classList.toggle("show");
+    }
+  });
+});
+
+// Event listeners
+button.addEventListener("click", toggleHamburgerMenu);
+document.addEventListener("click", closeHamburgerMenu); // Close on outside click
+
+
 
 
   // Rotation effect to vertical text
