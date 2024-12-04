@@ -98,6 +98,7 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
 
 
 
+
   // BGM Audio
 const musicSection = document.querySelector(".music-section");
 const audio = document.querySelector(".music-section .background-music");
@@ -183,7 +184,7 @@ updateSlideIndicator2();
 
 
   // Scroll effect
-  gsap.utils.toArray("#footer-contact, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
+  gsap.utils.toArray("#garphic-image, #footer-contact, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
       scale: 0.8,
       opacity: 0,
