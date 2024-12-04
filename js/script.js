@@ -96,6 +96,36 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
   updateSlideIndicator(); 
 
 
+
+
+  // BGM Audio
+const musicSection = document.querySelector(".music-section");
+const audio = document.querySelector(".music-section .background-music");
+
+audio.volume = 0.08;
+
+function handleIntersection(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      audio.play(); // Play audio when the section is in view
+    } else {
+      audio.pause(); // Pause audio when the section is out of view
+    }
+  });
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.5, // Trigger when 50% of the section is visible
+  rootMargin: '130px'
+});
+
+// Ensure the observer targets the correct section
+if (musicSection) {
+  observer.observe(musicSection);
+}
+
+
+
   
 
 // Slider for Graphic Section
