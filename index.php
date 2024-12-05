@@ -29,7 +29,7 @@
                         <ul>
                           <li><a href="#mens">Men</a></li>
                           <li><a href="#womens">Women</a></li>
-                          <li><a href="#graphic-con">Graphic</a></li>
+                          <li><a href="#graphic-con">Prints</a></li>
                         </ul>
                     </li>
                     
@@ -209,7 +209,7 @@
 <section class="full-width-grid-con">
   <div class="col-span-full m-col-span-full">
     <div id="graphic-con">
-      <h3>GRAPHIC</h3>
+      <h3>PRINTS</h3>
     </div>
     <div id="garphic-image">
       <button class="arrow2 left"></button>
