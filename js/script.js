@@ -57,6 +57,7 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
   );
 
 
+  
 
   // Slider for Experience Section
   const slider = document.querySelector('.image-slider');
@@ -124,6 +125,22 @@ const observer = new IntersectionObserver(handleIntersection, {
 if (musicSection) {
   observer.observe(musicSection);
 }
+
+
+
+
+// Rotation for Men Section
+function toggleImage(clickedImg) {
+  const siblingImg = clickedImg.nextElementSibling || clickedImg.previousElementSibling;
+
+  if (siblingImg) {
+    clickedImg.classList.remove('front');
+    clickedImg.classList.add('back');
+    siblingImg.classList.remove('back');
+    siblingImg.classList.add('front');
+  }
+}
+
 
 
 

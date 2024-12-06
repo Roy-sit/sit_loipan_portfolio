@@ -1,6 +1,21 @@
 @import 'variables';
 @import url('https://cdn.tailwindcss.com');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Fix common Firefox Flexbox issues */
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  flex: 1 1 0; /* For sizing fails */
+  min-width: 0; /* Prevent overflow */
+  min-height: 0; /* Stretching issues */
+}
+
 
 body {
     overflow-x: hidden;
@@ -177,6 +192,8 @@ li {
   object-fit: cover; 
   filter: blur(70px);
 }
+
+
 
 
 #hero-video {
@@ -362,16 +379,15 @@ li {
 
 // Men
 #mens {
-  margin-top: 180px;
+  margin-top: -120px;
+  margin-bottom: 190px;
   margin-left: 100px;
-  padding-bottom: 40px;
-  padding-top: 60px;
   padding-left: 70px;
 }
 
 #mens h3 {
   margin-left: -200px;
-  margin-top: 60px;
+  margin-top: 360px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
   font-size: 75px; 
@@ -381,42 +397,74 @@ li {
 
 #mens-image {
   max-width: 95%;
-  margin-top: -50px;
+  position: relative;
 }
 
 #mens-image p {
+  top: 670px;
+  right: 100px;
   font-size: 12px;
   line-height: 25px;
-  margin-left: -120px;
-  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px;
   position: relative;
+  max-width: 100%;
+  text-align: left; 
+  z-index: 9999;
 }
 
 #m-model {
   position: absolute;
   scale: 25%;
   z-index: -1;
-  margin-top: -1550px;
-  margin-left: -450px;
+  margin-top: -1100px;
+  margin-left: -470px;
+  opacity: 0.9;
 }
 
-#m-model img {
-  opacity: 0.8;
+// Men 2nd image
+#mens-image img {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+#mens-image img.front {
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+#mens-image img.front:hover {
+  transform: scale(1.03); 
+}
+
+
+#mens-image img.back {
+  z-index: 1;
+  opacity: 0.6;
+  margin-left: -40px;
+  margin-top: 20px;
+  max-width: 95%;
+  cursor: pointer;
 }
 
 
 // Womens
 #womens {
-  margin-top: 160px;
+  margin-top: 650px;
   margin-right: 100px;
 }
 
 #womens h3 {
-  margin-left: 250px;
-  margin-top: -480px;
+  margin-left: 280px;
+  margin-top: -780px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
   font-size: 70px; 
@@ -427,12 +475,12 @@ li {
   max-width: 90%;
 }
 
-#womens-image #w-model {
+#w-model {
   position: relative;
   opacity: 0.85;
   scale: 50%;
-  margin-top: -630px;
-  margin-left: 220px;
+  margin-top: -600px;
+  margin-left: 240px;
 }
 
 #womens-image p {
@@ -441,19 +489,18 @@ li {
   line-height: 25px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
-  margin-top: -340px;
+  top: -370px;
   padding: 20px 30px 20px 30px;
-  margin-bottom: 20px;
 }
 
 
 // Graphic
 #graphic-con {
   background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 180px;
   height: 550px;
   width: 700px;
   margin-left: -15px;
+  margin-top: -200px;
 
 
   h3 {
@@ -638,7 +685,7 @@ li {
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px;
   position: relative;
 }
 

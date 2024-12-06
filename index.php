@@ -169,7 +169,12 @@
             <div id="mens">
             <h3>MEN</h3>
             <div id="mens-image">
-                <img src="images/mens.jpg" alt="mens image">
+            <img src="images/mens.jpg" alt="mens image" class="front"
+          onclick="this.classList.toggle('front'); this.classList.toggle('back'); this.nextElementSibling.classList.toggle('front'); this.nextElementSibling.classList.toggle('back')"/>
+
+        <img src="images/men_2.jpg" alt="men 2 image" class="back"
+          onclick="this.classList.toggle('front'); this.classList.toggle('back'); this.previousElementSibling.classList.toggle('front'); this.previousElementSibling.classList.toggle('back')"/>
+          
                 <p>
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
@@ -180,6 +185,7 @@
             </div>
         </div>
     </section>
+
     <div id="m-model">
       <img src="images/man_model.png" alt="man model">
     </div>
