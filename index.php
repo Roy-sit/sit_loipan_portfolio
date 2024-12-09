@@ -88,7 +88,7 @@
 
   <!-- Contact icon -->
     <div class="contact-icon">
-      <a href="#contact-form" target="_blank">
+      <a href="#contact-form">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
       <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
