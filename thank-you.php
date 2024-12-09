@@ -33,10 +33,6 @@ ini_set('display_errors', 1);
     <style>
         body {
             font-family: 'Galvji', Helvetica, Arial, sans-serif; 
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            height: 100%;
         }
 
         .bg-video-container {
