@@ -1,19 +1,13 @@
 @import 'variables';
 @import url('https://cdn.tailwindcss.com');
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* Fix common Firefox Flexbox issues */
-.parent {
-  display: flex;
-  flex-wrap: wrap;
-}
-.child {
-  flex: 1 1 0; /* For sizing fails */
-  min-width: 0; /* Prevent overflow */
-  min-height: 0; /* Stretching issues */
+@supports (-moz-appearance: none) {
+  .bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(100px);
+  }
 }
 
 
@@ -183,16 +177,8 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  filter: blur(100px);
+  filter: blur(250px);
 }
-
-.bg-video2 {
-  width: 100%;
-  height: 65%;
-  object-fit: cover; 
-  filter: blur(70px);
-}
-
 
 
 
@@ -293,7 +279,7 @@ li {
 #showroom {
   margin-left: -20px;
   margin-top: -420px;
-  max-width: 110%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,6 +298,7 @@ li {
     max-width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
+    scale: 95%;
   }
 
   p {
@@ -396,7 +383,7 @@ li {
 
 
 #mens-image {
-  max-width: 95%;
+  max-width: 90%;
   position: relative;
 }
 
@@ -472,7 +459,7 @@ li {
 }
 
 #womens-image {
-  max-width: 90%;
+  scale: 90%;
 }
 
 #w-model {
@@ -514,7 +501,7 @@ li {
 #garphic-image {
   margin-left: -20px;
   margin-top: -420px;
-  max-width: 110%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;

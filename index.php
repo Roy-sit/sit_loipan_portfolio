@@ -61,12 +61,6 @@
   </video>
 </div>
 
-<div class="bg-video-container">
-  <video class="bg-video2" autoplay loop muted playsinline>
-      <source src="video/bg_video_2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-</div>
 
 <!-- Hero video -->    
     <section id="hero" class="full-width-grid-con">

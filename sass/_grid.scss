@@ -112,12 +112,6 @@ html {
 }
       
 
-  .bg-video2 {
-    width: 100%;
-    height: 70%;
-    filter: blur(95px);
-  }
-
 #hero-video {
   scale: 85%;
   margin-top: -35px;
@@ -158,7 +152,7 @@ html {
   }
 
   #collection-image {
-    width: 75%;
+    width: 70%;
     margin-left: -15px;
     margin-bottom: 150px;
   }
@@ -286,7 +280,7 @@ html {
 }
 
 #garphic-image {
-  width: 80%;
+  scale: 90%;
   margin-left: 150px;
 }
 
@@ -302,7 +296,7 @@ html {
 }
 
 #burple-video {
-  scale: 85%;
+  scale: 80%;
   margin-top: -30px;
 }
 
@@ -336,6 +330,7 @@ html {
   #earbuds-image {
     margin-left: 150px;
     margin-top: 280px;
+    scale: 90%;
   }
 
   #earbuds-image p {
@@ -354,7 +349,7 @@ html {
   }
 
   #demo-video {
-    scale: 85%;
+    scale: 80%;
     margin-top: -20px;
   }
   
