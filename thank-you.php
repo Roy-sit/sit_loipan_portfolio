@@ -15,13 +15,20 @@ ini_set('display_errors', 1);
     <div class="container">
         <h1>Thank You!</h1>
         <p>I will get back to you soon.</p>
-        <a href="index.php">Back to My Portfolio</a>
+        <a href="index.php">Roy's Portfolio</a>
     </div>
 </body>
 
 <div id="logo" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
-                <object data="images/my_name.svg" type="image/svg+xml"></object>
-        </div>
+    <object data="images/my_name.svg" type="image/svg+xml"></object>
+</div>
+
+<div class="bg-video-container">
+  <video class="bg-video" autoplay loop muted playsinline>
+      <source src="video/bg_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
 
     <style>
         body {
@@ -31,6 +38,23 @@ ini_set('display_errors', 1);
             background-color: white;
             height: 100%;
         }
+
+        .bg-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: blur(650px);
+}
         
         .container {
             width: 400px;
@@ -38,7 +62,6 @@ ini_set('display_errors', 1);
             padding: 20px;
             background: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
             text-align: center;
         }
 
