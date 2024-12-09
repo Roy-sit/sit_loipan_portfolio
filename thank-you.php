@@ -30,12 +30,12 @@ ini_set('display_errors', 1);
   </video>
 </div>
 
-    <style>
-        body {
-            font-family: 'Galvji', Helvetica, Arial, sans-serif; 
-        }
+<style>
+body {
+    font-family: 'Galvji', Helvetica, Arial, sans-serif; 
+}
 
-        .bg-video-container {
+.bg-video-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -52,39 +52,39 @@ ini_set('display_errors', 1);
   filter: blur(650px);
 }
         
-        .container {
-            width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+.container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-        h1 {
-            color: black;
-            font-size: 40px;
-        }
+h1 {
+ color: black;
+ font-size: 40px;
+ }
 
-        p {
-            color: black;
-            font-size: 16px;
-            margin: 20px 0;
-        }
+p {
+ color: black;
+ font-size: 16px;
+ margin: 20px 0;
+}
 
-      a {
-          text-decoration: none;
-          color: white;
-          font-size: 14px;
-          background-color: #FF6C00;
-          padding: 10px 20px; 
-        }
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #FF6C00;
+    padding: 10px 20px; 
+}
 
-       a:hover {
-    background-color: black; 
-     }
+a:hover {
+background-color: black; 
+}
 
-        #logo object {
+#logo object {
     max-width: 230px;
     margin: 0 auto; 
     display: block;
