@@ -20,9 +20,7 @@ ini_set('display_errors', 1);
 </body>
 
 <div id="logo" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
-            <a href="#hero">
                 <object data="images/my_name.svg" type="image/svg+xml"></object>
-            </a>
         </div>
 
     <style>
@@ -43,25 +41,31 @@ ini_set('display_errors', 1);
             border-radius: 8px;
             text-align: center;
         }
+
         h1 {
             color: black;
-            font-size: 24px;
-        }
-        p {
-            color: #555;
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #FF6C00;
-            font-size: 14px;
-        }
-        a:hover {
-            text-decoration: underline;
+            font-size: 40px;
         }
 
-        #logo {
+        p {
+            color: black;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+      a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          background-color: #FF6C00;
+          padding: 10px 20px; 
+        }
+
+       a:hover {
+    background-color: black; 
+     }
+
+        #logo object {
     max-width: 230px;
     margin: 0 auto; 
     display: block;
