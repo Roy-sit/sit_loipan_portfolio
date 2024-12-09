@@ -326,7 +326,7 @@
       </p>
 
       <div id="footer-contact">
-        <form id="contact-form" action="includes/sendmail.php" method="POST">
+        <form id="contact-form" action="thank-you.php" method="POST">
           <input type="text" name="fullName" placeholder="Full Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <textarea name="comments" rows="3" placeholder="Comments"></textarea>

@@ -43,7 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $query = "INSERT INTO contact (full_name, email, comments) VALUES ('$full_name', '$email', '$msg')";
 
         if (mysqli_query($connect, $query)) {
-            // Format and send these values in an email
             $to = 'lpsroy78@gmail.com';
             $subject = 'Message from your Portfolio site!';
             $message = "You have received a new contact form submission:\n\n";
@@ -51,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $message .= "Email: ".$email."\n\n";
             $message .= $msg;
             
-            // Send the email
             mail($to, $subject, $message);
 
             // Redirect to thank you page
@@ -66,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 } else {
-    // If the form is not submitted, provide feedback
     echo "Please fill out the form to contact us.";
 }
 ?>
