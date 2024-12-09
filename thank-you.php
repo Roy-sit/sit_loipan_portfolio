@@ -50,7 +50,7 @@ ini_set('display_errors', 1);
 <body>
     <div class="container">
         <h1>Thank You!</h1>
-        <p>Your message has been successfully sent. We will get back to you soon.</p>
+        <p>Your message has been successfully sent. I will get back to you soon.</p>
         <a href="index.php">Go Back to Home</a>
     </div>
 </body>
