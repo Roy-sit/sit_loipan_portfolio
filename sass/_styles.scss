@@ -1,14 +1,4 @@
 @import 'variables';
-@import url('https://cdn.tailwindcss.com');
-
-@supports (-moz-appearance: none) {
-  .bg-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(350px);
-  }
-}
 
 
 body {
@@ -177,7 +167,7 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  filter: blur(350px);
+  filter: blur(130px);
 }
 
 
@@ -220,7 +210,7 @@ li {
     transition: transform 0.3s ease; 
 
     &:hover {
-      transform: scale(1.15); // zoom-in on hover
+      transform: scale(1.15); 
     }
   }
 }
@@ -284,7 +274,7 @@ li {
   flex-direction: column;
   align-items: center;
   overflow: hidden; /* Prevent overflow of the images */
-  position: relative; /* For arrows positioning */
+  position: relative;
 
 
 
@@ -787,7 +777,7 @@ li {
 }
 
 #contact-form textarea {
-  resize: none; /* Disable resize */
+  resize: none; 
 }
 
 #contact-form button {
@@ -813,7 +803,7 @@ li {
   #contact-form input,
   #contact-form textarea,
   #contact-form button {
-    width: 100%; /* Full width for inputs and button */
+    width: 100%;
   }
 }
 
