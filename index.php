@@ -91,9 +91,9 @@
       <a href="#contact-form">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
-      <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
-          <img src="images/linkin.svg" alt="linkedin icon" class="icon">
-      </a>
+    <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+     <img src="images/facebook.svg" alt="Facebook icon" class="icon">
+    </a>
   </div>
 
 
@@ -312,9 +312,9 @@
           <a href="https://www.instagram.com/royspfo/" target="_blank">
             <img src="images/ig_logo.svg" alt="my IG" class="icon">
         </a>
-        <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
-            <img src="images/linkin.svg" alt="linkedin icon" class="icon">
-        </a>
+        <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+     <img src="images/facebook.svg" alt="Facebook icon" class="icon">
+    </a>
     </div>
 
     <div id="reserved">
