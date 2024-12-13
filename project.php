@@ -79,7 +79,7 @@
         while ($row = mysqli_fetch_assoc($results)) {
     ?>
     
-        <section class="project-con" id="project-<?php echo $row['id']; ?>"> <!-- Added ID here -->
+        <section class="project-con" id="project-<?php echo $row['id']; ?>"> 
             <div class="title">
               <h3><?php echo $row['title']; ?></h3>
             </div>
@@ -139,13 +139,13 @@
 
       <!--Footer section  -->
     <footer>
-      <div class="contact-icon">
+    <div class="contact-icon">
           <a href="https://www.instagram.com/royspfo/" target="_blank">
             <img src="images/ig_logo.svg" alt="my IG" class="icon">
         </a>
-        <a href="https://www.linkedin.com/in/roy-sit78" target="_blank">
-            <img src="images/linkin.svg" alt="linkedin icon" class="icon">
-        </a>
+        <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+     <img src="images/facebook.svg" alt="Facebook icon" class="icon">
+    </a>
     </div>
 
     <div id="reserved">
