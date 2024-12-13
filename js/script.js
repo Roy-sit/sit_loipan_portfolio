@@ -2,6 +2,55 @@
 
   console.log('JS file is connected.');
 
+
+// Popup on landing
+document.addEventListener('DOMContentLoaded', function() {
+  const popup = document.querySelector('.popup');
+  
+  function showPopup() {
+      popup.classList.add('show');
+  }
+
+  function hidePopup() {
+      popup.classList.remove('show');
+  }
+
+  showPopup();  
+
+  popup.addEventListener('click', function(event) {
+      if (event.target === popup) {
+          hidePopup();  
+      }
+  });
+});
+
+
+
+// Popup on landing with Local Storage
+// document.addEventListener('DOMContentLoaded', function() {
+  // const popup = document.querySelector('.popup');
+  
+  // if (!localStorage.getItem('popupShown')) {
+      // function showPopup() {
+          // popup.classList.add('show');
+      // }
+
+      // function hidePopup() {
+          // popup.classList.remove('show');
+          // localStorage.setItem('popupShown', 'true');
+      // }
+      
+      // showPopup();
+      // popup.addEventListener('click', function(event) {
+          // if (event.target === popup) {
+              // hidePopup();
+          // }
+      // });
+  // }
+// });
+
+
+
 // Hamburger menu elements
 let burgerCon = document.querySelector("#burger-con");
 let button = document.querySelector("#main-nav button");
@@ -40,7 +89,6 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
 
   // Rotation effect to vertical text
   gsap.registerPlugin(ScrollTrigger);
-
   gsap.fromTo(
     ".vertical_text",
     { rotate: 0, y: 0 }, 
@@ -140,8 +188,6 @@ function toggleImage(clickedImg) {
     siblingImg.classList.add('front');
   }
 }
-
-
 
 
   
