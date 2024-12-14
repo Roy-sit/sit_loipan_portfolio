@@ -3,20 +3,36 @@
   console.log('JS file is connected.');
 
 
-// Popup on landing
+
+// Immediate scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    // Get the target section by its id
+    const target = document.querySelector(this.getAttribute('href'));
+    
+    target.scrollIntoView({
+      behavior: 'auto',  // 'auto' for instant jump, no smooth scrolling
+      block: 'start'
+    });
+  });
+});
+
+
+
+
+// Popup up message
 document.addEventListener('DOMContentLoaded', function() {
   const popup = document.querySelector('.popup');
   
   function showPopup() {
       popup.classList.add('show');
   }
-
   function hidePopup() {
       popup.classList.remove('show');
   }
-
   showPopup();  
-
   popup.addEventListener('click', function(event) {
       if (event.target === popup) {
           hidePopup();  
@@ -86,23 +102,43 @@ document.addEventListener("click", closeHamburgerMenu); // Close on outside clic
 
 
 
+// Vertical text
+gsap.registerPlugin(ScrollTrigger);
+// Function to check if it's tablet or desktop
+function isTabletOrDesktop() {
+  return window.innerWidth >= 768; 
+}
 
-  // Rotation effect to vertical text
-  gsap.registerPlugin(ScrollTrigger);
+function applyScale() {
   gsap.fromTo(
     ".vertical_text",
-    { rotate: 0, y: 0 }, 
     {
-      rotate: 270, 
-      y: 500, // Move down to stay visible
+      rotate: 0,
+      y: 0,
+      scale: 1, 
+    },
+    {
+      rotate: 270,
+      y: 430,
+      scale: isTabletOrDesktop() ? 0.8 : 1, // Scale down to 80% for tablet/desktop, keep 100% for smaller screens
       scrollTrigger: {
         trigger: ".vertical_text",
-        start: "top 30%", 
-        end: "top 130%", 
+        start: "top 30%",
+        end: "top 130%",
         scrub: true,
       },
     }
   );
+}
+
+// Initial setup for scaling on page load
+applyScale();
+
+// Add an event listener to adjust scaling dynamically if window is resized
+window.addEventListener('resize', () => {
+  // Reapply the scale effect when the window resizes
+  applyScale();
+});
 
 
   
@@ -311,7 +347,7 @@ burpleVideo.volume = 0.05;
 
 // Volume control of Demo Reels video
 const demoVideo = document.querySelector("#demo-video");
-demoVideo.volume = 0.10;
+demoVideo.volume = 0.05;
 
 
 

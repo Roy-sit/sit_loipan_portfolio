@@ -10,12 +10,19 @@
     <link href="css/main.css" rel="stylesheet">
     <title>Roy's Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
 <div id="popup" class="popup">
     <div class="popup-content">
+        <video autoplay loop muted playsinline class="popup-video">
+            <source src="video/bg_popup.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <img src="images/roy.png" alt="My photo" class="popup-image">
     </div>
 </div>
@@ -78,18 +85,72 @@
       </video>   
     </section>
 
-    <div class="vertical_text">  
-      <p>MOTION & <br> GRAPHIC<br>DESIGN</p>
-      <p style="font-size: 10px; font-weight: 100;">C4D,  After Effects, <br>Illustrator, PremierePro</p>
-      <br>
-      <p>WEBSITE<br>DESIGN</p>
-      <p style="font-size: 10px; font-weight: 100;">XD, HTML, CSS
-        <br> JS, VSCode, Github</p>
-      <br>
-      <p>FASHION<br>DESIGN</p> 
-      <p style="font-size: 10px; font-weight: 100;">Illustrator, Photoshop, 
-        <br> PowerPoint</p>
-    </div>  
+
+  <div class="container">
+  <div class="vertical_text">
+    <p>MOTION & <br> GRAPHIC<br>DESIGN</p>
+    <p style="font-size: 10px; font-weight: 100;">C4D, After Effects, <br>Illustrator, PremierePro</p>
+    <br>
+    <p>WEBSITE<br>DESIGN</p>
+    <p style="font-size: 10px; font-weight: 100;">XD, HTML, CSS<br> JS, VSCode, Github</p>
+    <br>
+    <p>FASHION<br>DESIGN</p> 
+    <p style="font-size: 10px; font-weight: 100;">Illustrator, Photoshop, <br> PowerPoint</p>
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="thumb_grid">
+
+  <a href="#mens" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_m.png" alt="Thumbnail 1" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">MEN</span>
+  </div>
+  </a>
+
+  <a href="#womens" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_w.png" alt="Thumbnail 2" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">WOMEN</span>
+  </div>
+  </a>
+
+  <a href="#graphic-con" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_pt.png" alt="Thumbnail 3" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">PRINT</span>
+  </div>
+  </a>
+
+  <a href="#multi" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_bur.png" alt="Thumbnail 4" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">BRANDING</span>
+  </div>
+  </a>
+
+  <a href="#multi-2" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_buds.png" alt="Thumbnail 5" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">EARBUDS</span>
+  </div>
+  </a>
+
+  <a href="#demo-title" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_reel.png" alt="Thumbnail 6" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">REELS</span>
+  </div>
+</div>
+</div>
+</a>
+
 
 
   <!-- Contact icon -->
@@ -175,7 +236,7 @@
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
                   Innovations in fabrics and construction to create comfortable, sport-inspired tailoring. <br><br>
-                  <a href="project.php?id=project-1"  target="_blank"  class="d-button">DETAIL...</a>     
+                  <a href="project.php?id=#project-1"  target="_blank"  class="d-button">DETAIL...</a>     
               </p>
                 </div>  
             </div>
@@ -197,7 +258,7 @@
               <p>
                 Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
-                <a href="project.php?id=project-2" target="_blank" class="d-button">DETAIL...</a>                 
+                <a href="project.php?id=#project-2" target="_blank" class="d-button">DETAIL...</a>                 
               </p>
           </div>   
               <h3>WOMEN</h3>      
@@ -257,7 +318,7 @@
           <br><br> 
             <p>
               Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. Burple believes in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth. <br><br>
-              <a href="project.php?id=project-3" target="_blank" class="d-button">DETAIL...</a>                 
+              <a href="project.php?id=#project-3" target="_blank" class="d-button">DETAIL...</a>                 
               <br>  
               <br>       
             </p>
@@ -280,7 +341,7 @@
               The goal of this project is to design and build a pair of earbuds using generators in Cinema 4D for a print campaign and a short video. The earbuds should be visually appealing earbuds including its colours, shapes, textures, lighting and animation keyframes. The goal is to create a visually appealing
               and engaging video that showcases the 3D earbuds and their features forsocial media using text.
                 <br><br>
-                <a href="project.php?id=project-4" target="_blank" class="d-button">DETAIL...</a>                 
+                <a href="project.php?id=#project-4" target="_blank" class="d-button">DETAIL...</a>                 
                 <br><br>           
               </p>
           </div>

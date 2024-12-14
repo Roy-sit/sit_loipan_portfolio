@@ -57,15 +57,27 @@ li {
 }
 
 .popup-content {
+  position: relative;
   display: flex;
-  align-items: left;
-  background: rgba(255, 255, 255, 0.9);
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   border-radius: 3px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 500px; 
-  margin: 0 auto;
+  overflow: hidden;
+}
+
+.popup-content .popup-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  border-radius: 3px; 
 }
 
 .popup.show {
@@ -78,7 +90,6 @@ li {
   height: 60%;
   object-fit: cover;
 }
-
 
 
 
@@ -143,6 +154,7 @@ li {
     }
   }
 }
+
 
 // Dropdown for Fashion and Multimedia
 #burger-con ul li > a {
@@ -229,17 +241,94 @@ li {
   height: auto; 
 }
 
-
+// Vertical text
 .vertical_text {
   writing-mode: vertical-rl;
   letter-spacing: 5px;
   margin-top: 130px;
-  margin-left: 25px;
+  margin-bottom: 80px;
+  margin-left: 1%;
   font-size: 33px; 
   font-weight: 800; 
   transform-origin: left top; /* Anchor point for rotation */
   transform: rotate(0deg);   /* Start vertically */
   transition: transform 0.5s ease-out;
+}
+
+
+/* Thumbnails */
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  position: relative;
+  padding: 0 5%; /* Add padding to avoid touching the screen edges */
+}
+
+.thumb_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7%; 
+  margin: 10% auto; 
+  max-width: 1200px; 
+  width: 100%;
+}
+
+.thumb-container {
+  position: relative;
+  overflow: hidden;
+  border: 0.5vw solid rgba(255, 255, 255, 0.9);
+  border-radius: 0.3vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; 
+  aspect-ratio: 1; 
+}
+
+.thumb-container .thumb {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.thumb-container .orange-box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $secondary-color;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-container:hover .orange-box {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.thumb-container:hover {
+  transform: scale(1.07);
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 13px; 
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-container:hover .hover-text {
+  opacity: 1;
+  cursor: pointer;
 }
 
 
@@ -264,9 +353,9 @@ li {
 
 // About Me
 #about-me {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
-  margin-top: 130px;
+  margin-top: 40px;
   margin-left: 100px;
   padding: 60px 50px 40px;
 
@@ -298,7 +387,7 @@ li {
 
 // Experience
 #experience {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 550px;
   width: 400px;
   margin-left: -15px;
@@ -361,13 +450,13 @@ li {
 
     &.left {
       border-width: 13px 25px 13px 0;
-      border-color: transparent rgba(252, 89, 24, 0.8) transparent transparent;
+      border-color: transparent $secondary-color transparent transparent;
       left: 0;
     }
 
     &.right {
       border-width: 13px 0 13px 25px;
-      border-color: transparent transparent transparent rgba(252, 89, 24, 0.8);
+      border-color: transparent transparent transparent $secondary-color;
       right: 0;
     }
 
@@ -383,18 +472,9 @@ li {
 }
 
 // Slide Indicator
-.slide-indicator {
+.slide-indicator2 {
   position: absolute;
   display: none;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(252, 89, 24, 0.8);
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-size: 16px;
-  z-index: 10;
 }
 
 
@@ -580,13 +660,13 @@ li {
 
     &.left {
       border-width: 13px 25px 13px 0;
-      border-color: transparent rgba(252, 89, 24, 0.8) transparent transparent;
+      border-color: transparent $secondary-color transparent transparent;
       left: 0;
     }
 
     &.right {
       border-width: 13px 0 13px 25px;
-      border-color: transparent transparent transparent rgba(252, 89, 24, 0.8);
+      border-color: transparent transparent transparent $secondary-color;
       right: 0;
     }
 
@@ -679,14 +759,6 @@ li {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
-.contact-icon{
-  margin-left: 230px;
-  margin-bottom: 90px;
-  margin-top: 300px;
-  background-color: rgba(232, 204, 18, 0.8);
-  padding: 10px;
-}
-
 // Demo reels
 #demo-title h3 {
   margin-top: 70px;
@@ -709,7 +781,13 @@ li {
   position: relative;
 }
 
-
+.contact-icon{
+  margin-left: 230px;
+  margin-bottom: 90px;
+  margin-top: 200px;
+  background-color: rgba(232, 204, 18, 0.8);
+  padding: 10px;
+}
 
 // Styling for Project
 #main-title {
