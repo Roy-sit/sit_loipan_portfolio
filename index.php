@@ -49,7 +49,7 @@
                     <li>
                         <a href="#multimedia">Multimedia</a>
                         <ul>
-                            <li><a href="#multi">Rebranding</a></li>
+                            <li><a href="#multi">Branding</a></li>
                             <li><a href="#multi-2">Earbuds</a></li>
                             <li><a href="#demo-title">Showreel</a></li>
                         </ul>
@@ -147,9 +147,10 @@
     <div class="orange-box"></div>
     <span class="hover-text">REELS</span>
   </div>
+  </a>
 </div>
 </div>
-</a>
+
 
 
 
@@ -236,7 +237,7 @@
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
                   Innovations in fabrics and construction to create comfortable, sport-inspired tailoring. <br><br>
-                  <a href="project.php?id=#project-1"  target="_blank"  class="d-button">DETAIL...</a>     
+                  <a href="project.php?id=1"  target="_blank"  class="d-button">DETAIL...</a>     
               </p>
                 </div>  
             </div>
@@ -258,7 +259,7 @@
               <p>
                 Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
-                <a href="project.php?id=#project-2" target="_blank" class="d-button">DETAIL...</a>                 
+                <a href="project.php?id=2" target="_blank" class="d-button">DETAIL...</a>                 
               </p>
           </div>   
               <h3>WOMEN</h3>      
@@ -296,11 +297,11 @@
 </section>
  
 
-  <!-- Rebranding section -->
+  <!-- Branding section -->
   <section class="full-width-grid-con">
     <div class="col-span-full m-col-span-full">
         <div id="multi">
-            <h3>REBRANDING</h3>         
+            <h3>BRANDING</h3>         
         </div>
         
         <div id="burple">
@@ -318,7 +319,7 @@
           <br><br> 
             <p>
               Step into a world with vibrancy, and every sip is a burst of joy! Burple fruity drinks are a celebration of modern simplicity and colourful fun. Burple believes in keeping it simple yet exciting, offering a refreshing blend of flavours that captivate the true taste, where every drop is a commitment to a brighter, fruit-filled future for youth. <br><br>
-              <a href="project.php?id=#project-3" target="_blank" class="d-button">DETAIL...</a>                 
+              <a href="project.php?id=3" target="_blank" class="d-button">DETAIL...</a>                 
               <br>  
               <br>       
             </p>
@@ -341,7 +342,7 @@
               The goal of this project is to design and build a pair of earbuds using generators in Cinema 4D for a print campaign and a short video. The earbuds should be visually appealing earbuds including its colours, shapes, textures, lighting and animation keyframes. The goal is to create a visually appealing
               and engaging video that showcases the 3D earbuds and their features forsocial media using text.
                 <br><br>
-                <a href="project.php?id=#project-4" target="_blank" class="d-button">DETAIL...</a>                 
+                <a href="project.php?id=4" target="_blank" class="d-button">DETAIL...</a>                 
                 <br><br>           
               </p>
           </div>

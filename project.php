@@ -36,7 +36,7 @@
                     <li>
                         <a href="#multimedia">Multimedia</a>
                         <ul>
-                            <li><a href="index.php?id=#multi">Rebranding</a></li>
+                            <li><a href="index.php?id=#multi">Branding</a></li>
                             <li><a href="index.php?id=#multi-2">Earbuds</a></li>
                             <li><a href="index.php?id=#demo-title">Showreel</a></li>
                         </ul>
@@ -64,76 +64,81 @@
   
 <!-- Project PHP -->
 <div class="projects" id="projects">
-    <h2 id="main-title">PROJECTS SECTION</h2>
+    <h2 id="main-title">PROJECTS DETAIL</h2>
+    
     <?php
-    require_once('includes/connect.php');
+require_once('includes/connect.php');
 
-    $query = "SELECT id, title, image, case_study, client, application FROM project";
-    $results = mysqli_query($connect, $query);
+// Get the project ID from the URL or default to null
+$id = isset($_GET['id']) ? intval($_GET['id']) : null;
 
-    if (!$results) {
-        die("<p style='font-family: \"Galvji\", Helvetica, Arial, sans-serif;'>Query failed: " . mysqli_error($connect) . "</p>");
-    } elseif (mysqli_num_rows($results) === 0) {
-        echo "<p style='font-family: \"Galvji\", Helvetica, Arial, sans-serif;'>No data found in the table.</p>";
-    } else {
-        while ($row = mysqli_fetch_assoc($results)) {
-    ?>
-    
-        <section class="project-con" id="project-<?php echo $row['id']; ?>"> 
-            <div class="title">
-              <h3><?php echo $row['title']; ?></h3>
+// If no ID is provided, show an error or redirect
+if ($id === null) {
+    echo "<p>No project selected.</p>";
+    exit;
+}
+
+// Query to fetch the specific project
+$query = "SELECT id, title, image, case_study, client, application FROM project WHERE id = $id";
+$results = mysqli_query($connect, $query);
+
+if (!$results) {
+    die("<p>Query failed: " . mysqli_error($connect) . "</p>");
+} elseif (mysqli_num_rows($results) === 0) {
+    echo "<p>No project found for the provided ID.</p>";
+} else {
+    // Fetch and display the project
+    $row = mysqli_fetch_assoc($results);
+?>
+    <section class="project-con" id="project-<?php echo $row['id']; ?>">
+        <div class="title">
+            <h3><?php echo $row['title']; ?></h3>
+        </div>
+
+        <div class="image">
+            <img src="<?php echo $row['image']; ?>" alt="Project image">
+        </div>
+
+        <div class="des-con">
+            <div class="case_study">
+                <p>
+                    <span>CASE STUDY:</span>
+                    <?php echo $row['case_study']; ?>
+                </p>
             </div>
-    
-            <div class="image">
-              <img src="<?php echo $row['image']; ?>" alt="image" class="project-img-<?php echo $row['id']; ?>">
+
+            <div class="client">
+                <p>
+                    <span>CLIENT:</span>
+                    <?php echo $row['client']; ?>
+                </p>
             </div>
-    
-            <div class="des-con">
-                <div class="case_study">
-                    <p>
-                        <span>CASE STUDY:</span>
-                        <?php echo $row['case_study']; ?>
-                    </p>
-                </div>    
-    
-                <div class="client">
-                    <p>
-                        <span>CLIENT:</span>
-                        <?php echo $row['client']; ?>
-                    </p>
-                </div>
-    
-                <div class="application">
-                    <p>
-                        <span>APPLICATION:</span>
-                        <?php echo $row['application']; ?>
-                    </p>
-                </div>
+
+            <div class="application">
+                <p>
+                    <span>APPLICATION:</span>
+                    <?php echo $row['application']; ?>
+                </p>
             </div>
-    
-            <br>
-            <br>
-            <br>
-        </section>
-        
-        <script>
-          gsap.registerPlugin(ScrollTrigger);
-          gsap.from(".project-img-<?php echo $row['id']; ?>", {
-            scale: 0.8,
-            opacity: 0,
-            duration: 0.5,
-            scrollTrigger: {
-              trigger: ".project-img-<?php echo $row['id']; ?>",
-              start: "top 80%",
-              toggleActions: "play none none reverse",
-            },
-          });
-        </script>
-    <?php
-        }
-    }
-    ?>
+        </div>
+    </section>
+<?php
+}
+?>
 </div>
+
+
+
+
+<style>
+#main-title {
+  margin-top: 80px;
+  margin-bottom: -110px;
+  margin-left: 20px;
+  font-size: 55px;
+}
+
+</style>
 
 
 
