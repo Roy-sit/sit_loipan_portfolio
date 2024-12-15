@@ -110,14 +110,14 @@ if (!$results) {
             <div class="client">
                 <p>
                     <span>CLIENT:</span>
-                    <?php echo $row['client']; ?>
+                    <img src="<?php echo $row['client']; ?>" alt="Client logo">
                 </p>
             </div>
 
             <div class="application">
                 <p>
                     <span>APPLICATION:</span>
-                    <?php echo $row['application']; ?>
+                    <img src="<?php echo $row['application']; ?>" alt="application logo">
                 </p>
             </div>
         </div>
@@ -136,6 +136,10 @@ if (!$results) {
   margin-bottom: -110px;
   margin-left: 20px;
   font-size: 55px;
+}
+
+.client img {
+  width: 100%;
 }
 
 </style>
