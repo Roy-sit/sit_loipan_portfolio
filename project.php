@@ -8,6 +8,7 @@
 </head>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/pj_detail.css" rel="stylesheet">
     <title>Roy's Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
