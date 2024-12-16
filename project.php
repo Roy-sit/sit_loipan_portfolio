@@ -65,7 +65,7 @@
   
 <!-- Project PHP -->
 <div class="projects" id="projects">
-    <h2 id="main-title">PROJECTS DETAIL</h2>
+    <h2 id="main-title">PROJECT DETAIL</h2>
     
     <?php
 require_once('includes/connect.php');
@@ -142,7 +142,6 @@ if (!$results) {
 .client img {
   width: 100%;
 }
-
 </style>
 
 

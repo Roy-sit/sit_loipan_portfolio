@@ -63,3 +63,25 @@
   font-size: 12px;
   line-height: 25px;
 }
+
+
+
+// Tablet
+@media (min-width: 768px) {
+  .case_study p, 
+.client p, 
+.application p {
+  font-size: 14px;
+  line-height: 35px;
+}
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+
+  .popup-content {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
