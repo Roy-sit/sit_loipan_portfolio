@@ -85,7 +85,6 @@
       </video>   
     </section>
 
-
   <div class="container">
   <div class="vertical_text">
     <p>MOTION & <br> GRAPHIC<br>DESIGN</p>
@@ -159,7 +158,10 @@
       <a href="#contact-form">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
-    <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+      <a href="https://www.instagram.com/royspfo/" target="_blank">
+            <img src="images/ig_logo.svg" alt="my IG" class="icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
      <img src="images/facebook.svg" alt="Facebook icon" class="icon">
     </a>
   </div>
@@ -249,6 +251,7 @@
     </div>
 
 
+
     <!-- Womenswear section -->
     <section class="col-span-full m-col-span-full">
       <div>
@@ -328,7 +331,7 @@
   </section>
 
 
-  <!--T2 Earbuds section  -->
+  <!--Earbuds section  -->
     <section class="full-width-grid-con">
       <div class="col-span-full m-col-span-full">
           <div id="multi-2">
