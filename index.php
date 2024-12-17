@@ -235,7 +235,7 @@
                 <p>
                   Performance Tailoring
                   As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
-                  Innovations in fabrics and construction to create comfortable, sport-inspired tailoring. <br><br>
+                  Innovations in fabrics and heat sealed construction to create comfortable, sport-inspired modern tailoring. <br><br>
                   <a href="project.php?id=1"  target="_blank"  class="d-button">DETAIL...</a>     
               </p>
                 </div>  
