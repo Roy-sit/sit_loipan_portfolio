@@ -100,7 +100,6 @@
 
   <!-- Thumbnails -->
   <div class="thumb_grid">
-
   <a href="#mens" class="thumb-link">
   <div class="thumb-container">
     <img src="images/thumb_m.png" alt="Thumbnail 1" class="thumb">
