@@ -20,7 +20,7 @@
 <div id="popup" class="popup">
     <div class="popup-content">
         <video autoplay loop muted playsinline class="popup-video">
-            <source src="video/bg_popup.mp4" type="video/mp4">
+            <source src="video/bg_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <img src="images/roy.png" alt="My photo" class="popup-image">
@@ -84,6 +84,7 @@
           Your browser does not support the video tag.
       </video>   
     </section>
+
 
   <div class="container">
   <div class="vertical_text">
@@ -158,10 +159,7 @@
       <a href="#contact-form">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
-      <a href="https://www.instagram.com/royspfo/" target="_blank">
-            <img src="images/ig_logo.svg" alt="my IG" class="icon">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+    <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
      <img src="images/facebook.svg" alt="Facebook icon" class="icon">
     </a>
   </div>
