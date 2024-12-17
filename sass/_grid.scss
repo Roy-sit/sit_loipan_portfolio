@@ -141,8 +141,8 @@ html {
       
 
 #hero-video {
-  scale: 85%;
-  margin-top: -35px;
+  scale: 90%;
+  margin-top: -17px;
 }
 
 .vertical_text {
@@ -151,7 +151,8 @@ html {
 }
 
 .container {
-margin-left: 4%;
+margin-left: 40px;
+max-width: 950px;
 }
 
 .thumb_grid {
@@ -464,19 +465,15 @@ margin-left: 4%;
 }
 
 // Thumbnails
+
 .container {
-  margin-left: 9%;
-  margin-top: -50px;
+  margin-left: 180px;
+  max-width: 1000px;
   }
 
-.thumb_grid {
-  scale: 60%;
-  margin-top: -3%;
-}
 
-.hover-text {
-  font-size: 20px; 
-}
+
+
 
   .flex-container-contact {
       margin-right: -550px;

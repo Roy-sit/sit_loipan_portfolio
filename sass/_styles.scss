@@ -280,9 +280,9 @@ li {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 7%; 
   margin: 10% auto; 
-  max-width: 1200px; 
+  max-width: 500px; 
   width: 100%;
-  scale: 80%;
+  box-sizing: border-box; 
 }
 
 
