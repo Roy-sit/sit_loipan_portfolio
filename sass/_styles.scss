@@ -9,6 +9,8 @@ a {
   text-decoration: none;
 }
 
+
+
 li {
   list-style: none;
   margin: 0;
@@ -429,8 +431,6 @@ li {
   overflow: hidden; /* Prevent overflow of the images */
   position: relative; /* For arrows positioning */
 
-
-
    // Slider Experience
   .image-slider {
     display: flex;
@@ -491,7 +491,7 @@ li {
 }
 
 // Slide Indicator
-.slide-indicator2 {
+.slide-indicator, .slide-indicator2 {
   position: absolute;
   display: none;
 }

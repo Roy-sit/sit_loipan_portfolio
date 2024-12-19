@@ -316,7 +316,7 @@
 </section>
  
 
-  <!-- Branding section -->
+  <!-- Burple section -->
   <section class="full-width-grid-con">
     <div class="col-span-full m-col-span-full">
         <div id="multi">
@@ -367,7 +367,7 @@
 
             <br><br> 
               <p>
-              The goal of this project is to design and create a pair of visually appealing earbuds using generators in Cinema 4D for both a print campaign and a short video. The focus is on achieving a cohesive design through thoughtful use of colors, shapes, textures, lighting, and animation keyframes. Additionally, the project aims to produce an engaging video for social media that highlights the 3D earbuds and their features using text overlays.
+              The goal of these 2 projects is to design and create a pair of visually appealing earbuds using generators in Cinema 4D for both a print campaign and a short video. The focus is on achieving a cohesive design through thoughtful use of colors, shapes, textures, lighting, and animation keyframes. Additionally, the project aims to produce an engaging video for social media that highlights the 3D earbuds and their features using text overlays.
                 <br><br>
                 <a href="project.php?id=4" target="_blank" class="d-button">DETAIL...</a>                 
                 <br><br>           
