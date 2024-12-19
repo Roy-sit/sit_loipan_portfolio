@@ -768,6 +768,23 @@ li {
   margin-top: 180px;
 }
 
+#earbuds-image img, 
+#earbuds-image video {
+    width: 100%;           
+    height: auto;         
+    max-width: 100%;       
+    display: block;        
+    margin: 0 auto;        
+}
+
+#earbuds-image img {
+  margin-bottom: -10px;  
+}
+
+#earbuds-image video {
+  margin-top: -10px;      
+}
+
 #earbuds-image p {
   font-size: 12px;
   line-height: 25px;

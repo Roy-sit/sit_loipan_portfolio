@@ -43,6 +43,7 @@
                           <li><a href="#mens">Men</a></li>
                           <li><a href="#womens">Women</a></li>
                           <li><a href="#graphic-con">Prints</a></li>
+                          <li><a href="#experience">VM Display</a></li>
                         </ul>
                     </li>
                     
@@ -126,9 +127,17 @@
   </div>
   </a>
 
+  <a href="#experience" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_vm.png" alt="Thumbnail 4" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">VM DISPLAY</span>
+  </div>
+  </a>
+
   <a href="#multi" class="thumb-link">
   <div class="thumb-container">
-    <img src="images/thumb_bur.png" alt="Thumbnail 4" class="thumb">
+    <img src="images/thumb_bur.png" alt="Thumbnail 5" class="thumb">
     <div class="orange-box"></div>
     <span class="hover-text">BRANDING</span>
   </div>
@@ -136,7 +145,7 @@
 
   <a href="#multi-2" class="thumb-link">
   <div class="thumb-container">
-    <img src="images/thumb_buds.png" alt="Thumbnail 5" class="thumb">
+    <img src="images/thumb_buds.png" alt="Thumbnail 6" class="thumb">
     <div class="orange-box"></div>
     <span class="hover-text">EARBUDS</span>
   </div>
@@ -144,7 +153,7 @@
 
   <a href="#demo-title" class="thumb-link">
   <div class="thumb-container">
-    <img src="images/thumb_reel.png" alt="Thumbnail 6" class="thumb">
+    <img src="images/thumb_reel.png" alt="Thumbnail 7" class="thumb">
     <div class="orange-box"></div>
     <span class="hover-text">REELS</span>
   </div>
@@ -152,7 +161,7 @@
 
   <a href="#sport-con" class="thumb-link">
   <div class="thumb-container">
-    <img src="images/thumb_sport.png" alt="Thumbnail 7" class="thumb">
+    <img src="images/thumb_sport.png" alt="Thumbnail 8" class="thumb">
     <div class="orange-box"></div>
     <span class="hover-text">SPORTNET</span>
   </div>
@@ -347,10 +356,18 @@
 
           <div id="earbuds-image">
             <img src="images/earbuds.jpg" alt="earbuds posters">
+            <br><br>
+
+         
+        <video id="cyluxe-video" controls poster="images/cyluxe-thumb.jpg">
+            <source src="video/cyluxe.webm" type="video/webm">
+            <source src="video/cyluxe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
             <br><br> 
               <p>
-              The goal of this project is to design and build a pair of earbuds using generators in Cinema 4D for a print campaign and a short video. The earbuds should be visually appealing earbuds including its colours, shapes, textures, lighting and animation keyframes. The goal is to create a visually appealing
-              and engaging video that showcases the 3D earbuds and their features forsocial media using text.
+              The goal of this project is to design and create a pair of visually appealing earbuds using generators in Cinema 4D for both a print campaign and a short video. The focus is on achieving a cohesive design through thoughtful use of colors, shapes, textures, lighting, and animation keyframes. Additionally, the project aims to produce an engaging video for social media that highlights the 3D earbuds and their features using text overlays.
                 <br><br>
                 <a href="project.php?id=4" target="_blank" class="d-button">DETAIL...</a>                 
                 <br><br>           

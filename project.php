@@ -31,6 +31,7 @@
                           <li><a href="index.php?id=#mens">Men</a></li>
                           <li><a href="index.php?id=#womens">Women</a></li>
                           <li><a href="index.php?id=#graphic-con">Prints</a></li>
+                          <li><a href="index.php?id=#experience">VM Display</a></li>
                         </ul>
                     </li>
                     
@@ -81,7 +82,7 @@ if ($id === null) {
 }
 
 // Query to fetch the specific project
-$query = "SELECT id, title, image, case_study, client, application FROM project WHERE id = $id";
+$query = "SELECT id, title, image, image2, case_study, client, application FROM project WHERE id = $id";
 $results = mysqli_query($connect, $query);
 
 if (!$results) {
@@ -99,22 +100,32 @@ if (!$results) {
 
 
         <div class="image">
-            <?php 
-            $file = $row['image']; // Fetch the file from the database
-            $fileExtension = pathinfo($file, PATHINFO_EXTENSION); // Get file extension
+    <?php 
+    $file1 = $row['image']; // Fetch the first file from the database
+    $file2 = isset($row['image2']) ? $row['image2'] : null; // Optional second file from the database
 
-            // Check if it's a video
-            if (in_array($fileExtension, ['mp4', 'webm', 'ogg'])): ?>
-                <video controls>
-                    <source src="<?php echo $file; ?>" type="video/<?php echo $fileExtension; ?>">
-                    Your browser does not support the video tag.
-                </video>
-            <?php else: ?>
-                <img src="<?php echo $file; ?>" alt="Project image">
-            <?php endif; ?>
-        </div>
+    $fileExtension1 = pathinfo($file1, PATHINFO_EXTENSION); // Get file1 extension
+    $fileExtension2 = $file2 ? pathinfo($file2, PATHINFO_EXTENSION) : null; // Get file2 extension if it exists
 
-        
+    // Check if the first file is a video
+    if (in_array($fileExtension1, ['mp4', 'webm', 'ogg'])): ?>
+        <video controls>
+            <source src="<?php echo htmlspecialchars($file1); ?>" type="video/<?php echo htmlspecialchars($fileExtension1); ?>">
+            Your browser does not support the video tag.
+        </video>
+    <?php 
+    // If there's only one image
+    elseif (!empty($file1) && empty($file2)): ?>
+        <img src="<?php echo htmlspecialchars($file1); ?>" alt="Project image">
+    <?php 
+    // If there are two images
+    elseif (!empty($file1) && !empty($file2)): ?>
+        <img src="<?php echo htmlspecialchars($file1); ?>" alt="Project image 1">
+        <img src="<?php echo htmlspecialchars($file2); ?>" alt="Project image 2">
+    <?php endif; ?>
+</div>
+
+
         <div class="des-con">
             <div class="case_study">
                 <p>

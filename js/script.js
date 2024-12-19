@@ -349,4 +349,11 @@ burpleVideo.volume = 0.1;
 const demoVideo = document.querySelector("#demo-video");
 demoVideo.volume = 0.3;
 
+
+// Volume control of Cyluxe video
+const cyluxeVideo = document.querySelector("#cyluxe-video");
+if (cyluxeVideo) {
+  cyluxeVideo.volume = 0.2; 
+}
+
 })();
