@@ -23,47 +23,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Popup up message
-document.addEventListener('DOMContentLoaded', function() {
-  const popup = document.querySelector('.popup');
+// document.addEventListener('DOMContentLoaded', function() {
+  // const popup = document.querySelector('.popup');
   
-  function showPopup() {
-      popup.classList.add('show');
-  }
-  function hidePopup() {
-      popup.classList.remove('show');
-  }
-  showPopup();  
-  popup.addEventListener('click', function(event) {
-      if (event.target === popup) {
-          hidePopup();  
-      }
-  });
-});
+  // function showPopup() {
+      // popup.classList.add('show');
+  // }
+  // function hidePopup() {
+      // popup.classList.remove('show');
+  // }
+  // showPopup();  
+  // popup.addEventListener('click', function(event) {
+      // if (event.target === popup) {
+          // hidePopup();  
+      // }
+  // });
+// });
 
 
 
 // Popup on landing with Local Storage
-// document.addEventListener('DOMContentLoaded', function() {
-  // const popup = document.querySelector('.popup');
+document.addEventListener('DOMContentLoaded', function() {
+  const popup = document.querySelector('.popup');
   
-  // if (!localStorage.getItem('popupShown')) {
-      // function showPopup() {
-          // popup.classList.add('show');
-      // }
+  if (!localStorage.getItem('popupShown')) {
+      function showPopup() {
+          popup.classList.add('show');
+      }
 
-      // function hidePopup() {
-          // popup.classList.remove('show');
-          // localStorage.setItem('popupShown', 'true');
-      // }
+      function hidePopup() {
+          popup.classList.remove('show');
+          localStorage.setItem('popupShown', 'true');
+      }
       
-      // showPopup();
-      // popup.addEventListener('click', function(event) {
-          // if (event.target === popup) {
-              // hidePopup();
-          // }
-      // });
-  // }
-// });
+      showPopup();
+      popup.addEventListener('click', function(event) {
+          if (event.target === popup) {
+              hidePopup();
+          }
+      });
+  }
+});
 
 
 
@@ -283,7 +283,7 @@ updateSlideIndicator2();
 
 
   // Scroll effect
-  gsap.utils.toArray("#garphic-image, #footer-contact, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
+  gsap.utils.toArray("#sport-image, #garphic-image, #m-model img, #collection-image, #mens-image, #womens-image, #showroom, #earbuds-image").forEach((image) => {
     gsap.from(image, {
       scale: 0.8,
       opacity: 0,

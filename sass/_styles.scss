@@ -717,6 +717,7 @@ li {
 
 #burple-video {
   max-width: 100%;
+  margin-left: 4px;
 }
 
 #burple-images {
@@ -768,6 +769,40 @@ li {
 }
 
 #earbuds-image p {
+  font-size: 12px;
+  line-height: 25px;
+  margin-top: -5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 30px 20px 30px;
+  position: relative;
+  margin-bottom: 70px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+// Sportnet
+#sport-con {
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height to center vertically */
+  padding: 0 20px; /* Optional: Padding to avoid touching the edges */
+  margin-top: 80px;
+}
+
+#sport-h3 h3 {
+  margin-left: 20px;
+  letter-spacing: 4px;
+  font-size: 60px; 
+}
+
+#sport-image {
+  max-width: 95%;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+#sport-image p {
   font-size: 12px;
   line-height: 25px;
   margin-top: -5px;

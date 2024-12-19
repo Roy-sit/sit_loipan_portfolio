@@ -51,6 +51,7 @@
                         <ul>
                             <li><a href="#multi">Branding</a></li>
                             <li><a href="#multi-2">Earbuds</a></li>
+                            <li><a href="#sport-con">SportNet</a></li>
                             <li><a href="#demo-title">Showreel</a></li>
                         </ul>
             </div>
@@ -97,6 +98,7 @@
     <p>FASHION<br>DESIGN</p> 
     <p style="font-size: 10px; font-weight: 100;">Illustrator, Photoshop, <br> PowerPoint</p>
   </div>
+
 
   <!-- Thumbnails -->
   <div class="thumb_grid">
@@ -145,6 +147,14 @@
     <img src="images/thumb_reel.png" alt="Thumbnail 6" class="thumb">
     <div class="orange-box"></div>
     <span class="hover-text">REELS</span>
+  </div>
+  </a>
+
+  <a href="#sport-con" class="thumb-link">
+  <div class="thumb-container">
+    <img src="images/thumb_sport.png" alt="Thumbnail 7" class="thumb">
+    <div class="orange-box"></div>
+    <span class="hover-text">SPORTNET</span>
   </div>
   </a>
 </div>
@@ -329,7 +339,7 @@
 
 
   <!--Earbuds section  -->
-    <section class="full-width-grid-con">
+    <section class="full-width-grid-con" id="buds-con">
       <div class="col-span-full m-col-span-full">
           <div id="multi-2">
               <h3>EARBUDS</h3>         
@@ -350,8 +360,29 @@
       </section>
 
 
+        <!--Sportnet section  -->
+    <section class="full-width-grid-con" id="sport-con">
+      <div class="col-span-full m-col-span-full">
+          <div id="sport-h3">
+              <h3>SPORTNET</h3>         
+          </div>
+
+          <div id="sport-image">
+            <img src="images/kobe.jpg" alt="Kobe posters">
+            <br><br> 
+              <p>
+              In this project, the goal is to utilize the design and animation techniques learned to create a unique and dynamic opening intro for a sport. The objective is to develop a professional-grade motion graphics piece that showcases creativity, technical skill, and storytelling.
+                <br><br>
+                <a href="project.php?id=5" target="_blank" class="d-button">DETAIL...</a>                 
+                <br><br>           
+              </p>
+          </div>
+      </div>
+      </section>
+
+
       <!--Demo reels  -->
-      <section class="full-width-grid-con">
+      <section class="full-width-grid-con" id="reels-con">
         <div class="col-span-full m-col-span-full">
           <div id="demo-title">
             <h3>SHOWREEL</h3>
