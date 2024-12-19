@@ -3,7 +3,7 @@
 .project-con {
   max-width: 900px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .project-con:hover {
@@ -13,17 +13,16 @@
 
 .title h3 {
   font-size: 45px;
+  margin-top: -20px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
   letter-spacing: 3px;
   display: inline-block;
-  padding: 5px 10px;
   color: transparent; 
   -webkit-text-stroke: 1.5px $primary-color; /* Apply the stroke with black color */
 }
 
-.image img {
+.image img,
+.image video {
   width: 100%;
   display: block;
   margin: 0 auto; 

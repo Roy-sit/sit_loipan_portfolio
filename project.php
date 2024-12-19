@@ -9,7 +9,7 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/pj_detail.css" rel="stylesheet">
-    <title>Roy's Portfolio</title>
+    <title>Roy's Project</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
 </head>
@@ -39,6 +39,7 @@
                         <ul>
                             <li><a href="index.php?id=#multi">Branding</a></li>
                             <li><a href="index.php?id=#multi-2">Earbuds</a></li>
+                            <li><a href="index.php?id=#sport-con">SportNet</a></li>
                             <li><a href="index.php?id=#demo-title">Showreel</a></li>
                         </ul>
             </div>
@@ -96,6 +97,7 @@ if (!$results) {
             <h3><?php echo $row['title']; ?></h3>
         </div>
 
+
         <div class="image">
             <?php 
             $file = $row['image']; // Fetch the file from the database
@@ -112,6 +114,7 @@ if (!$results) {
             <?php endif; ?>
         </div>
 
+        
         <div class="des-con">
             <div class="case_study">
                 <p>

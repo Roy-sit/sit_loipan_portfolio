@@ -153,13 +153,19 @@ html {
 // Thumbnail
 .container {
 margin-left: 40px;
-max-width: 950px;
+
+}
+
+.thumb-container {
+  border: 0.5vw solid rgba(255, 255, 255, 0.9);
 }
 
 .thumb_grid {
-  grid-gap: 20px;
+  grid-gap: 5%; 
   margin-left: 10%; 
-  margin-top: 13%;
+  margin-top: 12%;
+  max-width: 260px;
+  height: auto;
 }
 
 
@@ -495,11 +501,18 @@ margin-top: -20px;
 
 .container {
   margin-left: 180px;
-  max-width: 1000px;
   }
 
+  .thumb-container {
+    border: 0.4vw solid rgba(255, 255, 255, 0.9);
+  }
 
-
+  .thumb_grid {
+    margin-left: 10%; 
+    margin-top: 10%;
+    max-width: 280px;
+    height: auto;
+  }
 
 
   .flex-container-contact {

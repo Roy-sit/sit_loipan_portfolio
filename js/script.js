@@ -342,13 +342,11 @@ updateSlideIndicator2();
 
 // Volume control of Purple video
 const burpleVideo = document.querySelector("#burple-video");
-burpleVideo.volume = 0.05;
+burpleVideo.volume = 0.1;
 
 
 // Volume control of Demo Reels video
 const demoVideo = document.querySelector("#demo-video");
-demoVideo.volume = 0.05;
-
-
+demoVideo.volume = 0.3;
 
 })();
