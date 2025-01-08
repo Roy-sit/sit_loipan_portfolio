@@ -231,7 +231,7 @@
         </section>
 
       <p>
-        With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.   
+      With a strong educational background in fashion and graphic design, combined with years of professional experience collaborating with international fashion brands, I have developed expertise in creating innovative and market-leading designs. My career is characterised by a strong sense of responsibility, a solid work ethic, and a proven ability to consistently deliver high-quality results. 
         <br><br>
       </p>
     </div>
