@@ -10,21 +10,25 @@ $stmt->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project List</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    
 </head>
 <body>
-    <h1>Project List</h1>
+    <h2>Project List</h2>
     <?php
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo '<p class="project-list">' .
             $row['title'] .
-            ' <a href="project_detail.php?id=' . $row['id'] . '">view</a>' .
-            ' <a href="edit_project_form.php?id=' . $row['id'] . '">edit</a>' .
-            ' <a href="delete_project.php?id=' . $row['id'] . '">delete</a></p>';
+            ' &nbsp;&nbsp;&nbsp; <a href="edit_project_form.php?id=' . $row['id'] . '">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;' .
+
+            ' &nbsp;&nbsp;&nbsp; <a href="delete_project.php?id=' . $row['id'] . 
+            '">Delete</a></p>';
     }
+
     $stmt = null;
     ?>
-    <br><br><br>
-    <h3>Add a New Project</h3>
+    <br><br>
+    <h2>Add a New Project</h2>
     <form action="add_project.php" method="post">
         <label for="title">Project Title:</label>
         <input name="title" type="text" required><br><br>
@@ -40,5 +44,15 @@ $stmt->execute();
         <input name="application" type="text" required><br><br>
         <input name="submit" type="submit" value="Add">
     </form>
+    <br> <br>
+    <a href="logout.php">log out</a>
+
+    <script>
+        function confirmDelete() {
+            // Display a confirmation message
+            return confirm("Are you sure you want to delete this project?");
+        }
+    </script>
+
 </body>
 </html>
