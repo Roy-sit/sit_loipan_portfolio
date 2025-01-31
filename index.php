@@ -252,9 +252,7 @@
           onclick="this.classList.toggle('front'); this.classList.toggle('back'); this.previousElementSibling.classList.toggle('front'); this.previousElementSibling.classList.toggle('back')"/>
           
                 <p>
-                  Performance Tailoring
-                  As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection.
-                  Innovations in fabrics and heat sealed construction to create comfortable, sport-inspired modern tailoring. <br><br>
+                  As outdoor performance remains important, climate-proof and windproof features such as quick-dry, comfort stretch, and water-repellent technology are key to this lightweight tailoring collection with innovative fabrics and heat sealed construction to create comfortable, sport-inspired modern tailoring. <br><br>
                   <a href="project.php?id=1"  target="_blank"  class="d-button">DETAIL...</a>     
               </p>
                 </div>  
@@ -276,7 +274,6 @@
               <img src="images/womens.jpg" alt="womens image">
               <img id="w-model" src="images/woman_model.png" alt="woman model">
               <p>
-                Tactile Material
                 The focus shifts to a bolder and more vibrant aesthetic. The designs feature rich, colourful palettes and innovative gradient dye techniques, adding depth and visual interest. Additionally emphasises on fabric textures, exploring unique surface treatments to enhance both the visual appeal and tactile experience of the garments, while still incorporating quick-dry, comfort stretch, and water-repellent technologies. <br><br>
                 <a href="project.php?id=2" target="_blank" class="d-button">DETAIL...</a>                 
               </p>
