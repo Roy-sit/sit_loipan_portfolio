@@ -1,29 +1,17 @@
+<!DOCTYPE html>
+
 <?php
-// Include the database connection file
 require_once('includes/connect.php');
+$query = "SELECT id, title, case_study, client, application, image, image2 FROM project WHERE id = :projectId";
 
-// Get the project ID from the URL
-$id = isset($_GET['id']) ? intval($_GET['id']) : null;
-
-$row = null; // Initialize $row
-
-if ($id !== null) {
-    try {
-        // Prepare the SQL query using PDO
-        $query = "SELECT id, title, image, image2, case_study, client, application FROM project WHERE id = :id";
-        $stmt = $connection->prepare($query);
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-
-        // Fetch the result
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        die("<p>Database error: " . $e->getMessage() . "</p>");
-    }
-}
+$stmt = $connection->prepare($query);
+$projectId = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$stmt->bindParam(':projectId', $projectId, PDO::PARAM_INT);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$stmt = null;
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +26,6 @@ if ($id !== null) {
 </head>
 
 <body>
-    <!-- Menu -->
     <h1 class="hidden">Welcome to my portfolio</h1>
     <div id="sticky-nav-con">
         <header id="main-header" class="grid-con">
@@ -70,7 +57,6 @@ if ($id !== null) {
                 </div>
             </nav>
 
-            <!-- My Logo -->
             <div id="logo" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
                 <a href="#hero">
                     <object data="images/my_name.svg" type="image/svg+xml"></object>
@@ -79,7 +65,6 @@ if ($id !== null) {
         </header>
     </div>
 
-    <!-- Background Video -->
     <div class="bg-video-container">
         <video class="bg-video" autoplay loop muted playsinline>
             <source src="video/bg_video.mp4" type="video/mp4">

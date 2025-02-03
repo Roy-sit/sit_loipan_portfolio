@@ -1,25 +1,14 @@
 <?php
-// Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Include the database connection file
 require_once('includes/connect.php');
-
-// Initialize variables to avoid undefined index warnings
 $full_name = $email = $msg = '';
 
-// Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    // Gather the form content safely
     $full_name = isset($_POST['full_name']) ? $_POST['full_name'] : '';
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $msg = isset($_POST['comments']) ? $_POST['comments'] : '';
 
     $errors = [];
-
-    // Validate and clean these values
     $full_name = trim($full_name);
     $email = trim($email);
     $msg = trim($msg);
@@ -39,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (empty($errors)) {
-        // Insert these values as a new row in the contact table
         $query = "INSERT INTO contact (full_name, email, comments) VALUES ('$full_name', '$email', '$msg')";
 
         if (mysqli_query($connect, $query)) {
@@ -55,10 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Redirect to thank you page
             header('Location: contact.php');
         } else {
-            echo "Error: " . mysqli_error($connect);  // Display SQL error if the query fails
+            echo "Error: " . mysqli_error($connect); 
         }
     } else {
-        // Output any validation errors
         foreach ($errors as $error) {
             echo $error . '<br>';
         }
