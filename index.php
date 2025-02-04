@@ -189,7 +189,7 @@
             <div id="about-me">
             <h3>ABOUT</h3>
             <p>
-            Driven by a strong passion for creativity, I was drawn to the world of fashion and graphic design, where I could transform ideas into tangible, impactful visuals. This inspiration has fueled my desire to craft innovative designs that truly resonate with audiences.
+            Driven by a strong passion for creativity, I was drawn to the world of fashion and graphic design, where I could transform ideas into impactful visuals. This inspiration has fueled my desire to craft innovative designs that truly resonate with audiences.
             <br><br>
             Currently, I am expanding my skill set by studying Interactive Media Design, with the goal of merging fashion and technology. My focus is on developing a unique specialization in website design, logo creation, and motion graphics tailored to the needs of fashion brands.
                 <br><br>           
