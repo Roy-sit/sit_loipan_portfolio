@@ -52,7 +52,7 @@
                         <ul>
                             <li><a href="#multi">Branding</a></li>
                             <li><a href="#multi-2">Earbuds</a></li>
-                            <li><a href="#sport-con">SportNet</a></li>
+                            <!-- <li><a href="#sport-con">SportNet</a></li> -->
                             <li><a href="#demo-title">Showreel</a></li>
                         </ul>
             </div>
@@ -159,13 +159,13 @@
   </div>
   </a>
 
-  <a href="#sport-con" class="thumb-link">
-  <div class="thumb-container">
-    <img src="images/thumb_sport.png" alt="Thumbnail 8" class="thumb">
-    <div class="orange-box"></div>
-    <span class="hover-text">SPORTNET</span>
-  </div>
-  </a>
+  <!-- <a href="#sport-con" class="thumb-link"> -->
+  <!-- <div class="thumb-container"> -->
+    <!-- <img src="images/thumb_sport.png" alt="Thumbnail 8" class="thumb"> -->
+    <!-- <div class="orange-box"></div> -->
+    <!-- <span class="hover-text">SPORTNET</span> -->
+  <!-- </div> -->
+  <!-- </a> -->
 </div>
 </div>
 
@@ -189,7 +189,7 @@
             <div id="about-me">
             <h3>ABOUT</h3>
             <p>
-            Driven by a strong passion for creativity, I was drawn to the world of fashion and graphic design, where I could transform ideas into impactful visuals. This inspiration has fueled my desire to craft innovative designs that truly resonate with audiences.
+            Driven by a strong passion for creativity, I was drawn to the world of fashion and graphic design, where I could transform ideas into tangible, impactful visuals. This inspiration has fueled my desire to craft innovative designs that truly resonate with audiences.
             <br><br>
             Currently, I am expanding my skill set by studying Interactive Media Design, with the goal of merging fashion and technology. My focus is on developing a unique specialization in website design, logo creation, and motion graphics tailored to the needs of fashion brands.
                 <br><br>           
@@ -375,24 +375,24 @@
 
 
         <!--Sportnet section  -->
-    <section class="full-width-grid-con" id="sport-con">
-      <div class="col-span-full m-col-span-full">
-          <div id="sport-h3">
-              <h3>SPORTNET</h3>         
-          </div>
+    <!-- <section class="full-width-grid-con" id="sport-con"> -->
+      <!-- <div class="col-span-full m-col-span-full"> -->
+          <!-- <div id="sport-h3"> -->
+              <!-- <h3>SPORTNET</h3>          -->
+          <!-- </div> -->
 
-          <div id="sport-image">
-            <img src="images/kobe.jpg" alt="Kobe posters">
-            <br><br> 
-              <p>
-              In this project, the goal is to utilize the design and animation techniques learned to create a unique and dynamic opening intro for a sport. The objective is to develop a professional-grade motion graphics piece that showcases creativity, technical skill, and storytelling.
-                <br><br>
-                <a href="project.php?id=5" target="_blank" class="d-button">DETAIL...</a>                 
-                <br><br>           
-              </p>
-          </div>
-      </div>
-      </section>
+          <!-- <div id="sport-image"> -->
+            <!-- <img src="images/kobe.jpg" alt="Kobe posters"> -->
+            <!-- <br><br>  -->
+              <!-- <p> -->
+              <!-- In this project, the goal is to utilize the design and animation techniques learned to create a unique and dynamic opening intro for a sport. The objective is to develop a professional-grade motion graphics piece that showcases creativity, technical skill, and storytelling. -->
+                <!-- <br><br> -->
+                <!-- <a href="project.php?id=5" target="_blank" class="d-button">DETAIL...</a>                  -->
+                <!-- <br><br>            -->
+              <!-- </p> -->
+          <!-- </div> -->
+      <!-- </div> -->
+      <!-- </section> -->
 
 
       <!--Demo reels  -->
@@ -444,7 +444,7 @@
       </div>
       </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     </footer>
 </body>
 </html>

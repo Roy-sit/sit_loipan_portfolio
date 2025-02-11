@@ -72,64 +72,37 @@ $stmt = null;
         </video>
     </div>
 
-    <!-- Project PHP -->
-    <div class="projects" id="projects">
-        <h2 id="main-title">PROJECT DETAIL</h2>
+<!-- Project PHP -->
+<div class="projects" id="projects">
+    <h2 id="main-title">PROJECT DETAIL</h2>
 
-        <?php if ($row): ?>
-            <section class="project-con" id="project-<?php echo $row['id']; ?>">
-                <div class="title">
-                    <h3><?php echo $row['title']; ?></h3>
+    <?php if ($row): ?>
+        <section class="project-con" id="project-<?php echo $row['id']; ?>">
+            <div class="title">
+                <h3><?php echo $row['title']; ?></h3>
+            </div>
+
+            <div class="image">
+             <img src="<?php echo $row['image']; ?>" alt="Project image">
+             <img src="<?php echo $row['image2']; ?>" alt="Project image 2">
+            </div>
+
+            <div class="des-con">
+                <div class="case_study">
+                    <p><span>CASE STUDY:</span> <?php echo $row['case_study']; ?></p>
                 </div>
-
-                <div class="image">
-                    <?php
-                    $file1 = $row['image']; 
-                    $file2 = isset($row['image2']) ? $row['image2'] : null; 
-
-                    $fileExtension1 = pathinfo($file1, PATHINFO_EXTENSION); 
-                    $fileExtension2 = $file2 ? pathinfo($file2, PATHINFO_EXTENSION) : null; 
-
-                    if (in_array($fileExtension1, ['mp4', 'webm', 'ogg'])): ?>
-                        <video controls>
-                            <source src="<?php echo $file1; ?>" type="video/<?php echo $fileExtension1; ?>">
-                            Your browser does not support the video tag.
-                        </video>
-                    <?php elseif (!empty($file1) && empty($file2)): ?>
-                        <img src="<?php echo $file1; ?>" alt="Project image">
-                    <?php elseif (!empty($file1) && !empty($file2)): ?>
-                        <img src="<?php echo $file1; ?>" alt="Project image 1">
-                        <img src="<?php echo $file2; ?>" alt="Project image 2">
-                    <?php endif; ?>
+                <div class="client">
+                    <p><span>CLIENT / THEME:</span> <img src="<?php echo $row['client']; ?>" alt="Client logo"></p>
                 </div>
-
-                <div class="des-con">
-                    <div class="case_study">
-                        <p>
-                            <span>CASE STUDY:</span>
-                            <?php echo $row['case_study']; ?>
-                        </p>
-                    </div>
-
-                    <div class="client">
-                        <p>
-                            <span>CLIENT / THEME:</span>
-                            <img src="<?php echo $row['client']; ?>" alt="Client logo">
-                        </p>
-                    </div>
-
-                    <div class="application">
-                        <p>
-                            <span>APPLICATION:</span>
-                            <img src="<?php echo $row['application']; ?>" alt="Application logo">
-                        </p>
-                    </div>
+                <div class="application">
+                    <p><span>APPLICATION:</span> <img src="<?php echo $row['application']; ?>" alt="Application logo"></p>
                 </div>
-            </section>
-        <?php else: ?>
-            <p>No project found for the provided ID.</p>
-        <?php endif; ?>
-    </div>
+            </div>
+        </section>
+    <?php else: ?>
+        <p>No project found for the provided ID.</p>
+    <?php endif; ?>
+</div>
 
     <style>
         #main-title {

@@ -12,17 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = [];
 
     if (empty($full_name)) {
-        $errors['full_name'] = 'Full Name can\'t be empty';
+        $errors['full_name'] = "Full Name can't be empty";
     }
 
     if (empty($msg)) {
-        $errors['comments'] = 'Comment field can\'t be empty';
+        $errors['comments'] = "Comments can't be empty";
     }
 
     if (empty($email)) {
-        $errors['email'] = 'You must provide an email';
+        $errors['email'] = "You must provide an email";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['legit_email'] = 'You must provide a REAL email';
+        $errors['legit_email'] = "You must provide a REAL email";
     }
 
     if (empty($errors)) {
@@ -41,11 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $message .= "Name: " . $full_name . "\n";
                 $message .= "Email: " . $email . "\n\n";
                 $message .= $msg;
-
                 mail($to, $subject, $message);
-
-
-
 
 
                 // Redirect to thank you page

@@ -2,68 +2,39 @@
 
   console.log('JS file is connected.');
 
-
-
-// Immediate scroll
+// Immediate scroll effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    
-    // Get the target section by its id
-    const target = document.querySelector(this.getAttribute('href'));
-    
+    const target = document.querySelector(this.getAttribute('href'));   
     target.scrollIntoView({
-      behavior: 'auto',  // 'auto' for instant jump, no smooth scrolling
+      behavior: 'auto',
       block: 'start'
     });
   });
 });
 
 
+// Popup profile on landing
+const popup = document.querySelector('.popup');
 
+if (!localStorage.getItem('popupShown')) {
+    function showPopup() {
+        popup.classList.add('show');
+    }
 
-// Popup up message
-// document.addEventListener('DOMContentLoaded', function() {
-  // const popup = document.querySelector('.popup');
-  
-  // function showPopup() {
-      // popup.classList.add('show');
-  // }
-  // function hidePopup() {
-      // popup.classList.remove('show');
-  // }
-  // showPopup();  
-  // popup.addEventListener('click', function(event) {
-      // if (event.target === popup) {
-          // hidePopup();  
-      // }
-  // });
-// });
-
-
-
-// Popup on landing with Local Storage
-document.addEventListener('DOMContentLoaded', function() {
-  const popup = document.querySelector('.popup');
-  
-  if (!localStorage.getItem('popupShown')) {
-      function showPopup() {
-          popup.classList.add('show');
-      }
-
-      function hidePopup() {
-          popup.classList.remove('show');
-          localStorage.setItem('popupShown', 'true');
-      }
-      
-      showPopup();
-      popup.addEventListener('click', function(event) {
-          if (event.target === popup) {
-              hidePopup();
-          }
-      });
-  }
-});
+    function hidePopup() {
+        popup.classList.remove('show');
+        localStorage.setItem('popupShown', 'true');
+    }
+    
+    showPopup();
+    popup.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            hidePopup();
+        }
+    });
+}
 
 
 
@@ -72,17 +43,16 @@ let burgerCon = document.querySelector("#burger-con");
 let button = document.querySelector("#main-nav button");
 const links = document.querySelectorAll("#burger-con > ul > li > a");
 
-// Menu visibility
 function toggleHamburgerMenu() {
   button.classList.toggle("expanded");
-  burgerCon.classList.toggle("show"); // Show/hide menu
+  burgerCon.classList.toggle("show");
 }
 
 // Close menu when clicking outside
 function closeHamburgerMenu(event) {
   if (!burgerCon.contains(event.target) && !button.contains(event.target)) {
     button.classList.remove("expanded");
-    burgerCon.classList.remove("show"); // Hide menu
+    burgerCon.classList.remove("show");
   }
 }
 
@@ -98,13 +68,12 @@ links.forEach((link) => {
 });
 
 button.addEventListener("click", toggleHamburgerMenu);
-document.addEventListener("click", closeHamburgerMenu); // Close on outside click
+document.addEventListener("click", closeHamburgerMenu);
 
 
 
 // Vertical text
 gsap.registerPlugin(ScrollTrigger);
-// Function to check if it's tablet or desktop
 function isTabletOrDesktop() {
   return window.innerWidth >= 768; 
 }
@@ -131,7 +100,6 @@ function applyScale() {
   );
 }
 
-// Initial setup for scaling on page load
 applyScale();
 
 // Add an event listener to adjust scaling dynamically if window is resized
@@ -141,24 +109,23 @@ window.addEventListener('resize', () => {
 });
 
 
-  
+
 
   // Slider for Experience Section
   const slider = document.querySelector('.image-slider');
   const leftArrow = document.querySelector('.arrow.left');
   const rightArrow = document.querySelector('.arrow.right');
-  const slideIndicator = document.querySelector('.slide-indicator'); // Reference to the slide indicator
+  const slideIndicator = document.querySelector('.slide-indicator');
 
   let currentPosition = 0;
-  const totalSlides = slider.querySelectorAll('img').length; // Calculate the total number of slides
+  const totalSlides = slider.querySelectorAll('img').length;
   let currentSlide = 0;
 
-  // Function to update the slide indicator
   function updateSlideIndicator() {
     slideIndicator.textContent = `${currentSlide + 1}/${totalSlides}`;
   }
 
-  // Left arrow functionality
+  // Left arrow function
   leftArrow.addEventListener('click', () => {
     if (currentSlide > 0) { // Prevent moving beyond the first slide
       currentSlide--;
@@ -168,7 +135,7 @@ window.addEventListener('resize', () => {
     }
   });
 
-  // Right arrow functionality
+  // Right arrow function
   rightArrow.addEventListener('click', () => {
     if (currentSlide < totalSlides - 1) { // Prevent moving beyond the last slide
       currentSlide++;
@@ -183,33 +150,30 @@ window.addEventListener('resize', () => {
 
 
 
+//   // BGM Audio
+// const musicSection = document.querySelector(".music-section");
+// const audio = document.querySelector(".music-section .background-music");
 
-  // BGM Audio
-const musicSection = document.querySelector(".music-section");
-const audio = document.querySelector(".music-section .background-music");
+// audio.volume = 0.08;
 
-audio.volume = 0.08;
+// function handleIntersection(entries) {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       audio.play(); // Play audio when the section is in view
+//     } else {
+//       audio.pause(); // Pause audio when the section is out of view
+//     }
+//   });
+// }
 
-function handleIntersection(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      audio.play(); // Play audio when the section is in view
-    } else {
-      audio.pause(); // Pause audio when the section is out of view
-    }
-  });
-}
+// const observer = new IntersectionObserver(handleIntersection, {
+//   threshold: 0.5, // Trigger when 50% of the section is visible
+//   rootMargin: '130px'
+// });
 
-const observer = new IntersectionObserver(handleIntersection, {
-  threshold: 0.5, // Trigger when 50% of the section is visible
-  rootMargin: '130px'
-});
-
-// Ensure the observer targets the correct section
-if (musicSection) {
-  observer.observe(musicSection);
-}
-
+// if (musicSection) {
+//   observer.observe(musicSection);
+// }
 
 
 
@@ -225,8 +189,6 @@ function toggleImage(clickedImg) {
   }
 }
 
-
-  
 
 // Slider for Graphic Section
 const slider2 = document.querySelector('.image-slider2');
@@ -261,7 +223,6 @@ rightArrow2.addEventListener('click', () => {
   }
 });
 updateSlideIndicator2(); 
-
 
 
 
@@ -308,13 +269,13 @@ updateSlideIndicator2();
     },
     {
       opacity: 1,
-      x: "0%",  // Move to normal position
+      x: "0%", 
       duration: 1,
       scrollTrigger: {
         trigger: "#burple-images",  
         start: "top 200%",  
         end: "bottom 100%",  
-        scrub: true,  // Smooth scrolling effect
+        scrub: true, 
       }
     }
   );
@@ -339,7 +300,6 @@ updateSlideIndicator2();
   );
 
 
-
 // Volume control of Purple video
 const burpleVideo = document.querySelector("#burple-video");
 burpleVideo.volume = 0.1;
@@ -347,13 +307,13 @@ burpleVideo.volume = 0.1;
 
 // Volume control of Demo Reels video
 const demoVideo = document.querySelector("#demo-video");
-demoVideo.volume = 0.3;
+demoVideo.volume = 0.2;
 
 
 // Volume control of Cyluxe video
 const cyluxeVideo = document.querySelector("#cyluxe-video");
 if (cyluxeVideo) {
-  cyluxeVideo.volume = 0.2; 
+  cyluxeVideo.volume = 0.2;
 }
 
 })();
