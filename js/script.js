@@ -15,27 +15,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// // Popup profile on landing
-// const popup = document.querySelector('.popup');
-
-// if (!localStorage.getItem('popupShown')) {
-//     function showPopup() {
-//         popup.classList.add('show');
-//     }
-
-//     function hidePopup() {
-//         popup.classList.remove('show');
-//         localStorage.setItem('popupShown', 'true');
-//     }
-    
-//     showPopup();
-//     popup.addEventListener('click', function(event) {
-//         if (event.target === popup) {
-//             hidePopup();
-//         }
-//     });
-// }
-
 
 
 // Hamburger menu elements
@@ -102,7 +81,7 @@ function applyScale() {
 
 applyScale();
 
-// Add an event listener to adjust scaling dynamically if window is resized
+// to adjust scaling if window is resized
 window.addEventListener('resize', () => {
   // Reapply the scale effect when the window resizes
   applyScale();
@@ -149,31 +128,6 @@ window.addEventListener('resize', () => {
 
 
 
-
-//   // BGM Audio
-// const musicSection = document.querySelector(".music-section");
-// const audio = document.querySelector(".music-section .background-music");
-
-// audio.volume = 0.08;
-
-// function handleIntersection(entries) {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       audio.play(); // Play audio when the section is in view
-//     } else {
-//       audio.pause(); // Pause audio when the section is out of view
-//     }
-//   });
-// }
-
-// const observer = new IntersectionObserver(handleIntersection, {
-//   threshold: 0.5, // Trigger when 50% of the section is visible
-//   rootMargin: '130px'
-// });
-
-// if (musicSection) {
-//   observer.observe(musicSection);
-// }
 
 
 

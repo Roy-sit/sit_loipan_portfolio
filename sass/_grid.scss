@@ -45,19 +45,6 @@ html {
 
 // Tablet
 @media screen and (min-width: 768px) {
-
-  .popup-content {
-    width: 100%;
-    max-width: 500px; 
-  }
-    
-  .popup-content img {
-    width: 70%; 
-    height: auto;
-    padding: 25px 0px;
-  }
-
-
   #logo {
     justify-self: left;
     width: 270px;
@@ -134,8 +121,8 @@ html {
 
 #burger-con ul ul li a {
   font-size: 13px;
-   display: flex;  /* To allow alignment */
-  justify-content: center; /* Centers the text horizontally */
+   display: flex;  
+  justify-content: center; 
   text-align: left; 
 }
       
@@ -347,7 +334,7 @@ margin-left: 40px;
 }
 
 #burple-images {
-  flex-direction: row; /* Horizontal layout */
+  flex-direction: row; 
   justify-content: center; 
   gap: 60px; 
 }
@@ -395,25 +382,25 @@ margin-top: -20px;
   }
 
 // Sportnet
-#sport-con {
-  margin-top: 230px;
-  margin-bottom: 170px;
-    }
+// #sport-con {
+//   margin-top: 230px;
+//   margin-bottom: 170px;
+//     }
 
-  #sport-h3 h3 {
-    font-size: 80px; 
-  }
+//   #sport-h3 h3 {
+//     font-size: 80px; 
+//   }
   
-  #sport-image {
-    max-width: 80%; 
-    height: auto; 
-    margin-left: 110px;
-  }
+//   #sport-image {
+//     max-width: 80%; 
+//     height: auto; 
+//     margin-left: 110px;
+//   }
 
-  #sport-image p {
-    font-size: 14px;
-    line-height: 35px;
-  }
+//   #sport-image p {
+//     font-size: 14px;
+//     line-height: 35px;
+//   }
 
 
   // Demo reels
@@ -469,17 +456,6 @@ margin-top: -20px;
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-
-  .popup-content {
-    width: 90%;
-    max-width: 500px; 
-  }
-    
-  .popup-content img {
-    width: 70%; 
-    height: auto;
-    padding: 25px 0px;
-  }
 
   #logo {
     margin-top: 40px;
@@ -699,24 +675,24 @@ margin-top: -20px;
   }
 
 // Sportnet
-#sport-con {
-  margin-bottom: 200px;
-    }
+// #sport-con {
+//   margin-bottom: 200px;
+//     }
 
-  #sport-h3 h3 {
-    font-size: 90px; 
-    margin-bottom: 50px;
-  }
+//   #sport-h3 h3 {
+//     font-size: 90px; 
+//     margin-bottom: 50px;
+//   }
   
-  #sport-image {
-    max-width: 65%; 
-    margin-left: 270px;
-  }
+//   #sport-image {
+//     max-width: 65%; 
+//     margin-left: 270px;
+//   }
 
-  #sport-image p {
-    font-size: 14px;
-    line-height: 35px;
-  }
+//   #sport-image p {
+//     font-size: 14px;
+//     line-height: 35px;
+//   }
 
     // Demo reels
     #demo-video {

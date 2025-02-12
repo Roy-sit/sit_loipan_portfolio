@@ -49,7 +49,7 @@ $stmt = null;
                             <ul>
                                 <li><a href="index.php?id=#multi">Branding</a></li>
                                 <li><a href="index.php?id=#multi-2">Earbuds</a></li>
-                                <li><a href="index.php?id=#sport-con">SportNet</a></li>
+                                <!-- <li><a href="index.php?id=#sport-con">SportNet</a></li> -->
                                 <li><a href="index.php?id=#demo-title">Showreel</a></li>
                             </ul>
                         </li>

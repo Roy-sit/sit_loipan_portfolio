@@ -17,17 +17,7 @@
 </head>
 
 <body>
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <video autoplay loop muted playsinline class="popup-video">
-            <source src="video/bg_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <img src="images/roy.png" alt="My photo" class="popup-image">
-    </div>
-</div>
 
-  <!-- menu -->
   <h1 class="hidden">Welcome to my portfolio</h1>
 <div id="sticky-nav-con">
     <header id="main-header" class="grid-con">
