@@ -129,7 +129,7 @@ $stmt = null;
         </div>
 
         <div id="reserved">
-            <p>&#174; Roy Sit, All Rights Reserved, 2025.</p>
+            <p>&#174; Roland Sit, All Rights Reserved, 2025.</p>
 
             <div id="footer-contact">
                 <form id="contact-form" action="includes/sendmail.php" method="POST">

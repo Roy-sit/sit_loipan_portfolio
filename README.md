@@ -5,7 +5,7 @@ This is a personal portfolio website showcasing my work in fashion design, web d
 
 
 #### About Me
-With a solid educational foundation in fashion and graphic design, backed by a degree from the UK, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
+With a solid educational foundation in fashion and graphic design, and many years of professional experience working with international fashion brands, I have honed my expertise in creating innovative and market-leading designs. My career has been defined by a strong sense of responsibility, a high work ethic, and a proven track record of delivering high-quality results.
 Currently expanding my skill set by studying Interactive Media Design. My goal is to blend fashion and technology with a unique specialisation in website design, logo design, and motion graphic for fashion brands.
 
 #### Installation
@@ -19,10 +19,10 @@ There is no installation process required. Simply download the files to your com
 5. Submit a pull request
 
 #### Credits
-Sit Loi Pan (Roy Sit)
+LP Sit
 
 #### License
-Copyright (c) 2024 Sit Loi Pan
+Copyright (c) 2024 LP Sit
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <br>
