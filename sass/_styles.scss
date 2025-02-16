@@ -1,8 +1,9 @@
 @import 'variables';
 
 
-body {
-    overflow-x: hidden;
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -519,7 +520,7 @@ li {
 }
 
 #womens h3 {
-  margin-left: 280px;
+  margin-left: 220px;
   margin-top: -780px;
   transform: rotate(-90deg);
   letter-spacing: 4px;
@@ -536,7 +537,7 @@ li {
   opacity: 0.95;
   scale: 50%;
   margin-top: -680px;
-  margin-left: 240px;
+  margin-left: 190px;
 }
 
 #womens-image p {
@@ -554,7 +555,7 @@ li {
 #graphic-con {
   background-color: rgba(255, 255, 255, 0.8);
   height: 450px;
-  width: 700px;
+  width: auto;
   margin-left: -15px;
   margin-top: -250px;
 

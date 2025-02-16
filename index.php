@@ -214,14 +214,8 @@
       <button class="arrow right"></button>
       <div class="slide-indicator">1/8</div> 
 
-        <!-- Audio -->
-        <section class="music-section">
-          <h2 class="hidden">Music Section</h2>
-          <audio class="background-music" preload="auto" src="audio/bgm.m4a"></audio>
-        </section>
-
       <p>
-      With a strong educational background in fashion and graphic design, combined with years of professional experience collaborating with international fashion brands, I have developed expertise in creating innovative and market-leading designs. My career is characterised by a strong sense of responsibility, a solid work ethic, and a proven ability to consistently deliver high-quality results. 
+      With a strong background in fashion and graphic design, combined with years of professional experience collaborating with international fashion brands, I have developed expertise in creating innovative and market-leading designs. My career is characterised by a strong sense of responsibility, a solid work ethic, and a proven ability to consistently deliver high-quality results. 
         <br><br>
       </p>
     </div>
