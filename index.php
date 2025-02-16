@@ -68,9 +68,9 @@
 
 
 <!-- Hero video -->    
-    <section id="hero" class="full-width-grid-con">
+<section id="hero" class="full-width-grid-con">
         <h2 class="hidden">My Fashion Show</h2>
-        <video id="hero-video" controls>
+        <video id="hero-video" controls poster="images/show_thumb.png">
           <source src="video/fashion_show.mp4" type="video/mp4">
           <source src="video/fashion_show.webm" type="video/webm">
           Your browser does not support the video tag.
