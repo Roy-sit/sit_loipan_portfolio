@@ -9,7 +9,7 @@
     <div class="container">
         <h1>Thank You!</h1>
         <p>I will get back to you soon.</p>
-        <a href="index.php">Roland's Portfolio</a>
+        <a href="index.php">LP S Portfolio</a>
     </div>
 </body>
 

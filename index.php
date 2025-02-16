@@ -8,7 +8,7 @@
 </head>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Roland's Portfolio</title>
+    <title>LP S Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
@@ -421,7 +421,7 @@
     </div>
 
     <div id="reserved">
-      <p>&#174; Roland Sit, All Right Reserved, 2025.
+      <p>&#174; LP S., All Right Reserved, 2025.
       </p>
 
       <div id="footer-contact">
