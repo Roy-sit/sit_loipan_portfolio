@@ -9,6 +9,12 @@ html {
 // Mobile
 // Add pointer to the dropdown container
 @media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   #burger-con ul li > ul {
     margin-left: 5px;
   }
@@ -63,8 +69,7 @@ html {
     position: sticky;
     z-index: 1;
     top: 0;
-    margin-bottom: -15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 // menu background
@@ -467,10 +472,9 @@ margin-top: -20px;
     font-size: 15px;
 }
 
-
 #hero-video {
   scale: 73%;
-  margin-top: -95px;
+  margin-top: -80px;
 }
 
 // Thumbnails

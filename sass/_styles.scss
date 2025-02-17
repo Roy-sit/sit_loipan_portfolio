@@ -1,15 +1,9 @@
 @import 'variables';
 
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
 a {
   text-decoration: none;
 }
-
 
 
 li {
@@ -151,7 +145,7 @@ li {
 }
 
 #sticky-nav-con {
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.93);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -183,6 +177,7 @@ li {
   border-left: 15px solid black; 
   border-right: 15px solid black; 
   border-bottom: 15px solid black;
+  border-top: 15px solid black;
   box-sizing: border-box; 
   display: block; 
   max-width: 100%;
