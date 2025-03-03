@@ -20,7 +20,7 @@ $stmt = null;
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/pj_detail.css" rel="stylesheet">
-    <title><?php echo $row ? $row['title'] : "Roy's Project"; ?></title>
+    <title><?php echo $row ? $row['title'] : "LP S's Project"; ?></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>   
 </head>
@@ -74,7 +74,6 @@ $stmt = null;
 
 <!-- Project PHP -->
 <div class="projects" id="projects">
-    <h2 id="main-title">PROJECT DETAIL</h2>
 
     <?php if ($row): ?>
         <section class="project-con" id="project-<?php echo $row['id']; ?>">
@@ -84,7 +83,7 @@ $stmt = null;
 
             <div class="image">
              <img src="<?php echo $row['image']; ?>" alt="Project image">
-             <img src="<?php echo $row['image2']; ?>" alt="Project image 2">
+             <img src="<?php echo $row['image2']; ?>">
             </div>
 
             <div class="des-con">
@@ -105,12 +104,6 @@ $stmt = null;
 </div>
 
     <style>
-        #main-title {
-            margin-top: 80px;
-            margin-bottom: -110px;
-            margin-left: 20px;
-            font-size: 55px;
-        }
 
         .client img {
             width: 100%;
@@ -118,20 +111,20 @@ $stmt = null;
     </style>
 
     <!-- Footer section -->
-    <footer>
-        <div class="contact-icon">
-            <a href="https://www.instagram.com/royspfo/" target="_blank">
+   <footer>
+      <div class="contact-icon">
+          <a href="https://www.linkedin.com/in/lps25" target="_blank">
+            <img src="images/lk_logo.svg" alt="my linkedin" class="icon">
+        </a>
+        <a href="https://www.instagram.com/royspfo/" target="_blank">
                 <img src="images/ig_logo.svg" alt="my IG" class="icon">
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook icon" class="icon">
-            </a>
-        </div>
+    </div>
 
         <div id="reserved">
             <p>&#174; LP S., All Rights Reserved, 2025.</p>
 
-            <div id="footer-contact">
+<div id="footer-contact">
     <form id="contact-form" action="sendmail.php" method="POST">
         <input type="text" name="full_name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email" required>

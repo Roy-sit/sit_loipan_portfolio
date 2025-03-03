@@ -16,8 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
 // Hamburger menu elements
 let burgerCon = document.querySelector("#burger-con");
 let button = document.querySelector("#main-nav button");
@@ -90,7 +88,6 @@ window.addEventListener('resize', () => {
 
 
 
-
   // Slider for Experience Section
   const slider = document.querySelector('.image-slider');
   const leftArrow = document.querySelector('.arrow.left');
@@ -126,9 +123,6 @@ window.addEventListener('resize', () => {
     }
   });
   updateSlideIndicator(); 
-
-
-
 
 
 
@@ -271,6 +265,46 @@ if (cyluxeVideo) {
   cyluxeVideo.volume = 0.2;
 }
 
+
+
+// Contact form - AJAX
+const form = document.querySelector("#contact-form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch('sendmail.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json()) 
+    .then(data => {
+        document.querySelectorAll(".error-message").forEach(e => e.remove()); // Clear old errors
+
+        if (data.status === "error" && data.errors) {
+            for (let field in data.errors) {
+                const inputField = form.querySelector(`[name="${field}"]`);
+                if (inputField) {
+                    const errorElement = document.createElement('p');
+                    errorElement.className = "error-message";
+                    errorElement.textContent = data.errors[field];
+                    errorElement.style.color = "white"; 
+                    errorElement.style.fontSize = "10px"; 
+                    errorElement.style.marginTop = "5px";
+                    inputField.insertAdjacentElement("afterend", errorElement);
+                }
+            }
+        } else if (data.status === "success") {
+            form.reset();
+            window.location.href = 'thank-you.php'; 
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+});
 
 
 })();
