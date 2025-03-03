@@ -35,13 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindParam(':msg', $msg, PDO::PARAM_STR);
 
             if ($stmt->execute()) {
-                $to = 'lpsroy78@gmail.com';
-                $subject = 'Message from your Portfolio site!';
-                $message = "You have received a new contact form submission:\n\n";
-                $message .= "Name: " . $full_name . "\n";
-                $message .= "Email: " . $email . "\n\n";
-                $message .= $msg;
-                mail($to, $subject, $message);
 
 
                 // Redirect to thank you page
