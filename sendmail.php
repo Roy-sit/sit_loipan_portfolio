@@ -45,22 +45,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
                 // Redirect to thank you page
-                header('Location: thankyou.php');
+                header('Location: thank-you.php');
                 exit;
             } else {
                 echo "Error: Unable to submit form.";
             }
 
             $stmt = null; 
-        } catch (PDOException $e) {
-            echo "Database Error: " . $e->getMessage();
+          } catch (PDOException $e) {
+            echo "Database Error: Something went wrong. Please try again later.";
         }
+        
     } else {
-        foreach ($errors as $error) {
-            echo $error . '<br>';
-        }
+         echo "Please correct the errors in the form."; 
     }
-} else {
-    echo "Please fill out the form to contact us.";
-}
+  }
 ?>

@@ -1,6 +1,7 @@
 (function() {
 
   console.log('JS file is connected.');
+  
 
 // Immediate scroll effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -269,5 +270,7 @@ const cyluxeVideo = document.querySelector("#cyluxe-video");
 if (cyluxeVideo) {
   cyluxeVideo.volume = 0.2;
 }
+
+
 
 })();

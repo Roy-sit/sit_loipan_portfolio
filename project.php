@@ -132,14 +132,13 @@ $stmt = null;
             <p>&#174; LP S., All Rights Reserved, 2025.</p>
 
             <div id="footer-contact">
-                <form id="contact-form" action="includes/sendmail.php" method="POST">
-                    <input type="text" name="fullName" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="comments" rows="3" placeholder="Comments"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
+    <form id="contact-form" action="sendmail.php" method="POST">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="comments" rows="3" placeholder="Comments"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
 
         <script src="js/script.js"></script>
     </footer>

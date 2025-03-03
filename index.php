@@ -163,14 +163,14 @@
 
 
   <!-- Contact icon -->
-    <div class="contact-icon">
+    <!-- <div class="contact-icon">
       <a href="#contact-form">
           <img src="images/my_logo.svg" alt="contact email" class="icon">
       </a>
     <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
      <img src="images/facebook.svg" alt="Facebook icon" class="icon">
     </a>
-  </div>
+  </div> -->
 
 
   <!-- About section -->
@@ -406,12 +406,12 @@
       <!--Footer section  -->
     <footer>
       <div class="contact-icon">
-          <a href="https://www.instagram.com/royspfo/" target="_blank">
-            <img src="images/ig_logo.svg" alt="my IG" class="icon">
+          <a href="https://www.linkedin.com/in/lps25" target="_blank">
+            <img src="images/lk_logo.svg" alt="my linkedin" class="icon">
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
+        <!-- <a href="https://www.facebook.com/profile.php?id=100075640328103" target="_blank">
      <img src="images/facebook.svg" alt="Facebook icon" class="icon">
-    </a>
+    </a> -->
     </div>
 
     <div id="reserved">
@@ -419,14 +419,13 @@
       </p>
 
       <div id="footer-contact">
-        <form id="contact-form" action="thank-you.php" method="POST">
-          <input type="text" name="fullName" placeholder="Full Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="comments" rows="3" placeholder="Comments"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      </div>
+    <form id="contact-form" action="sendmail.php" method="POST">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="comments" rows="3" placeholder="Comments"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
 
     <script src="js/script.js" defer></script>
     </footer>
