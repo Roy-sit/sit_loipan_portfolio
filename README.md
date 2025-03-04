@@ -52,5 +52,6 @@ Integration of After Effects, C4D for creating dynamic, innovative video content
 - Animated text.
 - One click Back-to-Top.
 - Slider function for multi images scrolling.
+- AJAX for contact form.
 
 THE END
