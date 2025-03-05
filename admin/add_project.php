@@ -1,14 +1,44 @@
 <?php
 require_once('../includes/connect.php');
-$query = "INSERT INTO project (title, image, image2, case_study, client, application) VALUES (?, ?, ?, ?, ?, ?)";
-$stmt = $connection->prepare($query);
-$stmt->bindParam(1, $_POST['title'], PDO::PARAM_STR);
-$stmt->bindParam(2, $_POST['image'], PDO::PARAM_STR);
-$stmt->bindParam(3, $_POST['image2'], PDO::PARAM_STR);
-$stmt->bindParam(4, $_POST['case_study'], PDO::PARAM_STR);
-$stmt->bindParam(5, $_POST['client'], PDO::PARAM_STR);
-$stmt->bindParam(6, $_POST['application'], PDO::PARAM_STR);
-$stmt->execute();
-$stmt = null;
-header('location: project_list.php');
+
+// Generate a unique filename
+$random = rand(10000, 99999);
+$newname = 'image' . $random;
+$filetype = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
+
+// Ensure safe file types
+if ($filetype == 'jpeg') {
+    $filetype = 'jpg';
+}
+if ($filetype == 'exe') {
+    exit('Nice try'); // we don't want to save executable files
+ } 
+
+$newname .= '.' . $filetype;
+$target_file = 'uploads/' . $newname;
+
+// Move uploaded file
+if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+  
+    // PDO database insert
+    $query = "INSERT INTO project (title, image, case_study, client, application, description) 
+              VALUES (:title, :image, :case_study, :client, :application, :description)";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(':title', $_POST['title'], PDO::PARAM_STR);
+    $stmt->bindParam(':image', $newname, PDO::PARAM_STR);
+    $stmt->bindParam(':case_study', $_POST['case_study'], PDO::PARAM_STR);
+    $stmt->bindParam(':client', $_POST['client'], PDO::PARAM_STR);
+    $stmt->bindParam(':application', $_POST['application'], PDO::PARAM_STR);
+    $stmt->bindParam(':description', $_POST['description'], PDO::PARAM_STR);
+
+    $stmt->execute();
+    $stmt = null;
+
+    // Redirect after success
+    header('Location: project_list.php');
+    exit();
+} else {
+    echo 'Error uploading the file.';
+}
 ?>
