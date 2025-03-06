@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 03, 2025 at 09:57 PM
+-- Generation Time: Mar 06, 2025 at 09:21 PM
 -- Server version: 8.0.35
 -- PHP Version: 8.2.20
 
@@ -34,6 +34,15 @@ CREATE TABLE contact (
   comments varchar(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table contact
+--
+
+INSERT INTO contact (id, full_name, email, comments) VALUES
+(44, 'Roy Sit', 'lpsroy78@gmail.com', 'Testing data'),
+(45, 'roy', 'lpsroy78@gmail.com', 'testing 2'),
+(46, 'roy', 'lpsroy78@gmail.com', 'ttt');
+
 -- --------------------------------------------------------
 
 --
@@ -63,6 +72,25 @@ INSERT INTO project (id, title, image, image2, description, case_study, client, 
 (5, 'PROJECT - SPORTNET', 'video/sportnet.mp4', '', 'In this project, students will utilize the design and animation techniques learned in class to create a unique and dynamic opening intro for a sports team. The objective is to develop a professional-grade motion graphics piece that showcases creativity, technical skill, and storytelling.', 'In this project, students will utilize the design and animation techniques learned in class to create a unique and dynamic opening intro for a sports team. The objective is to develop a professional-grade motion graphics piece that showcases creativity, technical skill, and storytelling.\r\n<br>\r\n<br>\r\nOutcome: <br>\r\nThe SportNet intro incorporating elements such as team colours, logos, typography, billboard with animations to engage the audience. Students are encouraged to push their creative boundaries and deliver a polished project for their unique portfolios.', 'images/sport_client.png', 'images/sport_app.png'),
 (14, 'test', 'image56648.jpg', '', 'd', 'd', 'd', 'd');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table user
+--
+
+CREATE TABLE `user` (
+  id int UNSIGNED NOT NULL,
+  username varchar(100) NOT NULL,
+  password varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table user
+--
+
+INSERT INTO user (id, username, password) VALUES
+(1, 'lpsroy', '2025@');
+
 --
 -- Indexes for dumped tables
 --
@@ -80,6 +108,12 @@ ALTER TABLE project
   ADD PRIMARY KEY (id);
 
 --
+-- Indexes for table user
+--
+ALTER TABLE user
+  ADD PRIMARY KEY (id);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -93,6 +127,12 @@ ALTER TABLE contact
 -- AUTO_INCREMENT for table project
 --
 ALTER TABLE project
+  MODIFY id int UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table user
+--
+ALTER TABLE user
   MODIFY id int UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 

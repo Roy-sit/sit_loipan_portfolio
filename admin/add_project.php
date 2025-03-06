@@ -1,23 +1,21 @@
 <?php
 require_once('../includes/connect.php');
 
-// Generate a unique filename
 $random = rand(10000, 99999);
 $newname = 'image' . $random;
 $filetype = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
 
-// Ensure safe file types
 if ($filetype == 'jpeg') {
     $filetype = 'jpg';
 }
 if ($filetype == 'exe') {
-    exit('Nice try'); // we don't want to save executable files
+    exit('Nice try');
  } 
 
 $newname .= '.' . $filetype;
 $target_file = 'uploads/' . $newname;
 
-// Move uploaded file
+
 if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
   
     // PDO database insert
@@ -35,7 +33,7 @@ if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
     $stmt->execute();
     $stmt = null;
 
-    // Redirect after success
+   
     header('Location: project_list.php');
     exit();
 } else {
